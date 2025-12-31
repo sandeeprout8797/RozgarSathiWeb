@@ -1,0 +1,3381 @@
+<!DOCTYPE html>
+<html lang="en‑IN">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en-IN">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title> RozgarSathi | Personalized Job Assistance - Jobs in Delhi, Noida, Gurgaon, Pune, Bangalore & Mumbai</title>
+        <meta name="description" content="Find jobs & internships across India with RozgarSathi. Get personalized career assistance, resume help & top job listings to kickstart your career today.">
+
+        <link rel="icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/favicon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/favicon-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon/favicon-120x120.png">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+        <style>
+            @media screen and (max-width: 450px) {
+                body {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    margin: 0px;
+                }
+  
+  
+                .headerOneDivision {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: black;
+                    color: white;
+                    height: 25px;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    z-index: 5;
+                }
+  
+  
+                .headerTwoDivision {
+                    display: flex;
+                    padding-top: 50px;
+                    justify-content: space-between;
+                    position: relative;
+                    align-items: center;
+                }
+  
+                .companylogoImgName {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid black;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    gap: 5px;
+                    height: 40px;
+                }
+  
+                .companylogoImgName img {
+                    width: 30px;
+                    height: 30px;
+                }
+  
+                .navigationButtonDivision {
+                    position: fixed;
+                    display: flex;
+                    flex-direction: column;
+                    top: 20px;
+                    left: -400px;
+                    width: 200px;
+                    height: 100%;
+                    background-color: white;
+                    color: black;
+                    z-index: 2;
+                    transform: translateX(200px);
+                    transition: left 0.8s ease;
+                }
+  
+                .navigationButtonDivision.active {
+                    left: -200px;
+                }
+  
+                .navigationButtonDivision:hover {
+                    cursor: pointer;
+                }
+  
+                .navigationButtonDivision a {
+                    border: 1px solid black;
+                    text-decoration: none;
+                    color: black;
+                    padding-left: 20px;
+                    padding-right: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+  
+                .navigationButtonDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .headerTwoDivisionButtons {
+                    display: flex;
+                }
+  
+                .headerTwoDivisionButtons button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 20px;
+                    border: none;
+                    margin-right: 5px;
+                }
+  
+                .headerTwoDivisionButtons img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 20px;
+                    border: 2px solid black;
+                }
+  
+                .contentOneDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .contentOneDivision a {
+                    color: blue;
+                    text-decoration: underline;
+                    border: 1px solid black;
+                    margin-left: 100px;
+                }
+  
+                .contentOneDivision img {
+                    width: 300px;
+                    height: 300px;
+                }
+  
+                .contenOneImageOneDiv figcaption {
+                    display: none;
+                }
+  
+  
+                .contentTwoDivision {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin-top: 100px;
+                }
+  
+                .contentTwoImageDiv {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 10px;
+                }
+                .contentTwoImageDiv div {
+                    display: flex;
+                    justify-content: right;
+                    gap: 10px;
+                }
+  
+                .contentTwoDivision img {
+                    width: 150px;
+                    height: 150px;
+                }
+  
+  
+                .ourServicesDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+  
+                .servicesDescDivisionOne h3 {
+                    border-top: 1px solid black;
+                }
+                .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
+                    color: grey;
+                }
+  
+                .servicesDescDivisionOne, .servicesDescDivisionTwo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+  
+                .servicesDescDivisionOne div, .servicesDescDivisionTwo div{
+                    height: 250px;
+                    width: 250px;
+                }
+  
+                .servicesDescDivisionTwo h3 {
+                    border-top: 1px solid black;
+                }
+                .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
+                    color: grey;
+                }
+  
+  
+                .contentThreeDivision {
+                    display: flex;
+                    flex-direction: column;
+                    height: 300px;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    padding: 100px;
+                    background-image: url(../assets/images/contentThree.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    color: white;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    margin-top: 100px;
+                }
+  
+  
+                .statisticDivision {
+                    margin-top: 100px;
+                }
+  
+                .statsRightDivision {
+                    display: flex;
+                    gap: 30px;
+                    border-top: 1px solid black;
+                    justify-content: center;
+                }
+  
+                .statsRightOneDivision, .statsRightTwoDivision {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+  
+  
+                .forumDivision {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    margin-top: 100px;
+                }
+  
+                .forumDivision form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 50px;
+                }
+  
+                .forumInputDivision  {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .forumInputDivision div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    gap: 30px;
+                }
+  
+  
+                .pricingDivision {
+                    margin-top: 100px;
+                }
+  
+                .pricingDivisionsDiv {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                }
+  
+                .pricingDivisionsDiv div {
+                    border-bottom: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid black;
+                }
+  
+  
+                .partnersDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                }
+  
+                .partnersDivision a {
+                    text-decoration: underline;
+                    color: black;
+                    text-align: center;
+                }
+  
+  
+  
+                .collabImagesDivisionScroll {
+                    width: 100%;
+                    overflow: hidden;
+                }
+                    
+                .collabImagesDivision {
+                    display: flex;
+                    gap: 40px;               
+                    min-width: max-content; 
+                    animation: marquee 12s linear infinite;
+                }
+                    
+                .collabImagesDivision img {
+                    width: 40px;
+                    height: 30px; 
+                    object-fit: cover;            
+                }
+                    
+                @keyframes marquee {
+                    100% {
+                        transform: translateX(0);
+                    }
+                    0% {
+                        transform: translateX(-50%);
+                    }
+                }
+  
+                .collabImagesDivisionScroll:hover .collabImagesDivision {
+                    animation-play-state: paused;
+                }
+  
+  
+                .callBookingDivision {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    margin-top: 100px;
+                    padding: 10px;
+                    background-color: rgb(207, 207, 207);
+                    justify-content: space-between;
+                    align-items: center;
+                }
+  
+                .callBookingDivision img {
+                    width: 200px;
+                    height: 200px;
+                }
+  
+                .callBookingDivision a {
+                    background-color: white;
+                    color: black;
+                    border: black 1px solid;
+                    padding: 5px;
+                    border-radius: 5px;
+                    font-size: 10px;
+                }
+  
+  
+                .storyDivisionscroll {
+                    width: 100%;
+                    overflow: hidden;
+                    margin-top: 100px;
+                }
+  
+                .storyDivision {
+                    display: flex;
+                    gap: 30px;               
+                    min-width: max-content; 
+                    animation: scroll 12s linear infinite;
+                }
+  
+                .storyDivision img {
+                    height: 80px;
+                    width: 80px;
+                }
+  
+                @keyframes scroll {
+                    100% {
+                        transform: translateX(0);
+                    }
+                    0% {
+                        transform: translateX(-50%);
+                    }
+                }
+  
+                .collabImagesDivisionScroll:hover .collabImagesDivision {
+                    animation-play-state: paused;
+                }
+  
+  
+                .storyDivisionscrollTwo {
+                    width: 100%;
+                    overflow: hidden;
+                    margin-top: 100px;
+                }
+  
+                .storyDivisionTwo {
+                    display: flex;
+                    gap: 30px;               
+                    min-width: max-content; 
+                    animation: scrollTwo 12s linear infinite;
+                }
+  
+                .storyDivisionTwo img {
+                    height: 80px;
+                    width: 80px;
+                }
+  
+                @keyframes scrollTwo {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+  
+                .collabImagesDivisionScroll:hover .collabImagesDivision {
+                    animation-play-state: paused;
+                }
+  
+  
+                .teamPartDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                }
+  
+                .teamPartDivision button {
+                    height: 40px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+  
+                .singnInDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    background-color: black;
+                    color: white;
+                    height: 20px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+  
+                .singnInDivision a {
+                    color: white;
+                    text-decoration: none;
+                }
+  
+                .singnInDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .testimonialDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 50px;
+                }
+  
+                .testimonialDivision img {
+                    background-color: red;
+                    height: 40px;
+                    width: 40px;
+                }
+  
+                .testimonialOne, .testimonialTwo, .testimonialThree {
+                    width: 250px;
+                    border: 1px solid black;
+                    padding: 5px;
+                }
+  
+                .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
+                    transform: translateY(-10px);
+                    translate: tranform 0.5s ease;
+                }
+  
+  
+                .faq-section {
+                    max-width: 700px;
+                    margin: 2rem auto;
+                    font-family: Arial, sans-serif;
+                    margin-top: 100px;
+                    overflow: hidden;
+                }
+  
+                .faq-section h2 {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                }
+  
+                .faq-item {
+                    border-bottom: 1px solid #ddd;
+                    margin-bottom: 0.5rem;
+                }
+  
+                .faq-question {
+                    width: 100%;
+                    background: #fff;
+                    border: none;
+                    padding: 1rem;
+                    text-align: left;
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                }
+  
+                .faq-question::after {
+                    content: "＋";
+                    position: absolute;
+                    right: 1rem;
+                    font-size: 1.2rem;
+                    transition: transform 0.3s ease;
+                }
+  
+                .faq-question.active::after {
+                    transform: rotate(45deg);
+                }
+  
+                .faq-answer {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease;
+                    padding: 0 1rem;
+                }
+  
+                .faq-answer p {
+                    margin: 0.8rem 0;
+                    font-size: 0.95rem;
+                    color: #444;
+                }
+  
+  
+                .footerdivision {
+                    margin-top: 100px;
+                    background-color: black;
+                    color: white;
+                    padding: 40px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 100px;
+                }
+  
+                .footerDivisionMain {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                }
+  
+                .footerdivision img {
+                    height: 50px;
+                    width: 50px;
+                }
+  
+                .footerRightCompanyQuickLinks {
+                    display: flex;
+                    gap: 50px;
+                }
+  
+                .footerRightCompanyQuickLinks div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                .footerRightCompanyQuickLinks h3 {
+                    color: grey;
+                }
+                .footerRightCompanyQuickLinks a {
+                    text-decoration: none;
+                    color: white;
+                }
+                .footerRightCompanyQuickLinks a:hover {
+                    text-decoration: underline;
+                }
+  
+                .backToTopDivision {
+                    margin-top: 100px;
+                    background-color: black;
+                    color: white;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    text-align: center;
+                    position: relative;
+                }
+  
+                .backToTopDivision a {
+                    color: white;
+                    text-decoration: none;
+                }
+  
+                .backToTopDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .footerWhatsAppMessage {
+                    position: fixed;
+                    bottom: 100px;
+                    right: 20px;
+                }
+  
+                .footerMailMesssage {
+                    position: fixed;
+                    bottom: 50px;
+                    right: 20px;
+                }
+  
+                .backToTopDivision img {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 20px;
+                }
+  
+                .privacyPolicyDivision {
+                    margin-top: 100px;
+                    color: grey;
+                    font-size: 10px;
+                    text-align: center;
+                }
+  
+            }
+  
+            @media screen and (max-width: 850px) and (min-width: 450px) {
+              body {
+                  padding-right: 10px;
+                  padding-left: 10px;
+              }
+  
+  
+              .headerOneDivision {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: black;
+                  color: white;
+                  height: 20px;
+                  position: fixed;
+                  top: 0px;
+                  left: 0px;
+                  right: 0px;
+                  z-index: 5;
+              }
+  
+  
+              .headerTwoDivision {
+                  display: flex;
+                  padding-top: 25px;
+                  justify-content: space-between;
+                  position: relative;
+                  align-items: center;
+              }
+  
+              .companylogoImgName {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border: 1px solid black;
+                  padding-right: 5px;
+                  padding-left: 5px;
+                  gap: 5px;
+                  height: 40px;
+              }
+  
+              .companylogoImgName img {
+                  width: 30px;
+                  height: 30px;
+              }
+  
+              .navigationButtonDivision {
+                  position: fixed;
+                  display: flex;
+                  flex-direction: column;
+                  top: 20px;
+                  left: -400px;
+                  width: 200px;
+                  height: 100%;
+                  background-color: white;
+                  color: black;
+                  z-index: 2;
+                  transform: translateX(200px);
+                  transition: left 0.8s ease;
+              }
+  
+              .navigationButtonDivision.active {
+                  left: -200px;
+              }
+  
+              .navigationButtonDivision:hover {
+                  cursor: pointer;
+              }
+  
+              .navigationButtonDivision a {
+                  border: 1px solid black;
+                  text-decoration: none;
+                  color: black;
+                  padding-left: 20px;
+                  padding-right: 10px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+              }
+  
+              .navigationButtonDivision a:hover {
+                  text-decoration: underline;
+              }
+  
+              .headerTwoDivisionButtons {
+                  display: flex;
+              }
+  
+              .headerTwoDivisionButtons button {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: white;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 20px;
+                  border: none;
+                  margin-right: 5px;
+              }
+            
+              .headerTwoDivisionButtons img {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 20px;
+                  border: 2px solid black;
+              }
+  
+              .contentOneDivision {
+                  margin-top: 100px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+              }
+              .contentOneDivision a {
+                  color: blue;
+                  text-decoration: underline;
+                  border: 1px solid black;
+                  margin-left: 100px;
+              }
+  
+              .contentOneDivision img {
+                  width: 300px;
+                  height: 300px;
+              }
+  
+              .contenOneImageOneDiv figcaption {
+                  display: none;
+              }
+  
+              
+              .contentTwoDivision {
+                  display: flex;
+                  flex-direction: column-reverse;
+                  margin-top: 100px;
+              }
+  
+              .contentTwoImageDiv {
+                  display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  gap: 10px;
+              }
+              .contentTwoImageDiv div {
+                  display: flex;
+                  justify-content: right;
+                  gap: 10px;
+              }
+  
+              .contentTwoDivision img {
+                  width: 150px;
+                  height: 150px;
+              }
+  
+  
+              .ourServicesDivision {
+                  margin-top: 100px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 3px;
+              }
+  
+              .servicesDescDivisionOne, .servicesDescDivisionTwo {
+                  display: flex;
+                  gap: 45px;
+                  align-items: top;    
+                  justify-content: space-between;
+              }
+  
+              .servicesDescDivisionOne div, .servicesDescDivisionTwo div{
+                  height: 350px;
+                  width: 250px;
+              }
+  
+              .servicesDescDivisionOne h3, .servicesDescDivisionTwo h3 {
+                  border-top: 1px solid black;
+              }
+  
+              .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
+                  color: grey;
+              }
+  
+              .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
+                  color: grey;
+              }
+  
+  
+              .contentThreeDivision {
+                  display: flex;
+                  flex-direction: column;
+                  height: 300px;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 25px;
+                  padding: 100px;
+                  background-image: url(../assets/images/contentThree.jpg);
+                  background-size: cover;
+                  background-position: center;
+                  color: white;
+                  margin-left: -20px;
+                  margin-right: -20px;
+                  margin-top: 100px;
+              }
+  
+  
+              .statisticDivision {
+                  margin-top: 100px;
+              }
+  
+              .statsRightDivision {
+                  display: flex;
+                  border-top: 1px solid black;
+                  justify-content: space-around;
+              }
+  
+              .statsRightOneDivision, .statsRightTwoDivision {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+              }
+  
+  
+              .forumDivision {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 30px;
+                  margin-top: 100px;
+              }
+  
+              .forumDivision form {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 50px;
+              }
+  
+              .forumInputDivision  {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+              }
+              .forumInputDivision div {
+                  display: flex;
+                  justify-content: space-between;
+                  padding-left: 40px;
+                  padding-right: 40px;
+                  gap: 30px;
+              }
+  
+  
+              .pricingDivision {
+                  margin-top: 100px;
+              }
+  
+              .pricingDivisionsDiv {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-around;
+                  gap: 10px;
+                  text-align: center;
+              }
+  
+              .pricingDivisionsDiv div {
+                  border-bottom: 1px solid black;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+              }
+  
+  
+              .partnersDivision {
+                  margin-top: 100px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 100px;
+              }
+  
+              .partnersDivision a {
+                  text-decoration: underline;
+                  color: black;
+                  text-align: center;
+              }
+  
+              .partnersDivision a {
+                  text-decoration: none;
+                  color: black;
+                  text-align: center;
+              }
+  
+              .partnersDivision a:hover {
+                  text-decoration: underline;
+              }
+  
+              .collabImagesDivisionScroll {
+                  width: 100vw;
+                  overflow: hidden;
+                  position: relative;
+              }
+              
+              .collabImagesDivision {
+                  display: flex;
+                  gap: 150px;
+                  /* duplicate content for seamless loop */
+                  animation: scrollLeft 15s linear infinite;
+              }
+              
+              .collabImagesDivision img {
+                  width: 100px;
+                  height: 80px;
+                  object-fit: cover;
+              }
+              
+              /* scroll from right to left */
+              @keyframes scrollLeft {
+                  0% {
+                      transform: translateX(-50%);
+                  }
+                  100% {
+                      transform: translateX(100%);
+                  }
+              }
+                
+  
+              .callBookingDivision {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 30px;
+                  margin-top: 100px;
+              }
+  
+              .callBookingDivision img {
+                  width: 400px;
+                  height: 400px;
+              }
+  
+              .callBookingDivision a {
+                  background-color: white;
+                  color: black;
+                  border: black 1px solid;
+                  padding: 5px;
+                  border-radius: 5px;
+                  font-size: 10px;
+              }
+  
+  
+              .storyDivisionscroll {
+                  width: 100%;
+                  overflow: hidden;
+                  margin-top: 100px;
+              }
+  
+              .storyDivision {
+                  display: flex;
+                  gap: 30px;               
+                  min-width: max-content; 
+                  animation: scroll 12s linear infinite;
+              }
+  
+              .storyDivision img {
+                  height: 80px;
+                  width: 80px;
+              }
+  
+              @keyframes scroll {
+                  0% {
+                    transform: translateX(0);
+                  }
+                  100% {
+                    transform: translateX(50%);
+                  }
+              }
+              
+              .collabImagesDivisionScroll:hover .collabImagesDivision {
+                  animation-play-state: paused;
+              }
+  
+  
+              .storyDivisionscrollTwo {
+                  width: 100%;
+                  overflow: hidden;
+                  margin-top: 100px;
+              }
+  
+              .storyDivisionTwo {
+                  display: flex;
+                  gap: 30px;               
+                  min-width: max-content; 
+                  animation: scrollTwo 12s linear infinite;
+              }
+  
+              .storyDivisionTwo img {
+                  height: 80px;
+                  width: 80px;
+              }
+  
+              @keyframes scrollTwo {
+                  0% {
+                    transform: translateX(0);
+                  }
+                  100% {
+                    transform: translateX(-50%);
+                  }
+              }
+              
+              .collabImagesDivisionScroll:hover .collabImagesDivision {
+                  animation-play-state: paused;
+              }
+  
+  
+              .teamPartDivision {
+                  margin-top: 100px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 30px;
+              }
+  
+              .teamPartDivision button {
+                  height: 40px;
+                  border: 1px solid black;
+                  border-radius: 10px;
+              }
+  
+              .singnInDivision {
+                  margin-top: 100px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 30px;
+                  background-color: black;
+                  color: white;
+                  height: 20px;
+                  margin-left: -20px;
+                  margin-right: -20px;
+              }
+  
+              .singnInDivision a {
+                  color: white;
+                  text-decoration: none;
+              }
+  
+              .singnInDivision a:hover {
+                  text-decoration: underline;
+              }
+  
+  
+              .testimonialDivision {
+                  margin-top: 100px;
+                  display: flex;
+                  align-items: center;
+                  gap: 50px;
+              }
+  
+              .testimonialDivision img {
+                  background-color: red;
+                  height: 40px;
+                  width: 40px;
+              }
+  
+              .testimonialOne, .testimonialTwo, .testimonialThree {
+                  width: 250px;
+                  height: 350px;
+                  border: 1px solid black;
+                  padding: 5px;
+              }
+  
+              .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
+                  transform: translateY(-10px);
+                  translate: tranform 0.5s ease;
+              }
+  
+  
+              .faq-section {
+                  max-width: 700px;
+                  margin: 2rem auto;
+                  font-family: Arial, sans-serif;
+                  margin-top: 100px;
+              }
+              
+              .faq-section h2 {
+                  text-align: center;
+                  margin-bottom: 1rem;
+                  font-size: 1.8rem;
+              }
+              
+              .faq-item {
+                  border-bottom: 1px solid #ddd;
+                  margin-bottom: 0.5rem;
+              }
+              
+              .faq-question {
+                  width: 100%;
+                  background: #fff;
+                  border: none;
+                  padding: 1rem;
+                  text-align: left;
+                  font-size: 1rem;
+                  font-weight: bold;
+                  cursor: pointer;
+                  outline: none;
+                  position: relative;
+              }
+              
+              .faq-question::after {
+                  content: "＋";
+                  position: absolute;
+                  right: 1rem;
+                  font-size: 1.2rem;
+                  transition: transform 0.3s ease;
+              }
+              
+              .faq-question.active::after {
+                  transform: rotate(45deg);
+              }
+              
+              .faq-answer {
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.3s ease;
+                  padding: 0 1rem;
+              }
+              
+              .faq-answer p {
+                  margin: 0.8rem 0;
+                  font-size: 0.95rem;
+                  color: #444;
+              }
+            
+  
+              .footerdivision {
+                  margin-top: 100px;
+                  background-color: black;
+                  color: white;
+                  padding: 40px;
+                  margin-left: -20px;
+                  margin-right: -20px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 100px;
+              }
+  
+              .footerDivisionMain {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 50px;
+              }
+  
+              .footerdivision img {
+                  height: 50px;
+                  width: 50px;
+              }
+  
+              .footerRightCompanyQuickLinks {
+                  display: flex;
+                  gap: 50px;
+                  align-items: top;
+                  justify-content: space-around;
+              }
+  
+              .footerRightCompanyQuickLinks div {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 15px;
+              }
+              .footerRightCompanyQuickLinks h3 {
+                  color: grey;
+              }
+              .footerRightCompanyQuickLinks a {
+                  text-decoration: none;
+                  color: white;
+              }
+              .footerRightCompanyQuickLinks a:hover {
+                  text-decoration: underline;
+              }
+  
+  
+              .backToTopDivision {
+                  margin-top: 100px;
+                  background-color: black;
+                  color: white;
+                  margin-left: -20px;
+                  margin-right: -20px;
+                  text-align: center;
+                  position: relative;
+              }
+  
+              .backToTopDivision a {
+                  color: white;
+                  text-decoration: none;
+              }
+  
+              .backToTopDivision a:hover {
+                  text-decoration: underline;
+              }
+  
+              .backToTopDivision img {
+                  height: 40px;
+                  width: 40px;
+                  border-radius: 20px;
+              }
+  
+  
+              .footerWhatsAppMessage {
+                  position: fixed;
+                  bottom: 100px;
+                  right: 20px;
+              }
+  
+              .footerMailMesssage {
+                  position: fixed;
+                  bottom: 50px;
+                  right: 20px;
+              }
+  
+  
+              .privacyPolicyDivision {
+                  margin-top: 100px;
+                  color: grey;
+                  font-size: 10px;
+                  text-align: center;
+              }
+            }
+  
+            @media screen and (max-width: 1100px) and (min-width: 800px) {
+  
+                body {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    padding-top: 20px;
+                }
+  
+                .headerOneDivision {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: black;
+                    color: white;
+                    height: 25px;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    z-index: 5;
+                }
+  
+  
+                .headerTwoDivision {
+                    display: flex;
+                    padding-top: 20px;
+                    justify-content: space-between;
+                    position: relative;
+                    align-items: center;
+                    gap: 10px;
+                }
+  
+                .companylogoImgName {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid black;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    gap: 5px;
+                }
+  
+                .companylogoImgName img {
+                    width: 30px;
+                    height: 30px;
+                }
+  
+                .navigationButtonDivision {
+                    position: fixed;
+                    display: flex;
+                    flex-direction: column;
+                    top: 20px;
+                    left: -400px;
+                    width: 200px;
+                    height: 100%;
+                    background-color: white;
+                    color: black;
+                    z-index: 2;
+                    transform: translateX(200px);
+                    transition: left 0.8s ease;
+                }
+  
+                .navigationButtonDivision.active {
+                    left: -200px;
+                }
+  
+                .navigationButtonDivision:hover {
+                    cursor: pointer;
+                }
+  
+                .navigationButtonDivision a {
+                    border: 1px solid black;
+                    text-decoration: none;
+                    color: black;
+                    padding-left: 20px;
+                    padding-right: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+  
+                .navigationButtonDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .headerTwoDivisionButtons {
+                    display: flex;
+                }
+  
+                .headerTwoDivisionButtons button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 40px;
+                    border: none;
+                    margin-right: 5px;
+                }
+              
+                .headerTwoDivisionButtons img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    border: 2px solid black;
+                }
+  
+  
+                .contentOneDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+                .contentOneDivision a {
+                    color: blue;
+                    text-decoration: underline;
+                    border: 1px solid black;
+                    margin-left: 100px;
+                }
+  
+                .contentOneDivision img {
+                    width: 300px;
+                    height: 300px;
+                }
+  
+                .contenOneImageOneDiv figcaption {
+                    display: none;
+                }
+  
+                
+                .contentTwoDivision {
+                    display: flex;
+                    gap: 50px;
+                    margin-top: 100px;
+                    align-items: center;
+                    justify-content: center;
+                }
+  
+                .contentTwoImageDiv {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 10px;
+                }
+                .contentTwoImageDiv div {
+                    display: flex;
+                    gap: 10px;
+                }
+  
+                .contentTwoImgOne, .contentTwoImgTwo {
+                    width: 250px;
+                    height: 250px;
+                }
+  
+                .contentTwoImgThree {
+                    width: 511px;
+                }
+  
+  
+                .ourServicesDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                }
+  
+                .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
+                    color: grey;
+                }
+  
+                .servicesDescDivisionOne, .servicesDescDivisionTwo {
+                    display: flex;
+                    justify-content: space-evenly;
+                    gap: 100px;
+                }
+  
+                .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
+                    width: 450px;
+                }
+  
+                .servicesDescDivisionTwo h3, .servicesDescDivisionOne h3 {
+                    border-bottom: 1px solid black;
+                }
+  
+                .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
+                    color: grey;
+                }
+  
+  
+                .contentThreeDivision {
+                    display: flex;
+                    flex-direction: column;
+                    height: 500px;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 100px;
+                    background-image: url(../assets/images/contentThree.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    color: white;
+                    margin-right: -20px;
+                    margin-left: -20px;
+                    margin-top: 100px;
+                }
+  
+  
+                .statisticDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+  
+                }
+  
+                .statsRightDivision {
+                    display: flex;
+                    align-items: center;
+                    gap: 200px;
+                    justify-content: space-evenly;
+                    border-top: 1px solid black;
+                }
+  
+                .statsRightOneDivision, .statsRightTwoDivision {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                }
+  
+  
+                .forumDivision {
+                    margin-top: 100px;
+                }
+  
+                .forumDivisionForm {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 30px;
+                    align-items: center;
+                }
+  
+                .forumInputDivision  {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding-left: 100px;
+                    padding-right: 100px;
+                }
+  
+                .forumInputDivision div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    align-items: center;
+                    gap: 30px;
+                }
+  
+                .forumSubmitButton {
+                    width: 100px;
+                }
+  
+  
+                .pricingDivision {
+                    margin-top: 100px;
+                }
+  
+                .pricingDivisionsDiv {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    gap: 50px;
+                }
+  
+                .pricingDivisionsDiv div {
+                    border-bottom: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+  
+  
+                .partnersDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                }
+  
+                .partnersDivision a {
+                    text-decoration: underline;
+                    color: black;
+                    text-align: center;
+                }
+  
+  
+  
+                .collabImagesDivisionScroll {
+                    width: 100%;
+                    overflow: hidden;
+                }
+                  
+                .collabImagesDivision {
+                    display: flex;
+                    gap: 40px;               
+                    min-width: max-content; 
+                    animation: marquee 12s linear infinite;
+                }
+                  
+                .collabImagesDivision img {
+                    width: 40px;
+                    height: 30px; 
+                    object-fit: cover;            
+                }
+                  
+                @keyframes marquee {
+                    100% {
+                      transform: translateX(0);
+                    }
+                    0% {
+                      transform: translateX(-50%);
+                    }
+                }
+                
+                .collabImagesDivisionScroll:hover .collabImagesDivision {
+                    animation-play-state: paused;
+                }
+  
+  
+                .callBookingDivision {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    margin-top: 100px;
+                    padding: 10px;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+  
+                .callBookingDivision img {
+                    width: 200px;
+                    height: 200px;
+                }
+  
+  
+                .partnersDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 100px;
+                }
+  
+                .partnersDivision a {
+                    text-decoration: underline;
+                    color: black;
+                    text-align: center;
+                }
+  
+                .partnersDivision a {
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                }
+  
+                .partnersDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .collabImagesDivisionScroll {
+                    width: 100vw;
+                    overflow: hidden;
+                    position: relative;
+                }
+                
+                .collabImagesDivision {
+                    display: flex;
+                    gap: 150px;
+                    /* duplicate content for seamless loop */
+                    animation: scrollLeft 15s linear infinite;
+                }
+                
+                .collabImagesDivision img {
+                    width: 120px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+                
+                /* scroll from right to left */
+                @keyframes scrollLeft {
+                    0% {
+                        transform: translateX(-50%);
+                    }
+                    100% {
+                        transform: translateX(100%);
+                    }
+                }
+                  
+  
+                .callBookingDivision {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    margin-top: 100px;
+                }
+  
+                .callBookingDivision img {
+                    width: 400px;
+                    height: 400px;
+                }
+  
+                .callBookingDivision a {
+                    background-color: white;
+                    color: black;
+                    border: black 1px solid;
+                    padding: 5px;
+                    border-radius: 5px;
+                    font-size: 10px;
+                }
+  
+  
+                .storyDivisionscroll {
+                    width: 100%;
+                    overflow: hidden;
+                    margin-top: 100px;
+                }
+  
+                .storyDivision {
+                    display: flex;
+                    gap: 30px;               
+                    min-width: max-content; 
+                    animation: scroll 12s linear infinite;
+                }
+  
+                .storyDivision img {
+                    height: 80px;
+                    width: 80px;
+                }
+  
+                @keyframes scroll {
+                    100% {
+                      transform: translateX(0);
+                    }
+                    0% {
+                      transform: translateX(-50%);
+                    }
+                }
+                
+                .collabImagesDivisionScroll:hover .collabImagesDivision {
+                    animation-play-state: paused;
+                }
+  
+  
+                .storyDivisionscrollTwo {
+                    width: 100%;
+                    overflow: hidden;
+                    margin-top: 100px;
+                }
+  
+                .storyDivisionTwo {
+                    display: flex;
+                    gap: 30px;               
+                    min-width: max-content; 
+                    animation: scrollTwo 12s linear infinite;
+                }
+  
+                .storyDivisionTwo img {
+                    height: 80px;
+                    width: 80px;
+                }
+  
+                @keyframes scrollTwo {
+                    0% {
+                      transform: translateX(0);
+                    }
+                    100% {
+                      transform: translateX(-50%);
+                    }
+                }
+                
+                .collabImagesDivisionScroll:hover .collabImagesDivision {
+                    animation-play-state: paused;
+                }
+  
+  
+                .teamPartDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                }
+  
+                .teamPartDivision button {
+                    height: 40px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+  
+  
+                .singnInDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    background-color: black;
+                    color: white;
+                    height: 25px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
+  
+                .singnInDivision a {
+                    color: white;
+                    text-decoration: none;
+                }
+  
+                .singnInDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+  
+                .testimonialDivision {
+                    margin-top: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    gap: 50px;
+                }
+  
+                .testimonialDivision img {
+                    background-color: red;
+                    height: 45px;
+                    width: 45px;
+                }
+  
+                .testimonialOne, .testimonialTwo, .testimonialThree {
+                    width: 350px;
+                    height: 400px;
+                    border: 1px solid black;
+                    padding: 10px;
+                }
+  
+                .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
+                    transform: translateY(-10px);
+                    translate: tranform 0.5s ease;
+                }
+  
+  
+                .faq-section {
+                    max-width: 900px;
+                    margin: 2rem auto;
+                    font-family: Arial, sans-serif;
+                    margin-top: 150px;
+                }
+                
+                .faq-section h2 {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                }
+                
+                .faq-item {
+                    border-bottom: 1px solid #ddd;
+                    margin-bottom: 0.5rem;
+                }
+                
+                .faq-question {
+                    width: 100%;
+                    background: #fff;
+                    border: none;
+                    padding: 1rem;
+                    text-align: left;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                }
+                
+                .faq-question::after {
+                    content: "＋";
+                    position: absolute;
+                    right: 1rem;
+                    font-size: 1.2rem;
+                    transition: transform 0.3s ease;
+                }
+                
+                .faq-question.active::after {
+                    transform: rotate(45deg);
+                }
+                
+                .faq-answer {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease;
+                    padding: 0 1rem;
+                }
+                
+                .faq-answer p {
+                    margin: 0.8rem 0;
+                    font-size: 0.95rem;
+                    color: #444;
+                }
+              
+  
+                .footerdivision {
+                    margin-top: 100px;
+                    background-color: black;
+                    color: white;
+                    padding: 40px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 100px;
+                }
+  
+                .footerRightCompanyQuickLinks {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 50px;
+                }
+  
+                .footerdivision img {
+                    height: 50px;
+                    width: 50px;
+                }
+  
+                .footerRightCompanyQuickLinks {
+                    display: flex;
+                }
+                .footerRightCompanyQuickLinks div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+                .footerRightCompanyQuickLinks h3 {
+                    color: grey;
+                }
+                .footerRightCompanyQuickLinks a {
+                    text-decoration: none;
+                    color: white;
+                }
+                .footerRightCompanyQuickLinks a:hover {
+                    text-decoration: underline;
+                }
+  
+  
+                .backToTopDivision {
+                    margin-top: 100px;
+                    background-color: black;
+                    color: white;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    text-align: center;
+                    position: relative;
+                }
+  
+                .backToTopDivision a {
+                    color: white;
+                    text-decoration: none;
+                }
+  
+                .backToTopDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .footerWhatsAppMessage {
+                    position: fixed;
+                    bottom: 130px;
+                    right: 40px;
+                }
+                .footerMailMesssage {
+                    position: fixed;
+                    bottom: 50px;
+                    right: 40px;
+                }
+  
+                .backToTopDivision img {
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 30px;
+                }
+  
+  
+                .privacyPolicyDivision {
+                    margin-top: 100px;
+                    color: grey;
+                    text-align: center;
+                }
+              
+            }
+  
+            @media screen and (min-width: 1100px) {
+                * {
+                    font-size: 25px;
+                }
+                body {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+  
+  
+                .headerOneDivision {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: black;
+                    color: white;
+                    height: 50px;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    z-index: 5;
+                }
+  
+  
+                .headerTwoDivision {
+                    display: flex;
+                    padding-top: 65px;
+                    justify-content: space-between;
+                    position: relative;
+                    align-items: center;
+                    gap: 25px;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    padding-bottom: 50px;
+                    border-bottom: 1px solid black;
+                }
+  
+                .companylogoImgName {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid black;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    gap: 5px;
+                }
+  
+                .companylogoImgName img {
+                    width: 50px;
+                    height: 50px;
+                }
+  
+                .navigationButtonDivision {
+                    color: black;
+                    font-size: 15px;
+                    gap: 10px;
+                    padding-top: 10px;
+                }
+  
+                .navigationButtonDivision a {
+                    text-decoration: none;
+                    color: black;
+                    margin: 5px;
+                    padding: 10px;
+                    margin-bottom: 5px;
+                }
+  
+                .navigationButtonDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .headerTwoDivisionButtons {
+                    display: flex;
+                }
+  
+                .headerTwoDivisionButtons button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    border: none;
+                    margin-right: 5px;
+                }
+              
+                .headerTwoDivisionButtons img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    border: 2px solid black;
+                }
+  
+  
+                .contentOneDivision {
+                    margin-top: 150px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 100px;
+                    padding-left: 10px;
+                }
+  
+                .contentOneDivision a {
+                    color: blue;
+                    text-decoration: underline;
+                    border: 1px solid black;
+                    margin-left: 100px;
+                }
+  
+                .contentOneDivision img {
+                    width: 400px;
+                    height: 400px;
+                }
+  
+                .contenOneImageOneDiv figcaption {
+                    display: none;
+                }
+  
+  
+                .contentTwoDivision {
+                    display: flex;
+                    gap: 100px;
+                    margin-top: 300px;
+                    align-items: center;
+                    justify-content: center;
+                }
+  
+                .contentTwoImageDiv {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 10px;
+                }
+                .contentTwoImageDiv div {
+                    display: flex;
+                    gap: 10px;
+                }
+  
+                .contentTwoImgOne, .contentTwoImgTwo {
+                    width: 250px;
+                    height: 250px;
+                }
+  
+                .contentTwoImgThree {
+                    width: 510px;
+                }
+  
+  
+                .ourServicesDivision {
+                    margin-top: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                }
+  
+                .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
+                    color: grey;
+                }
+  
+                .servicesDescDivisionOne, .servicesDescDivisionTwo {
+                    display: flex;
+                    justify-content: space-evenly;
+                    gap: 100px;
+                }
+  
+                .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
+                    width: 450px;
+                }
+  
+                .servicesDescDivisionTwo h3, .servicesDescDivisionOne h3 {
+                    border-bottom: 1px solid black;
+                }
+  
+                .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
+                    color: grey;
+                }
+  
+  
+                .contentThreeDivision {
+                    display: flex;
+                    flex-direction: column;
+                    height: 1000px;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    padding: 100px;
+                    background-image: url(../assets/images/contentThree.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    color: white;
+                    margin-right: -20px;
+                    margin-left: -20px;
+                    margin-top: 200px;
+                }
+  
+  
+                .statisticDivision {
+                    margin-top: 200px;
+                    display: flex;
+                    flex-direction: column;
+                }
+  
+                .statsRightDivision {
+                    display: flex;
+                    gap: 300px;
+                    justify-content: space-evenly;
+                    border-top: 1px solid black;
+                }
+  
+                .statsRightOneDivision, .statsRightTwoDivision {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                }
+  
+  
+                .forumDivision {
+                    margin-top: 150px;
+                }
+  
+                .forumDivisionForm {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 90px;
+                }
+  
+                .forumInputDivision  {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                    padding-left: 100px;
+                    padding-right: 100px;
+                    margin-top: 50px;
+                }
+  
+                .forumInputDivision div {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    align-items: center;
+                    gap: 100px;
+                }
+  
+                .forumSubmitButton {
+                    width: 400px;
+                }
+  
+                .forumDivisionForm {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+  
+  
+                .pricingDivision {
+                    margin-top: 150px;
+                }
+  
+                .pricingDivision div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+  
+                .pricingDivisionsDiv {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+  
+                .pricingDivisionsDiv div {
+                    border-bottom: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+  
+  
+                .partnersDivision {
+                    margin-top: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 100px;
+                }
+  
+                .partnersDivision a {
+                    text-decoration: underline;
+                    color: black;
+                    text-align: center;
+                }
+  
+                .partnersDivision a {
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                }
+  
+                .partnersDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .collabImagesDivisionScroll {
+                    width: 100vw;
+                    overflow: hidden;
+                    position: relative;
+                }
+                
+                .collabImagesDivision {
+                    display: flex;
+                    gap: 150px;
+                    /* duplicate content for seamless loop */
+                    animation: scrollLeft 15s linear infinite;
+                }
+                
+                .collabImagesDivision img {
+                    width: 120px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+                
+                /* scroll from right to left */
+                @keyframes scrollLeft {
+                    0% {
+                        transform: translateX(-50%);
+                    }
+                    100% {
+                        transform: translateX(100%);
+                    }
+                }
+                  
+  
+                .callBookingDivision {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    margin-top: 150px;
+                }
+  
+                .callBookingDivision img {
+                    width: 400px;
+                    height: 400px;
+                }
+  
+                .callBookingDivision a {
+                    background-color: white;
+                    color: black;
+                    border: black 1px solid;
+                    padding: 5px;
+                    border-radius: 5px;
+                    font-size: 10px;
+                }
+  
+                .storyDivisionscroll {
+                    width: 100vw;
+                    overflow: hidden;
+                    margin-top: 300px;
+                }
+  
+                .storyDivision {
+                    display: flex;
+                    gap: 30px;               
+                    min-width: max-content; 
+                    animation: scroll 12s linear infinite;
+                }
+  
+                .storyDivision img {
+                    height: 80px;
+                    width: 80px;
+                }
+  
+                @keyframes scroll {
+                    100% {
+                      transform: translateX(0);
+                    }
+                    0% {
+                      transform: translateX(-50%);
+                    }
+                }
+                
+                .collabImagesDivisionScroll:hover .collabImagesDivision {
+                    animation-play-state: paused;
+                }
+  
+  
+                .storyDivisionscrollTwo {
+                    width: 100%;
+                    overflow: hidden;
+                    margin-top: 100px;
+                }
+  
+                .storyDivisionTwo {
+                    display: flex;
+                    gap: 30px;               
+                    min-width: max-content; 
+                    animation: scrollTwo 12s linear infinite;
+                }
+  
+                .storyDivisionTwo img {
+                    height: 80px;
+                    width: 80px;
+                }
+  
+                @keyframes scrollTwo {
+                    0% {
+                      transform: translateX(0);
+                    }
+                    100% {
+                      transform: translateX(-50%);
+                    }
+                }
+                
+                .collabImagesDivisionScroll:hover .collabImagesDivision {
+                    animation-play-state: paused;
+                }
+  
+  
+                .teamPartDivision {
+                    margin-top: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                }
+  
+                .teamPartDivision button {
+                    height: 70px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+  
+  
+                .singnInDivision {
+                    margin-top: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    background-color: black;
+                    color: white;
+                    height: 50px;
+                    position: absolute;
+                    left: 0px;
+                    right: 0px;
+                }
+  
+                .singnInDivision a {
+                    color: white;
+                    text-decoration: none;
+                }
+  
+                .singnInDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+  
+                .testimonialDivision {
+                    margin-top: 500px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 50px;
+                }
+  
+                .testimonialDivision img {
+                    background-color: red;
+                    height: 50px;
+                    width: 50px;
+                }
+  
+                .testimonialOne, .testimonialTwo, .testimonialThree {
+                    width: 750px;
+                    height: 500px;
+                    border: 1px solid black;
+                    padding: 5px;
+                }
+  
+                .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
+                    transform: translateY(-10px);
+                    translate: tranform 0.5s ease;
+                }
+  
+  
+                .faq-section {
+                    max-width: 1300px;
+                    margin: 2rem auto;
+                    font-family: Arial, sans-serif;
+                    margin-top: 150px;
+                }
+                
+                .faq-section h2 {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    font-size: 1.8rem;
+                }
+                
+                .faq-item {
+                    border-bottom: 1px solid #ddd;
+                    margin-bottom: 0.5rem;
+                }
+                
+                .faq-question {
+                    width: 100%;
+                    background: #fff;
+                    border: none;
+                    padding: 1rem;
+                    text-align: left;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                }
+                
+                .faq-question::after {
+                    content: "＋";
+                    position: absolute;
+                    right: 1rem;
+                    font-size: 1.2rem;
+                    transition: transform 0.3s ease;
+                }
+                
+                .faq-question.active::after {
+                    transform: rotate(45deg);
+                }
+                
+                .faq-answer {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease;
+                    padding: 0 1rem;
+                }
+                
+                .faq-answer p {
+                    margin: 0.8rem 0;
+                    font-size: 0.95rem;
+                    color: #444;
+                }
+              
+  
+                .footerdivision {
+                    margin-top: 250px;
+                    background-color: black;
+                    color: white;
+                    padding: 40px;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 100px;
+                }
+  
+                .footerRightCompanyQuickLinks {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 150px;
+                }
+  
+                .footerdivision img {
+                    height: 150px;
+                    width: 150px;
+                }
+  
+                .footerRightCompanyQuickLinks {
+                    display: flex;
+                }
+                .footerRightCompanyQuickLinks div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+                .footerRightCompanyQuickLinks h3 {
+                    color: grey;
+                }
+                .footerRightCompanyQuickLinks a {
+                    text-decoration: none;
+                    color: white;
+                }
+                .footerRightCompanyQuickLinks a:hover {
+                    text-decoration: underline;
+                }
+  
+                .backToTopDivision {
+                    margin-top: 100px;
+                    background-color: black;
+                    color: white;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                    text-align: center;
+                    position: relative;
+                }
+  
+                .backToTopDivision a {
+                    color: white;
+                    text-decoration: none;
+                }
+  
+                .backToTopDivision a:hover {
+                    text-decoration: underline;
+                }
+  
+                .footerWhatsAppMessage {
+                    position: fixed;
+                    bottom: 170px;
+                    right: 50px;
+                }
+                .footerMailMesssage {
+                    position: fixed;
+                    bottom: 60px;
+                    right: 50px;
+                }
+  
+                .backToTopDivision img {
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50px;
+                }
+  
+                .privacyPolicyDivision {
+                    margin-top: 100px;
+                    color: grey;
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+  
+        </style>
+
+        
+        <link rel="icon" href="./assets/images/companyLogoImage.JPG">
+
+        <link rel="canonical" href="https://rozgarsathi.co.in/">
+
+        <link rel="alternate" href="https://rozgarsathi.co.in/" hreflang="en-in" />
+        <link rel="alternate" href="https://rozgarsathi.co.in/" hreflang="x-default" />
+        <meta name="theme-color" content="0d47a1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta property="og:title" content="RozgarSathi – Job Portal India | Your Career Journey Begins Here">
+        <meta property="og:description" content="Search thousands of job listings and internships across India with RozgarSathi. Start your career in Delhi, Gurugram & beyond today!">
+        <meta property="og:url" content="https://rozgarsathi.co.in/">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://rozgarsathi.co.in/assets/social-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="RozgarSathi Career and Job Assistance Preview Image" />
+    
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="RozgarSathi – Job Portal India">
+        <meta name="twitter:description" content="Find jobs and internships in Delhi, Gurugram & across India with RozgarSathi.">
+        <meta name="twitter:image" content="https://rozgarsathi.co.in/assets/social-image.jpg">
+        <meta name="twitter:site" content="@YourTwitterHandle">
+    
+        <meta name="robots" content="index, follow">
+    
+        <meta http‑equiv="content‑language" content="en‑IN">
+        <meta name="geo.region" content="IN‑HR">
+        <meta name="geo.placename" content="Gurugram, Haryana, India">
+        <meta name="geo.position" content="28.4595;77.0266">
+        <meta name="ICBM" content="28.4595, 77.0266">
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "RozgarSathi",
+            "url": "https://rozgarsathi.co.in/",
+            "logo": "https://rozgarsathi.co.in/assets/logo.png",
+            "sameAs": [
+            "https://www.facebook.com/rozgarsathi.co.in",
+            "https://x.com/RozgarSathiCoIn",
+            "https://www.linkedin.com/in/rozgar-sathi-b83476396/",
+            "https://www.instagram.com/rozgarsathi.co.in/",
+            "https://www.youtube.com/@rozgarsathichannel"
+            ]
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://rozgarsathi.co.in/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Jobs",
+                "item": "https://rozgarsathi.co.in/jobs"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Frontend Developer"
+            }
+            ]
+        }
+        </script>
+            
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "RozgarSathi",
+            "url": "https://rozgarsathi.co.in/",
+            "logo": "https://rozgarsathi.co.in/assets/logo.png",
+            "description": "RozgarSathi provides personalized job assistance, AI resume tools, career guidance, internships and job placements across India.",
+            "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "telephone": "+91 96259 94420",
+            "email": "privaterozgarsathi@gmail.com"
+            },
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "704/3, Bhawani Enclave, Sector-9",
+            "addressLocality": "Gurugram",
+            "addressRegion": "Haryana",
+            "postalCode": "1220XX",
+            "addressCountry": "IN"
+            },
+            "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.4595",
+            "longitude": "77.0266"
+            },
+            "sameAs": [
+            "https://www.facebook.com/rozgarsathi.co.in",
+            "https://x.com/RozgarSathiCoIn",
+            "https://www.linkedin.com/in/rozgar-sathi-b83476396/",
+            "https://www.instagram.com/rozgarsathi.co.in/",
+            "https://www.youtube.com/@rozgarsathichannel"
+            ]
+        }
+        </script>
+            
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://rozgarsathi.co.in/",
+            "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://rozgarsathi.co.in/search?query={search_term_string}",
+            "query-input": "required name=search_term_string"
+            }
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "RozgarSathi – Career Guidance and Job Support",
+            "description": "Career guidance, job placement success, AI resume generator, interview preparation, freelance opportunities in India."
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://rozgarsathi.co.in/",
+            "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://rozgarsathi.co.in/search?query={search_term_string}",
+            "query-input": "required name=search_term_string"
+            }
+        }
+        </script>
+            
+            
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What services does RozgarSathi offer?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We provide career counselling, AI resume generation, interview prep, direct referrals to employers, and freelance opportunities."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I apply for jobs through RozgarSathi?",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Create a profile, upload your resume, browse listings, and click “Apply”."
+                }
+            }
+            ]
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rozgarsathi.co.in/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://rozgarsathi.co.in/pages/services.html"},
+            {"@type": "ListItem", "position": 3, "name": "Career Guidance", "item": "https://rozgarsathi.co.in/pages/services.html#career-guidance"}
+            ]
+        }
+        </script>
+            
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "RozgarSathi",
+            "url": "https://rozgarsathi.co.in/",
+            "logo": "https://rozgarsathi.co.in/assets/logo.png",
+            "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "telephone": "+91 96259 94420",
+            "email": "privaterozgarsathi@gmail.com"
+            }
+        }
+        </script>
+
+            
+    </head>
+
+    <body>
+        <div class="headerOneDivision">
+            <h3> RozgarSathi </h3>
+        </div>
+
+        <div class="headerTwoDivision">
+            <div class="companylogoImgName">
+                <h3> RozgarSathi</h3>
+                <img class="companyLogoImage" src="./assets/images/companyLogoImage.JPG" alt="RozgarSathi logo">
+            </div>
+
+            <div class="navigationButtonDivision">
+                <a class="homePageLink" href="./index.html"> Home </a>
+                <a class="aboutUsPageLink" href="./pages/aboutus.html"> AboutUs </a>
+                <a class="shopPageLink" href=""> Shop </a>
+                <a class="eventsPageLink" href="./pages/events.html"> Events </a>
+                <a class="newsPageLink" href="./pages/news.html"> News </a>
+                <a class="coursesPageLink" href=""> Courses </a>
+                <a class="servicesPageLink" href="./pages/services.html"> Services </a>
+                <a class="pricePageLink" href=""> Pricings </a>
+                <a class="appoinmentPageLink" href=""> Appointments </a>
+                <a class="jobPageLink" href=""> Jobs </a>
+                <a class="testimonialPageLink" href="./pages/testimonial.html"> Testimonials </a>
+            </div>
+
+            <div class="headerTwoDivisionButtons">
+                <button class="cartButton"> <img class="cartButtonImage" src="./assets/images/cartButtonImage.jpg"> </button>
+                <button class="myAccountButton"> <img class="accountButtonImage" src="./assets/images/accountImage.jpg"> </button>
+                <button class="menuButton" style="border: 3px solid black;"> ☰ </button>
+            </div>
+
+        </div>
+
+        <div class="contentOneDivision">
+            <div class="contentOneDescriptionOneDiv">
+                <article>
+                    <h1>RozgarSathi – Career Guidance, Jobs & Freelancing Support in India</h1> <br>
+                    <h3> Your Carrer Our Passion </h3>
+                    <p>We see job search not as a struggle, but as a chance to grow your career and find meaningful employment. At RozgarSathi, we provide personalized career guidance, job placement support, and networking opportunities for job seekers across India. Through skills‑building workshops, internship connections, interview preparation coaching, and ongoing support for career growth, we’re more than a recruiter — we’re your trusted partner in achieving freelance opportunities, professional success, and long‑term employment.</p><br>
+                    <a> Learn more </a>
+                </article>
+            </div>
+
+            <div class="contenOneImageOneDiv">
+                <figure>
+                    <img class="contenOneImageOne" src="./assets/images/contentOneImageOne.jpg" alt="Illustration of Rozgarsathi vision – career growth and community support">
+                    <figcaption class="sr-only">
+                        Illustration showing Rozgarsathi’s vision of career growth.
+                    </figcaption>
+                </figure>              
+            </div>
+        </div>
+
+        <div class="contentTwoDivision">
+            <div class="contentTwoImageDiv">
+                <div class="">
+                    <img class="contentTwoImgOne" src="./assets/images/contentTwoImageOne.jpg" alt="Job seekers collaborating in a professional environment">
+                    <img class="contentTwoImgTwo" src="./assets/images/contentTwoImage.jpg" alt="Young professionals discussing career opportunities">
+                </div>
+                <img class="contentTwoImgThree" src="./assets/images/contentTwoImageThree.jpg"  alt="Team working together on career planning">
+            </div>
+            
+            <div class="contentTwoDescriptionOneDiv">
+                <h2> "The Only Sathi You Need for Your Next Job" </h2>
+                <h3>- it's just not a qoute, We stand by this </h3>
+                <p>Every successful job placement we make is a step toward fulfilling career goals and creating meaningful job opportunities that support both individuals and communities in their professional growth.</p>
+            </div>
+
+        </div>
+
+        <div class="ourServicesDivision">
+            <h2> Discover our Major Services </h2>
+          
+            <div class="servicesDescDivisionOne">
+              <div class="serviceItemOne">
+                <h2>1</h2>
+                <h3>24/7 Career Counselling</h3>
+                <p>Our expert advisors are available around the clock to guide you through career choices, transitions and growth strategies — whenever you need us.</p>
+              </div>
+          
+              <div class="serviceItemTwo">
+                <h2>2</h2>
+                <h3>AI-Powered Resume Generator</h3>
+                <p>Leverage our intelligent tool to craft optimized resumes that highlight your strengths, align with industry standards and impress recruiters.</p>
+              </div>
+          
+              <div class="serviceItemThree">
+                <h2>3</h2>
+                <h3>MNC Direct Referrals & Mass Hiring</h3>
+                <p>Access our network of multinational clients and benefit from direct referrals and large-volume hiring drives tailored to your profile and ambitions.</p>
+              </div>
+            </div>
+          
+            <div class="servicesDescDivisionTwo">
+              <div class="serviceItemFour">
+                <h2>4</h2>
+                <h3>Get Industry-Ready with Us</h3>
+                <p>Through practical training, mock projects and industry exposure, we prepare you comprehensively to enter the workforce with confidence and competence.</p>
+              </div>
+          
+              <div class="serviceItemFive">
+                <h2>5</h2>
+                <h3>Mock Interviews & Interview Prep</h3>
+                <p>Practice with real-world interview simulations, receive feedback from professionals and refine your presentation, tech-skills and confidence.</p>
+              </div>
+          
+              <div class="serviceItemSix">
+                <h2>6</h2>
+                <h3>Authentic Freelancing Opportunities</h3>
+                <p>Explore verified freelance roles vetted by our team — giving you flexibility, trust and quality assignments in the gig economy.</p>
+              </div>
+            </div>
+        </div>
+          
+        <div class="contentThreeDivision">
+            <h2> Emabark on your  </h2>
+            <h2> Next Journey </h2>
+            <button class="startNowContentThreeDivisionButton"> Start Now </button>
+        </div>
+
+        <div class="statisticDivision">
+            <div class="statsLeftDivision">
+                <h2> Key achievements in our job placement success </h2> 
+                <p> From resume building to interview coaching and job matching, our key milestones reflect our commitment to empowering job seekers and employee alike. </p>
+            </div>
+
+            <div class="statsRightDivision">
+                <div class="statsRightOneDivision">
+                    <div class="statsOne">
+                        <h2>45%</h2>
+                        <p>Increase in job placements</p>
+                    </div>
+
+                    <div class="statsTwo">
+                        <h2>85%</h2>
+                        <p> Succes rate in job placements </p>
+                    </div>
+
+                    <div class="statsThree">
+                        <h2>60%</h2>
+                        <p> Client satisfaction rate </p>
+                    </div>
+                </div>
+
+                <div class="statsRightTwoDivision">
+                    <div class="statsFour">
+                        <h2> 2,000 </h2>
+                        <p> Companies partnered </p>
+                    </div>
+                    <div class="statsFive">
+                        <h2> 1.2 Million </h2>
+                        <p> job seekers assisted </p>
+                    </div>
+                    <div class="statsSix">
+                        <h2>500</h2>
+                        <p> Workshops conducted </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forumDivision">
+
+            <div class="forumDescDivision">
+                <h2>Let’s Connect</h2>
+                <p>“Have a question or want to explore options? Connect with us and we’ll take it from there.”</p>
+            </div>
+
+            <form class="forumDivisionForm" action="https://formsubmit.co/rozgarsathiform@gmail.com" method="POST">
+                <div class="formInputDivisionMain">
+                    <div class="forumInputDivision">
+                        <div class="inputGroup">
+                            <label>Your Name</label>
+                            <input type="text" name="name" placeholder="Enter your name">
+                        </div>
+                        <div class="inputGroup">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone" placeholder="Enter your phone number here">
+                        </div>
+                        <div class="inputGroup">
+                            <label>Your Email</label>
+                            <input type="email" name="email" placeholder="Enter your email here">
+                        </div>
+                        <div class="inputGroup">
+                            <label>Your Company</label>
+                            <input type="text" name="company" placeholder="Enter your company here">
+                        </div>
+                        <div class="inputGroup">
+                            <label>Subject</label>
+                            <input type="text" name="subject" placeholder="Enter your subject here">
+                        </div>
+                        <div class="inputGroup">
+                            <label>Your Question</label>
+                            <input type="text" name="query" placeholder="Enter your question here">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="forumSubmitButton" type="submit">Submit</button>
+
+            </form>
+        </div>
+
+        <div class="pricingDivision">
+            <h2> Competitive Pricing </h2>
+            <p> We offer strategically structured service fees that reflect our commitment to delivering quality talent solutions—ensuring you receive professional expertise at a fair and competitive rate. </p>
+
+            <div class="pricingDivisionsDiv">
+                <div class="pricingBeginner">
+                    <h3>Beginner</h3>
+                    <h2> ₹ __.__ / month </h2>
+                    <p> - </p>
+
+                    <button> Add to Cart </button>
+
+                    <div class="princingOneDiscription">
+                        <p>-</p>
+                        <p>-</p>
+                        <p>-</p>
+                        <p></p>
+                    </div>
+
+                    <p> Terms and Conditions Applied</p>
+                </div>
+
+                <div class="pricingIntermediate">
+                    <h3>Intermediate</h3>
+                    <h2> ₹ __.__ / month </h2>
+                    <p> - </p>
+                     
+                    <button> Add to Cart </button>
+
+                    <div class="princingOneDiscription">
+                        <p>-</p>
+                        <p>-</p>
+                        <p>-</p>
+                        <p></p>
+                    </div>
+
+                    <p> Terms and Conditions Applied</p>
+                </div>
+
+                <div class="pricingAdvance">
+                    <h3> Advance </h3>
+                    <h2> ₹ __.__ / month </h2>
+                    <p> - </p>
+
+                    <button> Add to Cart </button>
+
+                    <div class="princingOneDiscription">
+                        <p>-</p>
+                        <p>-</p>
+                        <p>-</p>
+                        <p></p>
+                    </div>
+
+                    <p> Terms and Conditions Applied</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="partnersDivision">
+            <div class="partnersDiscDivision">
+                <h2> Partners and refrences </h2>
+                <p> Together, we partner with business and organizations dedicated to wordforce development and creating a thriving job market.</p>
+            </div>
+
+            <div class="collabImagesDivisionScroll">
+                <div class="collabImagesDivision">
+                    <img src="./assets/images/googleLogo.jpg" alt="Google logo">
+                    <img src="./assets/images/yahooLogo.jpg" alt="Yahoo logo">
+                    <img src="./assets/images/linkedinLogo.jpg" alt="LinkedIn logo">
+                    <img src="./assets/images/datacovetLogo.jpg" alt="Datacovet logo">
+                    <img src="./assets/images/ibmLogo.jpg" alt="IBM logo">
+                    <img src="./assets/images/cognizentLogo.jpg" alt="Cognizant logo">
+
+
+                    <img src="./assets/images/googleLogo.jpg" alt="Google logo">
+                    <img src="./assets/images/yahooLogo.jpg" alt="Yahoo logo">
+                    <img src="./assets/images/linkedinLogo.jpg" alt="LinkedIn logo">
+                    <img src="./assets/images/datacovetLogo.jpg" alt="Datacovet logo">
+                    <img src="./assets/images/ibmLogo.jpg" alt="IBM logo">
+                    <img src="./assets/images/cognizentLogo.jpg" alt="Cognizant logo">
+
+                </div>
+            </div>
+
+            <a href="" class=""> Show details -> </a>
+            
+        </div>
+
+        <div class="callBookingDivision">
+            <div class="callBookingDiscDivision">
+                <h2> A Call for Career Development </h2> 
+                <p>Job placement services play a vital role in connecting job seekers with suitable employment opportunities, ensuring a match that benefits both candidates and employers. At RozgarSathi, our focus is on understanding the needs of job seekers and companies alike to deliver successful career support, improve job placement outcomes, and help professionals achieve long‑term employment success.</p>
+                <a href="tel:+919467661992" class="callBookingDiscDivisionA"> Call Now </a>
+            </div>
+
+            <div class="callBookingImgDivision">
+                <img class="callBookingImage" src="./assets/images/callOneImage.jpg" alt="Career development call support graphic">
+            </div>
+        </div>
+
+        <div class="storyDivisionscroll">
+            <div class="storyDivision">
+                <img class="storyDivisionImgOne" src="./assets/images/depression.jpg">
+                <img class="storyDivisionImgTwo" src="./assets/images/depressionTwoImage.jpg">
+                <img class="storyDivisionImgThree" src="./assets/images/interviewOneImage.jpg">
+                <img class="storyDivisionImgFour" src="./assets/images/interviewTwoImage.jpg">
+                <img class="storyDivisionImgFive" src="./assets/images/hardworkImage.jpg">
+                <img class="storyDivisionImgSix" src="./assets/images/storySuccessImage.jpg">
+
+                <img class="storyDivisionImgOne" src="./assets/images/depression.jpg">
+                <img class="storyDivisionImgTwo" src="./assets/images/depressionTwoImage.jpg">
+                <img class="storyDivisionImgThree" src="./assets/images/interviewOneImage.jpg">
+                <img class="storyDivisionImgFour" src="./assets/images/interviewTwoImage.jpg">
+                <img class="storyDivisionImgFive" src="./assets/images/hardworkImage.jpg">
+                <img class="storyDivisionImgSix" src="./assets/images/storySuccessImage.jpg">
+            </div>
+        </div>
+
+        <div class="storyDivisionscrollTwo">
+            <div class="storyDivisionTwo">
+                <img class="storyDivisionImgOne" src="./assets/images/depression.jpg">
+                <img class="storyDivisionImgTwo" src="./assets/images/depressionTwoImage.jpg">
+                <img class="storyDivisionImgThree" src="./assets/images/interviewOneImage.jpg">
+                <img class="storyDivisionImgFour" src="./assets/images/interviewTwoImage.jpg">
+                <img class="storyDivisionImgFive" src="./assets/images/hardworkImage.jpg">
+                <img class="storyDivisionImgSix" src="./assets/images/storySuccessImage.jpg">
+
+                <img class="storyDivisionImgOne" src="./assets/images/depression.jpg">
+                <img class="storyDivisionImgTwo" src="./assets/images/depressionTwoImage.jpg">
+                <img class="storyDivisionImgThree" src="./assets/images/interviewOneImage.jpg">
+                <img class="storyDivisionImgFour" src="./assets/images/interviewTwoImage.jpg">
+                <img class="storyDivisionImgFive" src="./assets/images/hardworkImage.jpg">
+                <img class="storyDivisionImgSix" src="./assets/images/storySuccessImage.jpg">
+            </div>
+        </div>
+
+        <div class="teamPartDivision">
+            <div class="teamPartDescDivision">
+                <h2> Empowering careers for a Brighter Future </h2>
+                <p>Join us in our mission to connect individuals with meaningful job opportunities and long‑term employment success. We focus on fostering career growth and professional development through personalized support, career guidance, and innovative solutions designed to help job seekers achieve their goals.</p>
+            </div>
+
+            <div class="teamPartButtonDivision">
+                <button class="teamPartButton">
+                    Be a Part of the WorkForce Revolution
+                </button>
+            </div>
+        </div>
+
+        <div class="singnInDivision">
+            <p> Help Us Know You More ! </p>
+            <a class="" href=""> SignIn </a>
+        </div>
+
+        <div class="testimonialDivision">
+            <div class="testimonialOne">
+                <div class="testimonialOneProfile">
+                    <img class="" src="">
+                    <h3> Anjali Sharma </h3>
+                    <p> -software engineer </p>
+                </div>
+
+                <div class="testimonialOneDesc">
+                    <p>“RozgarSathi helped me clarify my career goals and guided me through the entire job search process. With their support, I gained confidence, polished my resume with AI tools, and landed my dream job faster than I expected. Highly recommended!”</p>
+                </div>
+            </div>
+
+            <div class="testimonialTwo">
+                <div class="testimonialTwoProfile">
+                    <img class="" src="">
+                    <h3> Rohan Verma </h3>
+                    <p> -marketing specialist</p>
+                </div>
+
+                <div class="testimonialTwoDesc">
+                    <p> “The personalized career counseling at RozgarSathi was a game‑changer for me. Their team not only helped me find suitable job listings but also prepared me through mock interviews. I felt supported and ready for real interviews!” </p>
+                </div>
+            </div>
+
+            <div class="testimonialThree">
+                <div class="testimonialThreeProfile">
+                    <img class="" src="">
+                    <h3>Priya Singh</h3>
+                    <p> -freelance graphic designer</p>
+
+                </div>
+
+                <div class="testimonialThreeDesc">
+                    <p> “I was struggling to find relevant freelance work, but after joining RozgarSathi, I started receiving genuine opportunities. Their guidance and AI resume builder showcased my skills beautifully — I now work with clients I never thought possible!”</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faqDivision">
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+              
+                <div class="faq-item">
+                  <button class="faq-question">1. What services does RozgarSathi offer?</button>
+                  <div class="faq-answer">
+                    <p>We provide career counselling, AI resume generation, interview prep, direct referrals to employers, and freelance opportunities.</p>
+                  </div>
+                </div>
+              
+                <div class="faq-item">
+                  <button class="faq-question">2. How can I apply for jobs through RozgarSathi?</button>
+                  <div class="faq-answer">
+                    <p>Create a profile, upload your resume, browse listings, and click “Apply” on relevant jobs to submit your application.</p>
+                  </div>
+                </div>
+              
+                <div class="faq-item">
+                  <button class="faq-question">3. Are there fees for job seekers?</button>
+                  <div class="faq-answer">
+                    <p>Basic job search and profile features are free. Some advanced services like personalized coaching may involve fees.</p>
+                  </div>
+                </div>
+              
+                <div class="faq-item">
+                  <button class="faq-question">4. Can fresh graduates find internships?</button>
+                  <div class="faq-answer">
+                    <p>Yes. We list internships and entry-level roles that fresh graduates and students can apply for.</p>
+                  </div>
+                </div>
+              
+                <div class="faq-item">
+                  <button class="faq-question">5. How does RozgarSathi improve my hiring chances?</button>
+                  <div class="faq-answer">
+                    <p>We help optimize your resume, offer mock interview prep, and connect you with employers that match your skills.</p>
+                  </div>
+                </div>
+              
+            </section>
+        </div>
+
+        <div class="footerdivision">
+            <div class="footerDivisionMain">
+                <div class="footerLeftCompanyDescription">
+                    <div class="footerCompanyLogo">
+                        <img class="footerCompanyLogoImage" src="./assets/images/companyLogoImage.JPG" alt="RozgarSathi logo">
+                        <h3> RozgarSathi </h3>
+                    </div>
+    
+                    <div class="footerCompanyQuote">
+                        <h2> Your <br> Skills, <br> Our Passion </h2>
+                    </div>
+                </div>
+    
+                <div class="footerRightCompanyQuickLinks">
+                    
+                    <div class="footerRightKnowUsMore">
+                        <h3> Know Us More </h3>
+    
+                        <a class="" href="./pages/footerpages/fAboutUs.html"> About Us </a>
+                        <a class="" href="./pages/footerpages/fCarrer.html"> Careers </a>
+                        <a class="" href="./pages/footerpages/fBrandCentre.html"> Brand Center </a>
+                        <a class="" href="./pages/footerpages/fBlogs.html"> Blogs </a>
+                        <a class="" href="./pages/footerpages"> Privacy </a>
+                    </div>
+    
+                    <div class="footerRightConnectUs">
+                        <h3> Connect Us </h3>
+    
+                        <a class="rozgarsathiLinkedIn" href="https://www.linkedin.com/in/rozgar-sathi-b83476396/"> Linkedin </a>
+                        <a class="rozgarsathiTwitter" href="https://x.com/RozgarSathiCoIn?t=kCg8ZD8eOfnMkushIcbmDw&s=08"> Twitter </a>
+                        <a class="rozgarsathiInstagram" href="https://www.instagram.com/rozgarsathi.co.in/?igsh=MW92NWZ3d2g4MjZidg%3D%3D"> Instagram </a>
+                        <a class="rozgarsathiFacebook" href="https://www.facebook.com/rozgarsathi.co.in?rdid=fEQ3xzO7NIHLbyKj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17pAD93s7i%2F"> Facebook </a>
+                        <a class="rozgarsathiYoutube" href="https://www.youtube.com/@rozgarsathichannel"> Youtube </a>
+                        <a class="rozgarsathiReddit" href=""> Reddit </a>
+                        <a class="rozgarsathiQuora" href=""> Quora </a>
+                    </div>
+    
+                    <div class="footerRightNeedHelp">
+                        <h3> Need Help </h3>
+    
+                        <a class="" href="./pages/footerpages/fContactUs.html"> Contact Us </a>
+                        <a class="" href="./pages/footerpages/fHelpCentre.html"> Help center </a>
+                        <a class="" href="./pages/footerpages/fApp.html"> App </a>
+                        <a class="" href="./pages/footerpages/fSecuirity.html"> Secuirity Advisory </a>
+                    </div>
+    
+                </div>
+            </div>
+            
+
+            <div class="footercompanyaddress">
+                <div>
+                    <p> 704/3, Bhawani Enclave,<br> Sector-9, Gurgaon <br> Haryana,<br> India </p><br>
+
+                    <p> +91 xxxxx-xxxxx || privaterozgarsathi@gmail.com </p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="backToTopDivision">
+            <a class="backtoTop" href="#">Back to top </a>
+
+            <div class="footerWhatsAppMessage">
+                <a href="https://wa.me/919625994420?text=Hello%20there!" target="_blank">
+                    <img src="./assets/images/whatsappLogoImage.jpg" class="footerWhatsAppLogo" alt="WhatsApp contact link">
+                </a>
+            </div>
+
+            <div class="footerMailMesssage">
+                <a href="mailto:privaterozgarsathi@gmail.com?subject=Inquiry&amp;body=Hi,%0D%0A%0D%0AI%20would%20like%20to%20know%20more%20about...">
+                    <img src="./assets/images/mailLogoImage.jpg" class="footerMailLogo" alt="Email contact link"> 
+                </a>
+            </div>
+        </div>
+
+        <div class="privacyPolicyDivision">
+            <p> PRIVACY POLICY COPYRIGHT © 2025 RozgarSathi All rights reserved </p>
+        </div>
+
+        <script src="./assets/jsFile/index.js"></script>
+
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
+            data-cbid="93afbdd8-7ce1-4753-9ae0-a23add0547fc"
+            type="text/javascript" async>
+        </script>
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RozgarSathi",
+        "url": "https://rozgarsathi.co.in/",
+        "logo": "https://rozgarsathi.co.in/assets/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "telephone": "+91 96259 94420",
+            "email": "privaterozgarsathi@gmail.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "704/3, Bhawani Enclave, Sector‑9",
+            "addressLocality": "Gurugram",
+            "addressRegion": "Haryana",
+            "postalCode": "1220XX",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.4595",
+            "longitude": "77.0266"
+        },
+        "sameAs": [
+            "https://www.facebook.com/rozgarsathi.co.in",
+            "https://x.com/RozgarSathiCoIn",
+            "https://www.linkedin.com/in/rozgar-sathi-b83476396/",
+            "https://www.instagram.com/rozgarsathi.co.in/",
+            "https://www.youtube.com/@rozgarsathichannel"
+        ]
+        }
+        </script>
+    
+    </body>
+
+</html>
