@@ -2,6 +2,7 @@
     body {
         padding-right: 10px;
         padding-left: 10px;
+        background-color: red;
     }
 
 
@@ -448,7 +449,6 @@
     }
 
     .testimonialDivision img {
-        background-color: red;
         height: 40px;
         width: 40px;
     }
@@ -598,14 +598,14 @@
 
     .footerWhatsAppMessage {
         position: fixed;
-        bottom: 100px;
-        right: 40px;
+        top: 450px;
+        right: 45px;
     }
 
     .footerMailMesssage {
         position: fixed;
-        bottom: 50px;
-        right: 40px;
+        top: 500px;
+        right: 45px;
     }
 
 
