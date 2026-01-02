@@ -604,13 +604,14 @@
 
     .footerWhatsAppMessage {
         position: fixed;
-        top: 450px;
-        right: 50px;
+        bottom: 120px;
+        right: 40px;
     }
+    
     .footerMailMesssage {
         position: fixed;
-        top: 520px;
-        right: 50px;
+        bottom: 60px;
+        right: 40px;
     }
 
     .backToTopDivision img {
