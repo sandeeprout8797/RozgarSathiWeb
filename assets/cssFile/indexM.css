@@ -595,13 +595,13 @@ body {
 
 .footerWhatsAppMessage {
     position: fixed;
-    top: 450px;
+    bottom: 120px;
     right: 40px;
 }
 
 .footerMailMesssage {
     position: fixed;
-    top: 500px;
+    bottom: 60px;
     right: 40px;
 }
 

@@ -2,10 +2,10 @@
     body {
         padding-right: 10px;
         padding-left: 10px;
-        background-color: red;
+        margin: 0px;
     }
-
-
+    
+    
     .headerOneDivision {
         display: flex;
         justify-content: center;
@@ -19,16 +19,18 @@
         right: 0px;
         z-index: 5;
     }
-
-
+    
+    
     .headerTwoDivision {
         display: flex;
-        padding-top: 30px;
+        padding-top: 50px;
         justify-content: space-between;
         position: relative;
         align-items: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
     }
-
+    
     .companylogoImgName {
         display: flex;
         justify-content: center;
@@ -39,12 +41,12 @@
         gap: 5px;
         height: 40px;
     }
-
+    
     .companylogoImgName img {
         width: 30px;
         height: 30px;
     }
-
+    
     .navigationButtonDivision {
         position: fixed;
         display: flex;
@@ -59,15 +61,15 @@
         transform: translateX(200px);
         transition: left 0.8s ease;
     }
-
+    
     .navigationButtonDivision.active {
         left: -200px;
     }
-
+    
     .navigationButtonDivision:hover {
         cursor: pointer;
     }
-
+    
     .navigationButtonDivision a {
         border: 1px solid black;
         text-decoration: none;
@@ -77,15 +79,15 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
+    
     .navigationButtonDivision a:hover {
         text-decoration: underline;
     }
-
+    
     .headerTwoDivisionButtons {
         display: flex;
     }
-
+    
     .headerTwoDivisionButtons button {
         display: flex;
         justify-content: center;
@@ -97,16 +99,21 @@
         border: none;
         margin-right: 5px;
     }
-  
+    
     .headerTwoDivisionButtons img {
         width: 30px;
         height: 30px;
         border-radius: 20px;
         border: 2px solid black;
     }
-
+    
     .contentOneDivision {
         margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
     }
     .contentOneDivision a {
         color: blue;
@@ -114,23 +121,23 @@
         border: 1px solid black;
         margin-left: 100px;
     }
-
+    
     .contentOneDivision img {
         width: 300px;
         height: 300px;
     }
-
+    
     .contenOneImageOneDiv figcaption {
         display: none;
     }
-
+    
     
     .contentTwoDivision {
         display: flex;
         flex-direction: column-reverse;
         margin-top: 100px;
     }
-
+    
     .contentTwoImageDiv {
         display: flex;
         flex-direction: column;
@@ -142,44 +149,46 @@
         justify-content: right;
         gap: 10px;
     }
-
+    
     .contentTwoDivision img {
         width: 150px;
         height: 150px;
     }
-
-
+    
+    
     .ourServicesDivision {
         margin-top: 100px;
         display: flex;
         flex-direction: column;
-        gap: 3px;
+        gap: 10px;
     }
-
+    
+    .servicesDescDivisionOne h3 {
+        border-top: 1px solid black;
+    }
+    .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
+        color: grey;
+    }
+    
     .servicesDescDivisionOne, .servicesDescDivisionTwo {
         display: flex;
-        align-items: top;    
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
-
+    
     .servicesDescDivisionOne div, .servicesDescDivisionTwo div{
         height: 250px;
         width: 250px;
     }
-
-    .servicesDescDivisionOne h3, .servicesDescDivisionTwo h3 {
+    
+    .servicesDescDivisionTwo h3 {
         border-top: 1px solid black;
     }
-
-    .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
-        color: grey;
-    }
-
     .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
         color: grey;
     }
-
-
+    
+    
     .contentThreeDivision {
         display: flex;
         flex-direction: column;
@@ -196,25 +205,26 @@
         margin-right: -20px;
         margin-top: 100px;
     }
-
-
+    
+    
     .statisticDivision {
         margin-top: 100px;
     }
-
+    
     .statsRightDivision {
         display: flex;
+        gap: 30px;
         border-top: 1px solid black;
-        justify-content: space-around;
+        justify-content: center;
     }
-
+    
     .statsRightOneDivision, .statsRightTwoDivision {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-
-
+    
+    
     .forumDivision {
         display: flex;
         flex-direction: column;
@@ -222,14 +232,15 @@
         gap: 30px;
         margin-top: 100px;
     }
-
+    
     .forumDivision form {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 50px;
     }
-
+    
     .forumInputDivision  {
         display: flex;
         flex-direction: column;
@@ -242,93 +253,91 @@
         padding-right: 40px;
         gap: 30px;
     }
-
-
+    
+    
     .pricingDivision {
         margin-top: 100px;
     }
-
+    
     .pricingDivisionsDiv {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        gap: 25px;
-        text-align: center;
+        gap: 20px;
     }
-
+    
     .pricingDivisionsDiv div {
         border-bottom: 1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: 1px solid black;
     }
-
-
+    
+    
     .partnersDivision {
         margin-top: 100px;
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 30px;
     }
-
+    
     .partnersDivision a {
         text-decoration: underline;
         color: black;
         text-align: center;
     }
-
-    .partnersDivision a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-    }
-
-    .partnersDivision a:hover {
-        text-decoration: underline;
-    }
-
+    
+    
+    
     .collabImagesDivisionScroll {
         width: 100%;
         overflow: hidden;
-        position: relative;
     }
-    
+        
     .collabImagesDivision {
         display: flex;
-        gap: 150px;
-        animation: scrollLeft 60s linear infinite;
+        gap: 40px;               
+        min-width: max-content; 
+        animation: marquee 20s linear infinite;
     }
-    
+        
     .collabImagesDivision img {
-        height: 80px;
-        object-fit: cover;
+        height: 30px; 
+        object-fit: cover;            
     }
-    
-    @keyframes scrollLeft {
+        
+    @keyframes marquee {
+        100% {
+            transform: translateX(0);
+        }
         0% {
             transform: translateX(-50%);
         }
-        100% {
-            transform: translateX(100%);
-        }
     }
-      
-
+    
+    .collabImagesDivisionScroll:hover .collabImagesDivision {
+        animation-play-state: paused;
+    }
+    
+    
     .callBookingDivision {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 30px;
         margin-top: 100px;
+        padding: 10px;
+        background-color: rgb(207, 207, 207);
+        justify-content: space-between;
+        align-items: center;
     }
-
+    
     .callBookingDivision img {
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
     }
-
+    
     .callBookingDivision a {
         background-color: white;
         color: black;
@@ -337,72 +346,68 @@
         border-radius: 5px;
         font-size: 10px;
     }
-
-
+    
+    
     .storyDivisionscroll {
         width: 100%;
         overflow: hidden;
         margin-top: 100px;
     }
-
+    
     .storyDivision {
         display: flex;
         gap: 30px;               
         min-width: max-content; 
         animation: scroll 12s linear infinite;
     }
-
+    
     .storyDivision img {
         height: 80px;
         width: 80px;
     }
-
+    
     @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
         100% {
-          transform: translateX(50%);
+            transform: translateX(0);
+        }
+        0% {
+            transform: translateX(-50%);
         }
     }
     
-    .collabImagesDivisionScroll:hover .collabImagesDivision {
-        animation-play-state: paused;
-    }
-
-
+    
     .storyDivisionscrollTwo {
         width: 100%;
         overflow: hidden;
         margin-top: 100px;
     }
-
+    
     .storyDivisionTwo {
         display: flex;
         gap: 30px;               
         min-width: max-content; 
         animation: scrollTwo 12s linear infinite;
     }
-
+    
     .storyDivisionTwo img {
         height: 80px;
         width: 80px;
     }
-
+    
     @keyframes scrollTwo {
         0% {
-          transform: translateX(0);
+            transform: translateX(0);
         }
         100% {
-          transform: translateX(-50%);
+            transform: translateX(-50%);
         }
     }
     
     .collabImagesDivisionScroll:hover .collabImagesDivision {
         animation-play-state: paused;
     }
-
-
+    
+    
     .teamPartDivision {
         margin-top: 100px;
         display: flex;
@@ -411,13 +416,14 @@
         align-items: center;
         gap: 30px;
     }
-
+    
     .teamPartDivision button {
         height: 40px;
         border: 1px solid black;
         border-radius: 10px;
     }
-
+    
+    
     .singnInDivision {
         margin-top: 100px;
         display: flex;
@@ -430,47 +436,48 @@
         margin-left: -20px;
         margin-right: -20px;
     }
-
+    
     .singnInDivision a {
         color: white;
         text-decoration: none;
     }
-
+    
     .singnInDivision a:hover {
         text-decoration: underline;
     }
-
-
+    
     .testimonialDivision {
         margin-top: 100px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 50px;
     }
-
+    
     .testimonialDivision img {
+        background-color: red;
         height: 40px;
         width: 40px;
     }
-
+    
     .testimonialOne, .testimonialTwo, .testimonialThree {
         width: 250px;
-        height: 350px;
         border: 1px solid black;
         padding: 5px;
     }
-
+    
     .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
         transform: translateY(-10px);
         translate: tranform 0.5s ease;
     }
-
-
+    
+    
     .faq-section {
         max-width: 700px;
         margin: 2rem auto;
         font-family: Arial, sans-serif;
         margin-top: 100px;
+        overflow: hidden;
     }
     
     .faq-section h2 {
@@ -490,7 +497,7 @@
         border: none;
         padding: 1rem;
         text-align: left;
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-weight: bold;
         cursor: pointer;
         outline: none;
@@ -521,8 +528,8 @@
         font-size: 0.95rem;
         color: #444;
     }
-  
-
+    
+    
     .footerdivision {
         margin-top: 100px;
         background-color: black;
@@ -534,25 +541,23 @@
         flex-direction: column;
         gap: 100px;
     }
-
+    
     .footerDivisionMain {
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
-
+    
     .footerdivision img {
         height: 50px;
         width: 50px;
     }
-
+    
     .footerRightCompanyQuickLinks {
         display: flex;
         gap: 50px;
-        align-items: top;
-        justify-content: space-around;
     }
-
+    
     .footerRightCompanyQuickLinks div {
         display: flex;
         flex-direction: column;
@@ -568,8 +573,8 @@
     .footerRightCompanyQuickLinks a:hover {
         text-decoration: underline;
     }
-
-
+    
+    
     .backToTopDivision {
         margin-top: 100px;
         background-color: black;
@@ -579,42 +584,41 @@
         text-align: center;
         position: relative;
     }
-
+    
     .backToTopDivision a {
         color: white;
         text-decoration: none;
     }
-
+    
     .backToTopDivision a:hover {
         text-decoration: underline;
     }
-
+    
+    .footerWhatsAppMessage {
+        position: fixed;
+        bottom: 120px;
+        right: 40px;
+    }
+    
+    .footerMailMesssage {
+        position: fixed;
+        bottom: 60px;
+        right: 40px;
+    }
+    
     .backToTopDivision img {
         height: 40px;
         width: 40px;
         border-radius: 20px;
     }
-
-
-    .footerWhatsAppMessage {
-        position: fixed;
-        top: 450px;
-        right: 45px;
-    }
-
-    .footerMailMesssage {
-        position: fixed;
-        top: 500px;
-        right: 45px;
-    }
-
-
+    
     .privacyPolicyDivision {
         margin-top: 100px;
         color: grey;
         font-size: 10px;
         text-align: center;
     }
+    
 }
 
 @media screen and (min-width: 800px) {
