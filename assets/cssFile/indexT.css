@@ -1250,14 +1250,14 @@
 
     .footerWhatsAppMessage {
         position: fixed;
-        bottom: 100px;
-        right: 40px;
+        bottom: 150px;
+        right: 50px;
     }
     
     .footerMailMesssage {
         position: fixed;
-        bottom: 40px;
-        right: 40px;
+        bottom:100px;
+        right: 50px;
     }
 
 
