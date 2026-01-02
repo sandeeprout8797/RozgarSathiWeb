@@ -1,619 +1,622 @@
-body {
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: 0px;
-}
-
-
-.headerOneDivision {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    height: 25px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 5;
-}
-
-
-.headerTwoDivision {
-    display: flex;
-    padding-top: 50px;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
-    border-bottom: 1px solid black;
-    padding-bottom: 15px;
-}
-
-.companylogoImgName {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    padding-right: 5px;
-    padding-left: 5px;
-    gap: 5px;
-    height: 40px;
-}
-
-.companylogoImgName img {
-    width: 30px;
-    height: 30px;
-}
-
-.navigationButtonDivision {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    top: 20px;
-    left: -400px;
-    width: 200px;
-    height: 100%;
-    background-color: white;
-    color: black;
-    z-index: 2;
-    transform: translateX(200px);
-    transition: left 0.8s ease;
-}
-
-.navigationButtonDivision.active {
-    left: -200px;
-}
-
-.navigationButtonDivision:hover {
-    cursor: pointer;
-}
-
-.navigationButtonDivision a {
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.navigationButtonDivision a:hover {
-    text-decoration: underline;
-}
-
-.headerTwoDivisionButtons {
-    display: flex;
-}
-
-.headerTwoDivisionButtons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    border: none;
-    margin-right: 5px;
-}
-
-.headerTwoDivisionButtons img {
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    border: 2px solid black;
-}
-
-.contentOneDivision {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-}
-.contentOneDivision a {
-    color: blue;
-    text-decoration: underline;
-    border: 1px solid black;
-    margin-left: 100px;
-}
-
-.contentOneDivision img {
-    width: 300px;
-    height: 300px;
-}
-
-.contenOneImageOneDiv figcaption {
-    display: none;
-}
-
-
-.contentTwoDivision {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 100px;
-}
-
-.contentTwoImageDiv {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-}
-.contentTwoImageDiv div {
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-}
-
-.contentTwoDivision img {
-    width: 150px;
-    height: 150px;
-}
-
-
-.ourServicesDivision {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.servicesDescDivisionOne h3 {
-    border-top: 1px solid black;
-}
-.servicesDescDivisionOne h2, .servicesDescDivisionOne p {
-    color: grey;
-}
-
-.servicesDescDivisionOne, .servicesDescDivisionTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.servicesDescDivisionOne div, .servicesDescDivisionTwo div{
-    height: 250px;
-    width: 250px;
-}
-
-.servicesDescDivisionTwo h3 {
-    border-top: 1px solid black;
-}
-.servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
-    color: grey;
-}
-
-
-.contentThreeDivision {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    padding: 100px;
-    background-image: url(../images/contentThree.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: 100px;
-}
-
-
-.statisticDivision {
-    margin-top: 100px;
-}
-
-.statsRightDivision {
-    display: flex;
-    gap: 30px;
-    border-top: 1px solid black;
-    justify-content: center;
-}
-
-.statsRightOneDivision, .statsRightTwoDivision {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-
-.forumDivision {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 100px;
-}
-
-.forumDivision form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-.forumInputDivision  {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.forumInputDivision div {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-    gap: 30px;
-}
-
-
-.pricingDivision {
-    margin-top: 100px;
-}
-
-.pricingDivisionsDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.pricingDivisionsDiv div {
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-}
-
-
-.partnersDivision {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.partnersDivision a {
-    text-decoration: underline;
-    color: black;
-    text-align: center;
-}
-
-
-
-.collabImagesDivisionScroll {
-    width: 100%;
-    overflow: hidden;
-}
+@media screen and (max-width: 450px) {
+    body {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 0px;
+    }
     
-.collabImagesDivision {
-    display: flex;
-    gap: 40px;               
-    min-width: max-content; 
-    animation: marquee 20s linear infinite;
-}
     
-.collabImagesDivision img {
-    height: 30px; 
-    object-fit: cover;            
-}
+    .headerOneDivision {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        height: 25px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 5;
+    }
     
-@keyframes marquee {
-    100% {
-        transform: translateX(0);
+    
+    .headerTwoDivision {
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 15px;
     }
-    0% {
-        transform: translateX(-50%);
+    
+    .companylogoImgName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        padding-right: 5px;
+        padding-left: 5px;
+        gap: 5px;
+        height: 40px;
     }
-}
-
-.collabImagesDivisionScroll:hover .collabImagesDivision {
-    animation-play-state: paused;
-}
-
-
-.callBookingDivision {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 100px;
-    padding: 10px;
-    background-color: rgb(207, 207, 207);
-    justify-content: space-between;
-    align-items: center;
-}
-
-.callBookingDivision img {
-    width: 200px;
-    height: 200px;
-}
-
-.callBookingDivision a {
-    background-color: white;
-    color: black;
-    border: black 1px solid;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 10px;
-}
-
-
-.storyDivisionscroll {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 100px;
-}
-
-.storyDivision {
-    display: flex;
-    gap: 30px;               
-    min-width: max-content; 
-    animation: scroll 12s linear infinite;
-}
-
-.storyDivision img {
-    height: 80px;
-    width: 80px;
-}
-
-@keyframes scroll {
-    100% {
-        transform: translateX(0);
+    
+    .companylogoImgName img {
+        width: 30px;
+        height: 30px;
     }
-    0% {
-        transform: translateX(-50%);
+    
+    .navigationButtonDivision {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 20px;
+        left: -400px;
+        width: 200px;
+        height: 100%;
+        background-color: white;
+        color: black;
+        z-index: 2;
+        transform: translateX(200px);
+        transition: left 0.8s ease;
     }
-}
-
-
-.storyDivisionscrollTwo {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 100px;
-}
-
-.storyDivisionTwo {
-    display: flex;
-    gap: 30px;               
-    min-width: max-content; 
-    animation: scrollTwo 12s linear infinite;
-}
-
-.storyDivisionTwo img {
-    height: 80px;
-    width: 80px;
-}
-
-@keyframes scrollTwo {
-    0% {
-        transform: translateX(0);
+    
+    .navigationButtonDivision.active {
+        left: -200px;
     }
-    100% {
-        transform: translateX(-50%);
+    
+    .navigationButtonDivision:hover {
+        cursor: pointer;
     }
-}
-
-.collabImagesDivisionScroll:hover .collabImagesDivision {
-    animation-play-state: paused;
-}
-
-
-.teamPartDivision {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.teamPartDivision button {
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-
-.singnInDivision {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    background-color: black;
-    color: white;
-    height: 20px;
-    margin-left: -20px;
-    margin-right: -20px;
-}
-
-.singnInDivision a {
-    color: white;
-    text-decoration: none;
-}
-
-.singnInDivision a:hover {
-    text-decoration: underline;
-}
-
-.testimonialDivision {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-.testimonialDivision img {
-    background-color: red;
-    height: 40px;
-    width: 40px;
-}
-
-.testimonialOne, .testimonialTwo, .testimonialThree {
-    width: 250px;
-    border: 1px solid black;
-    padding: 5px;
-}
-
-.testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
-    transform: translateY(-10px);
-    translate: tranform 0.5s ease;
-}
-
-
-.faq-section {
-    max-width: 700px;
-    margin: 2rem auto;
-    font-family: Arial, sans-serif;
-    margin-top: 100px;
-    overflow: hidden;
-}
-
-.faq-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
-.faq-item {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 0.5rem;
-}
-
-.faq-question {
-    width: 100%;
-    background: #fff;
-    border: none;
-    padding: 1rem;
-    text-align: left;
-    font-size: 0.7rem;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-}
-
-.faq-question::after {
-    content: "＋";
-    position: absolute;
-    right: 1rem;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-}
-
-.faq-question.active::after {
-    transform: rotate(45deg);
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 1rem;
-}
-
-.faq-answer p {
-    margin: 0.8rem 0;
-    font-size: 0.95rem;
-    color: #444;
-}
-
-
-.footerdivision {
-    margin-top: 100px;
-    background-color: black;
-    color: white;
-    padding: 40px;
-    margin-left: -20px;
-    margin-right: -20px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.footerDivisionMain {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.footerdivision img {
-    height: 50px;
-    width: 50px;
-}
-
-.footerRightCompanyQuickLinks {
-    display: flex;
-    gap: 50px;
-}
-
-.footerRightCompanyQuickLinks div {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.footerRightCompanyQuickLinks h3 {
-    color: grey;
-}
-.footerRightCompanyQuickLinks a {
-    text-decoration: none;
-    color: white;
-}
-.footerRightCompanyQuickLinks a:hover {
-    text-decoration: underline;
-}
-
-
-.backToTopDivision {
-    margin-top: 100px;
-    background-color: black;
-    color: white;
-    margin-left: -20px;
-    margin-right: -20px;
-    text-align: center;
-    position: relative;
-}
-
-.backToTopDivision a {
-    color: white;
-    text-decoration: none;
-}
-
-.backToTopDivision a:hover {
-    text-decoration: underline;
-}
-
-.footerWhatsAppMessage {
-    position: fixed;
-    bottom: 120px;
-    right: 40px;
-}
-
-.footerMailMesssage {
-    position: fixed;
-    bottom: 60px;
-    right: 40px;
-}
-
-.backToTopDivision img {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-}
-
-.privacyPolicyDivision {
-    margin-top: 100px;
-    color: grey;
-    font-size: 10px;
-    text-align: center;
+    
+    .navigationButtonDivision a {
+        border: 1px solid black;
+        text-decoration: none;
+        color: black;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navigationButtonDivision a:hover {
+        text-decoration: underline;
+    }
+    
+    .headerTwoDivisionButtons {
+        display: flex;
+    }
+    
+    .headerTwoDivisionButtons button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        margin-right: 5px;
+    }
+    
+    .headerTwoDivisionButtons img {
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    
+    .contentOneDivision {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contentOneDivision a {
+        color: blue;
+        text-decoration: underline;
+        border: 1px solid black;
+        margin-left: 100px;
+    }
+    
+    .contentOneDivision img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .contenOneImageOneDiv figcaption {
+        display: none;
+    }
+    
+    
+    .contentTwoDivision {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+    
+    .contentTwoImageDiv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .contentTwoImageDiv div {
+        display: flex;
+        justify-content: right;
+        gap: 10px;
+    }
+    
+    .contentTwoDivision img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+    .ourServicesDivision {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .servicesDescDivisionOne h3 {
+        border-top: 1px solid black;
+    }
+    .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
+        color: grey;
+    }
+    
+    .servicesDescDivisionOne, .servicesDescDivisionTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .servicesDescDivisionOne div, .servicesDescDivisionTwo div{
+        height: 250px;
+        width: 250px;
+    }
+    
+    .servicesDescDivisionTwo h3 {
+        border-top: 1px solid black;
+    }
+    .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
+        color: grey;
+    }
+    
+    
+    .contentThreeDivision {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        padding: 100px;
+        background-image: url(../images/contentThree.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-top: 100px;
+    }
+    
+    
+    .statisticDivision {
+        margin-top: 100px;
+    }
+    
+    .statsRightDivision {
+        display: flex;
+        gap: 30px;
+        border-top: 1px solid black;
+        justify-content: center;
+    }
+    
+    .statsRightOneDivision, .statsRightTwoDivision {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    
+    .forumDivision {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 100px;
+    }
+    
+    .forumDivision form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .forumInputDivision  {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .forumInputDivision div {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: 30px;
+    }
+    
+    
+    .pricingDivision {
+        margin-top: 100px;
+    }
+    
+    .pricingDivisionsDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .pricingDivisionsDiv div {
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+    
+    
+    .partnersDivision {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .partnersDivision a {
+        text-decoration: underline;
+        color: black;
+        text-align: center;
+    }
+    
+    
+    
+    .collabImagesDivisionScroll {
+        width: 100%;
+        overflow: hidden;
+    }
+        
+    .collabImagesDivision {
+        display: flex;
+        gap: 40px;               
+        min-width: max-content; 
+        animation: marquee 20s linear infinite;
+    }
+        
+    .collabImagesDivision img {
+        height: 30px; 
+        object-fit: cover;            
+    }
+        
+    @keyframes marquee {
+        100% {
+            transform: translateX(0);
+        }
+        0% {
+            transform: translateX(-50%);
+        }
+    }
+    
+    .collabImagesDivisionScroll:hover .collabImagesDivision {
+        animation-play-state: paused;
+    }
+    
+    
+    .callBookingDivision {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 100px;
+        padding: 10px;
+        background-color: rgb(207, 207, 207);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .callBookingDivision img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .callBookingDivision a {
+        background-color: white;
+        color: black;
+        border: black 1px solid;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    
+    
+    .storyDivisionscroll {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 100px;
+    }
+    
+    .storyDivision {
+        display: flex;
+        gap: 30px;               
+        min-width: max-content; 
+        animation: scroll 12s linear infinite;
+    }
+    
+    .storyDivision img {
+        height: 80px;
+        width: 80px;
+    }
+    
+    @keyframes scroll {
+        100% {
+            transform: translateX(0);
+        }
+        0% {
+            transform: translateX(-50%);
+        }
+    }
+    
+    
+    .storyDivisionscrollTwo {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 100px;
+    }
+    
+    .storyDivisionTwo {
+        display: flex;
+        gap: 30px;               
+        min-width: max-content; 
+        animation: scrollTwo 12s linear infinite;
+    }
+    
+    .storyDivisionTwo img {
+        height: 80px;
+        width: 80px;
+    }
+    
+    @keyframes scrollTwo {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    
+    .collabImagesDivisionScroll:hover .collabImagesDivision {
+        animation-play-state: paused;
+    }
+    
+    
+    .teamPartDivision {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .teamPartDivision button {
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
+    
+    .singnInDivision {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: black;
+        color: white;
+        height: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    
+    .singnInDivision a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .singnInDivision a:hover {
+        text-decoration: underline;
+    }
+    
+    .testimonialDivision {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .testimonialDivision img {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .testimonialOne, .testimonialTwo, .testimonialThree {
+        width: 250px;
+        border: 1px solid black;
+        padding: 5px;
+    }
+    
+    .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
+        transform: translateY(-10px);
+        translate: tranform 0.5s ease;
+    }
+    
+    
+    .faq-section {
+        max-width: 700px;
+        margin: 2rem auto;
+        font-family: Arial, sans-serif;
+        margin-top: 100px;
+        overflow: hidden;
+    }
+    
+    .faq-section h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+    
+    .faq-item {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 0.5rem;
+    }
+    
+    .faq-question {
+        width: 100%;
+        background: #fff;
+        border: none;
+        padding: 1rem;
+        text-align: left;
+        font-size: 0.7rem;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+    }
+    
+    .faq-question::after {
+        content: "＋";
+        position: absolute;
+        right: 1rem;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .faq-question.active::after {
+        transform: rotate(45deg);
+    }
+    
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0 1rem;
+    }
+    
+    .faq-answer p {
+        margin: 0.8rem 0;
+        font-size: 0.95rem;
+        color: #444;
+    }
+    
+    
+    .footerdivision {
+        margin-top: 100px;
+        background-color: black;
+        color: white;
+        padding: 40px;
+        margin-left: -20px;
+        margin-right: -20px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    
+    .footerDivisionMain {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .footerdivision img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .footerRightCompanyQuickLinks {
+        display: flex;
+        gap: 50px;
+    }
+    
+    .footerRightCompanyQuickLinks div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footerRightCompanyQuickLinks h3 {
+        color: grey;
+    }
+    .footerRightCompanyQuickLinks a {
+        text-decoration: none;
+        color: white;
+    }
+    .footerRightCompanyQuickLinks a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    .backToTopDivision {
+        margin-top: 100px;
+        background-color: black;
+        color: white;
+        margin-left: -20px;
+        margin-right: -20px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .backToTopDivision a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .backToTopDivision a:hover {
+        text-decoration: underline;
+    }
+    
+    .footerWhatsAppMessage {
+        position: fixed;
+        bottom: 120px;
+        right: 40px;
+    }
+    
+    .footerMailMesssage {
+        position: fixed;
+        bottom: 60px;
+        right: 40px;
+    }
+    
+    .backToTopDivision img {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+    }
+    
+    .privacyPolicyDivision {
+        margin-top: 100px;
+        color: grey;
+        font-size: 10px;
+        text-align: center;
+    }
+    
 }
