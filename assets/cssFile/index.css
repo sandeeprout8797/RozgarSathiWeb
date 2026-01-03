@@ -48,7 +48,7 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
-    top: 20px;
+    top: 42px;
     left: -400px;
     width: 200px;
     height: 100%;
@@ -611,10 +611,19 @@ body {
     } 
 
 
+    .servicesDescDivisionOne {
+        gap: 40px;
+    }
+
     .servicesDescDivisionOne, .servicesDescDivisionTwo {
         flex-direction: row;
-        gap: 30px;
+        gap: 40px;
     }
+
+    .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
+        height: 450px;
+    }
+    
 
 
     .pricingDivisionsDiv {
@@ -625,12 +634,45 @@ body {
 
     .testimonialDivision {
         flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .testimonialOne, .testimonialTwo, .testimonialThree {
+        width: 250px;
+        height: 600px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .contentOneDivision {
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .testimonialDivision div {
-        width: 300px;
+    .contentOneDivision img {
+        height: 450px;
+        width: 450px;
     }
+
+    .contentTwoDivision {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contentTwoDivision img {
+        height: 250px;
+        width: 250px;
+    } 
 
 }
