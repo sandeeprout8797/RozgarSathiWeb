@@ -414,7 +414,6 @@ body {
 }
 
 .testimonialDivision img {
-    background-color: red;
     height: 40px;
     width: 40px;
 }
@@ -556,20 +555,20 @@ body {
 
 .footerWhatsAppMessage {
     position: fixed;
-    bottom: 120px;
-    right: 40px;
+    bottom: 150px;
+    right: 50px;
 }
 
 .footerMailMesssage {
     position: fixed;
-    bottom: 60px;
-    right: 40px;
+    bottom: 70px;
+    right: 50px;
 }
 
 .backToTopDivision img {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
 }
 
 .privacyPolicyDivision {
