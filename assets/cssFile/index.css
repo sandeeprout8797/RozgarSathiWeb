@@ -579,14 +579,17 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
     body {
+        background-color: red;
         padding: 0px;
         margin: 0px;
     }
 
+
     .contentOneDivision {
-        flex-direction: row;
+        padding: 20px;
         justify-content: center;
         align-items: center;
     }
@@ -596,8 +599,9 @@ body {
         width: 350px;
     }
 
+
     .contentTwoDivision {
-        flex-direction: row;
+        padding: 20px;
         align-items: center;
         justify-content: center;
     }
@@ -616,7 +620,6 @@ body {
     }
 
     .servicesDescDivisionOne, .servicesDescDivisionTwo {
-        flex-direction: row;
         gap: 40px;
     }
 
@@ -624,34 +627,37 @@ body {
         height: 450px;
     }
     
-
+    .storyDivisionTwo img, .storyDivision img {
+        height: 100px;
+        width: 100px;
+    }
 
     .pricingDivisionsDiv {
-        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
     .testimonialDivision {
-        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
 
     }
 
+    .testimonialDivision img {
+        width: 100px;
+        height: 100px;
+    }
+
     .testimonialOne, .testimonialTwo, .testimonialThree {
-        width: 250px;
-        height: 600px;
+        height: 500px;
+        width: 400px;
+        align-items: center;
     }
 
 }
 
 
 @media screen and (min-width: 1024px) {
-    body {
-        padding: 0px;
-        margin: 0px;
-    }
 
     .contentOneDivision {
         flex-direction: row;
@@ -706,9 +712,14 @@ body {
 
     }
 
-    .testimonialOne, .testimonialTwo, .testimonialThree {
-        height: 550px;
-        width: 300px;
+    .storyDivisionTwo img, .storyDivision img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .testimonialDivision img {
+        width: 100px;
+        height: 100px;
     }
 
 }
