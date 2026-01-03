@@ -708,7 +708,12 @@ body {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+    }
 
+    .testimonialOne, .testimonialTwo, .testimonialThree {
+        height: 550px;
+        width: 400px;
+        align-items: center;
     }
 
     .storyDivisionTwo img, .storyDivision img {
