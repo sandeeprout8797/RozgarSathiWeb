@@ -675,5 +675,41 @@ body {
         width: 250px;
     } 
 
+    .servicesDescDivisionOne {
+        gap: 40px;
+    }
+
+    .servicesDescDivisionOne, .servicesDescDivisionTwo {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
+        height: 450px;
+    }
+
+    .pricingDivisionsDiv {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .storyDivisionTwo img, .storyDivision img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .testimonialDivision {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .testimonialOne, .testimonialTwo, .testimonialThree {
+        height: 550px;
+        width: 300px;
+    }
+
 }
 
