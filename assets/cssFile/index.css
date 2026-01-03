@@ -582,7 +582,6 @@ body {
 @media screen and (min-width: 500px) and (max-width: 1024px) {
 
     body {
-        background-color: red;
         padding: 0px;
         margin: 0px;
     }
