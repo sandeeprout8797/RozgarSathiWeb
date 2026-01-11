@@ -90,7 +90,10 @@ body {
     width: 80px;
     border-radius: 50px;
     margin-right: 10px;
-    border: none;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .headerTwoDivisionButtons img {
