@@ -103,11 +103,53 @@ body {
 }
 
 
+.blogsMainDivision {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
 
+.blogsMainDivision h2 {
+    height: 50px;
+    width: 100%;
+    text-overflow: clip;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
 
+.blogsMainDivision p {
+    height: 40px;
+    width: 100%;
+    text-overflow: clip;
+    overflow: hidden;
+}
 
+.blogsMainDivision div div {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid black;
+    margin: 20px;
+    align-items: center;
+}
 
+.blogsMainDivision div div div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: left;
+    text-align: left;
+    width: 70%;
+    border: none;
+}
 
+.blogsMainDivision div img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
 
 
 
