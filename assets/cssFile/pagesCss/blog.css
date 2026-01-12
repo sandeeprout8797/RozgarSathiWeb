@@ -103,6 +103,13 @@ body {
 }
 
 
+
+.blogsControlDivision {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 .blogsMainDivision {
     padding-left: 100px;
     padding-right: 100px;
