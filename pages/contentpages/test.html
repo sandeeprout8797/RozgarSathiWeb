@@ -1,71 +1,121 @@
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta lang="en-IN">
-    <meta name="viewport" content="width=device-width, initial-scale=1.32">
+  <title>Show One Child Div at a Time</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 40px;
+    }
 
-    <title> RozgarSathi | About Us – About Our Job Portal & Career Support in India</title>
-    <meta name="description" content="Learn more about RozgarSathi — our mission, vision, and how we help job seekers across India with personalized job assistance, career support, and opportunities.">
-    <meta name="robots" content="index, follow">
+    #parent {
+      width: 400px;
+      height: 200px;
+      margin: 20px auto;
+      border: 2px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-    <link rel="canonical" href="https://rozgarsathi.co.in/about-us">
-    <link rel="alternate" href="https://rozgarsathi.co.in/about-us" hreflang="en-IN">
-    <link rel="alternate" href="https://rozgarsathi.co.in/about-us" hreflang="x-default">
+    .child {
+      display: none;
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-    <link rel="icon" href="../../assets/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/favicon/favicon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../../assets/images/favicon/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../../assets/images/favicon/favicon-120x120.png">
-    <link rel="icon" href="../../assets/images/favicon/favicon-16x16.png" type="image/svg+xml">
+    .controls {
+      margin-top: 20px;
+    }
 
-    <link rel="stylesheet" href="../../assets/cssFile/pagesCss/aboutUs.css">
+    input {
+      width: 50px;
+      text-align: center;
+    }
 
-    <meta property="og:title" content="About RozgarSathi – Helping You Find Jobs & Career Growth in India">
-    <meta property="og:description" content="Get to know RozgarSathi’s mission, vision, and how we support job seekers with personalized placements, career guidance and more.">
-    <meta property="og:url" content="https://rozgarsathi.co.in/about-us">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://rozgarsathi.co.in/assets/social-image-about.jpg">
-    <meta property="og:image:alt" content="RozgarSathi - About Us">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About RozgarSathi – Career & Job Support in India">
-    <meta name="twitter:description" content="Explore the story behind RozgarSathi — our commitment to helping job seekers find meaningful work across India.">
-    <meta name="twitter:image" content="https://rozgarsathi.co.in/assets/social-image-about.jpg">
-
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "RozgarSathi",
-        "url": "https://rozgarsathi.co.in/",
-        "logo": "https://rozgarsathi.co.in/assets/logo.png",
-        "description": "RozgarSathi provides personalized job assistance, career guidance, resume tools, and job placements across India.",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Support",
-            "telephone": "+91 96259 94420",
-            "email": "privaterozgarsathi@gmail.com"
-        },
-        "sameAs": [
-            "https://www.facebook.com/rozgarsathi.co.in",
-            "https://x.com/RozgarSathiCoIn",
-            "https://www.linkedin.com/in/rozgar-sathi-b83476396/",
-            "https://www.instagram.com/rozgarsathi.co.in/",
-            "https://www.youtube.com/@rozgarsathichannel"
-        ]
-        }
-    </script>
-
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "About RozgarSathi",
-        "description": "About page for RozgarSathi – Learn about our mission, values, and how we support job seekers and career growth.",
-        "url": "https://rozgarsathi.co.in/about-us"
-        }
-    </script>
+    button {
+      margin: 0 10px;
+      padding: 6px 12px;
+    }
+  </style>
 </head>
+<body>
+
+  <!-- Parent Div -->
+  <div id="parent">
+    <!-- Child Divs -->
+    <div class="child">Child Div 1</div>
+    <div class="child">Child Div 2</div>
+    <div class="child">Child Div 3</div>
+    <div class="child">Child Div 4</div>
+    <div class="child">Child Div 5</div>
+    <div class="child">Child Div 6</div>
+    <div class="child">Child Div 7</div>
+    <div class="child">Child Div 8</div>
+    <div class="child">Child Div 9</div>
+    <div class="child">Child Div 10</div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button id="prev">Prev</button>
+    <input type="number" id="jumpInput" min="1" max="10" placeholder="1–10">
+    <button id="next">Next</button>
+  </div>
+
+  <script>
+    const children = document.querySelectorAll(".child");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    const jumpInput = document.getElementById("jumpInput");
+  
+    let currentIndex = 0;
+  
+    function showDiv(index) {
+      children.forEach((child, i) => {
+        child.style.display = i === index ? "block" : "none";
+      });
+    }
+  
+    // initial display
+    showDiv(currentIndex);
+  
+    // Prev
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex <= 0) {
+        currentIndex = children.length - 1;
+      } else {
+        currentIndex--;
+      }
+      showDiv(currentIndex);
+      jumpInput.value = "";
+    });
+  
+    // Next
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex >= children.length - 1) {
+        currentIndex = 0;
+      } else {
+        currentIndex++;
+      }
+      showDiv(currentIndex);
+      jumpInput.value = "";
+    });
+  
+    // Jump input
+    jumpInput.addEventListener("change", () => {
+      const val = parseInt(jumpInput.value);
+      if (!isNaN(val) && val >= 1 && val <= children.length) {
+        currentIndex = val - 1;
+        showDiv(currentIndex);
+      } else {
+        alert("Please enter a valid number between 1 and 10");
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
+
