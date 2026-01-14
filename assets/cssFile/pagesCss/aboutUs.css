@@ -104,7 +104,7 @@ body {
 
 
 .aboutUsDescriptionDivision {
-    padding: 120px;
+    padding: 20px;
 }
 
 .aboutrozgarsathiDiv {
@@ -136,10 +136,16 @@ body {
     justify-content: space-evenly;
 }
 
+.image-section img {
+    border: 3px solid black;
+    border-radius: 1000px;
+}
+
 .aboutOurStoryDiv img {
     width: 250px;
     height: 250px;
-    border-radius: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
 }
 
 
