@@ -740,6 +740,33 @@
 
         <script src="./assets/jsFile/index.js"></script>
 
+        <script>
+            // Simple mobile detection
+            function isMobileDevice() {
+              return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+        
+            // Set or update viewport meta for mobile
+            function setMobileViewportScale(scale) {
+              let meta = document.querySelector('meta[name="viewport"]');
+        
+              if (!meta) {
+                meta = document.createElement('meta');
+                meta.name = "viewport";
+                document.head.appendChild(meta);
+              }
+        
+              meta.content = "width=device-width, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no";
+            }
+        
+            // Run on load
+            window.addEventListener("DOMContentLoaded", function() {
+              if (isMobileDevice()) {
+                setMobileViewportScale(1.5);
+              }
+            });
+        </script>
+
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
             data-cbid="93afbdd8-7ce1-4753-9ae0-a23add0547fc"
             type="text/javascript" async>
