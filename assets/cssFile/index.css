@@ -30,7 +30,6 @@ p {
     align-items: center;
     height: 40px;
     z-index: 5;
-    width: 100%;
 }
 
 .headerTwoDivision {
@@ -128,8 +127,9 @@ p {
 }
 
 .contentOneDivision img {
-    height: 500px;
-    width: 500px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .contentOneDivision figcaption {
@@ -175,8 +175,8 @@ p {
 }
 
 .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-    height: 400px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     margin-bottom: 10px;
     padding: 20px;
 }
@@ -288,8 +288,7 @@ p {
     
 .collabImagesDivision {
     display: flex;
-    gap: 40px;               
-    min-width: max-content; 
+    gap: 40px; 
     animation: marquee 20s linear infinite;
 }
     
@@ -329,8 +328,8 @@ p {
 }
 
 .callBookingDivision img {
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
 }
 
 
@@ -343,7 +342,6 @@ p {
 .storyDivision {
     display: flex;
     gap: 30px;               
-    min-width: max-content; 
     animation: scroll 12s linear infinite;
     margin-top: 100px;
 }
@@ -372,7 +370,6 @@ p {
 .storyDivisionTwo {
     display: flex;
     gap: 30px;               
-    min-width: max-content; 
     margin-top: 100px;
     animation: scrollTwo 12s linear infinite;
 }
@@ -423,7 +420,6 @@ p {
     gap: 50px;
     background-color: black;
     color: white;
-    margin-right: -20px;
 }
 
 .singnInDivision a {
@@ -445,7 +441,8 @@ p {
 }
 
 .testimonialOne, .testimonialTwo, .testimonialThree {
-    width: 450px;
+    max-width: 350px;
+    width: 100%;
     border: 1px solid black;
     padding: 15px;
 }
@@ -521,8 +518,6 @@ p {
     background-color: black;
     color: white;
     padding: 40px;
-    margin-left: -20px;
-    margin-right: -20px;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -1015,3 +1010,46 @@ p {
 
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Kill fixed widths on mobile */
+@media (max-width: 600px) {
+
+  * {
+    max-width: 100% !important;
+  }
+
+  .contentOneDivision img,
+  .callBookingDivision img,
+  .contentTwoDivision img,
+  .testimonialOne,
+  .testimonialTwo,
+  .testimonialThree,
+  .servicesDescDivisionOne div,
+  .servicesDescDivisionTwo div {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .collabImagesDivision,
+  .storyDivision,
+  .storyDivisionTwo {
+    min-width: 100% !important;
+  }
+
+  .singnInDivision,
+  .footerdivision {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    }
+}
