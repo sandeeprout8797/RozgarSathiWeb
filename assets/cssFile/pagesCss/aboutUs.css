@@ -183,6 +183,14 @@ body {
 
 .whatWeDoDiv h3 {
     border-bottom: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.whatWeDoDiv p {
+    padding: 0px;
+    margin-bottom: 100px;
+
 }
 
 
@@ -193,13 +201,12 @@ body {
     margin-top: 150px;
     padding: 20px;
 }
+
 .coreValuesDivision div {
-    display: flex;
-    flex-direction: row;
+    gap: 50px;
     justify-content: space-between;
-    gap: 30px;
-    text-align: left;
-    padding: 70px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 
