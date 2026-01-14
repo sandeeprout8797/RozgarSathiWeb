@@ -1053,3 +1053,54 @@ img {
     margin-right: 0 !important;
     }
 }
+
+/* MOBILE SAFE FIX */
+@media (max-width: 600px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .contentOneDivision,
+  .contentTwoDivision,
+  .servicesDescDivisionOne,
+  .servicesDescDivisionTwo {
+    gap: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .contentOneDivision img,
+  .contentTwoDivision img,
+  .callBookingDivision img,
+  .testimonialOne,
+  .testimonialTwo,
+  .testimonialThree,
+  .servicesDescDivisionOne div,
+  .servicesDescDivisionTwo div {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .collabImagesDivision,
+  .storyDivision,
+  .storyDivisionTwo {
+    min-width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .storyDivision img,
+  .storyDivisionTwo img,
+  .partnersDivision img {
+    width: 100px !important;
+    height: auto !important;
+  }
+
+  .singnInDivision,
+  .footerdivision {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
