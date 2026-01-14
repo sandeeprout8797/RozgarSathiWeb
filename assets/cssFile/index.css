@@ -9,14 +9,15 @@ body {
     display: flex;
     position: fixed;
     color: white;
+    background-color: rgb(205, 134, 134);
     top: 0px;
     left: 0px;
     right: 0px;
     justify-content: center;
     align-items: center;
     height: 40px;
-    background-color: black;
     z-index: 5;
+    width: 100%;
 }
 
 .headerTwoDivision {
@@ -24,8 +25,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 50px;
     border-bottom: 1px solid black;
 }
@@ -82,20 +83,19 @@ body {
 
 .headerTwoDivisionButtons {
     display: flex;
-    margin-right: -10px;
 }
 
 .headerTwoDivisionButtons button {
     height: 50px;
     width: 50px;
     border-radius: 50px;
+    margin-right: 10px;
     border: 3px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     font-size: 30px;
-    margin-right: 5px;
 }
 
 .headerTwoDivisionButtons img {
@@ -115,8 +115,8 @@ body {
 }
 
 .contentOneDivision img {
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
 }
 
 .contentOneDivision figcaption {
@@ -133,6 +133,11 @@ body {
     gap: 50px;
 }
 
+.contentTwoImageDiv {
+    display: flex;
+    gap: 20px;
+}
+
 .contentTwoImageDivPartOne {
     display: flex;
     flex-direction: column;
@@ -140,8 +145,7 @@ body {
 }
 
 .contentTwoDivision img {
-    height: 150px;
-    width: 170px;
+    height: 300px;
 }
 
 
@@ -158,8 +162,9 @@ body {
 }
 
 .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 10px;
 }
 
 
@@ -187,7 +192,6 @@ body {
 .statsRightDivision {
     display: flex;
     align-items: center;
-    gap: 30px;
     justify-content: space-around;
 }
 
@@ -263,13 +267,13 @@ body {
     
 .collabImagesDivision {
     display: flex;
-    gap: 60px;               
+    gap: 40px;               
     min-width: max-content; 
-    animation: marquee 30s linear infinite;
+    animation: marquee 20s linear infinite;
 }
     
 .collabImagesDivision img {
-    height: 60px; 
+    height: 90px; 
     object-fit: cover;            
 }
     
@@ -324,9 +328,8 @@ body {
 }
 
 .storyDivision img {
-    height: 150px;
-    width: 150px;
-    border-radius: 20px;
+    height: 250px;
+    width: 250px;
 }
 
 @keyframes scroll {
@@ -354,9 +357,8 @@ body {
 }
 
 .storyDivisionTwo img {
-    height: 150px;
-    width: 150px;
-    border-radius: 20px;
+    height: 250px;
+    width: 250px;
 }
 
 @keyframes scrollTwo {
@@ -422,7 +424,7 @@ body {
 }
 
 .testimonialOne, .testimonialTwo, .testimonialThree {
-    width: 300px;
+    width: 450px;
     border: 1px solid black;
     padding: 15px;
 }
@@ -581,12 +583,11 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 400px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 1024px) {
 
     body {
         padding: 0px;
         margin: 0px;
-        background-color: red;
     }
 
 
@@ -700,8 +701,7 @@ body {
     }
 
     .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-        height: 250px;
-        margin-bottom: 50px;
+        height: 450px;
     }
 
     .pricingDivisionsDiv {
@@ -711,8 +711,8 @@ body {
     }
 
     .storyDivisionTwo img, .storyDivision img {
-        height: 350px;
-        width: 350px;
+        height: 150px;
+        width: 150px;
     }
 
     .testimonialDivision {
@@ -722,8 +722,8 @@ body {
     }
 
     .testimonialOne, .testimonialTwo, .testimonialThree {
-        height: 350px;
-        width: 300px;
+        height: 550px;
+        width: 400px;
         align-items: center;
     }
 
