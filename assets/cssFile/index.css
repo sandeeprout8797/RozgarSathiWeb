@@ -5,6 +5,19 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+      font-size: 2.2rem;
+}
+h2 {
+      font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p {
+    font-size: 0.9rem;
+}
+
 .headerOneDivision {
     display: flex;
     position: fixed;
@@ -596,11 +609,6 @@ body {
         margin: 0px;
     }
 
-    h1 {font-size: 35px;}
-    h2 {font-size: 30px;}
-    h3 {font-size: 25px;}
-    p {font-size: 20px;}
-
     .headerTwoDivision {
         justify-content: space-between;
         gap: 50px;
@@ -689,12 +697,18 @@ body {
         margin: 0px;
     }
 
-    h1 {font-size: 35px;}
-    h2 {font-size: 30px;}
-    h3 {font-size: 25px;}
-    p {font-size: 20px;}
-
-
+    h1 {
+      font-size: 2.6rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.9rem;
+    }
+    p {
+        font-size: 1rem;
+    }
 
     .contentOneDivision {
         padding: 20px;
@@ -772,6 +786,19 @@ body {
 
 
 @media screen and (min-width: 1024px) {
+
+    h1 {
+      font-size: 2.6rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.9rem;
+    }
+    p {
+        font-size: 1rem;
+    }
 
     .contentOneDivision {
         flex-direction: row;

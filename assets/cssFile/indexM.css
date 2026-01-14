@@ -1,0 +1,368 @@
+/* Global Styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.headerOneDivision {
+    display: flex;
+    position: fixed;
+    color: white;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    z-index: 5;
+    width: 100%;
+}
+
+.headerTwoDivision {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px 50px;
+    border-bottom: 1px solid black;
+}
+
+.companylogoImgName {
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.companylogoImgName img {
+    width: 50px;
+    height: 50px;
+}
+
+.navigationButtonDivision {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 42px;
+    left: -400px;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    transform: translateX(200px);
+    transition: left 0.8s ease;
+}
+
+.navigationButtonDivision.active {
+    left: -200px;
+}
+
+.navigationButtonDivision:hover {
+    cursor: pointer;
+}
+
+.navigationButtonDivision a {
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px 10px 20px;
+}
+
+.navigationButtonDivision a:hover {
+    text-decoration: underline;
+}
+
+.headerTwoDivisionButtons {
+    display: flex;
+}
+
+.headerTwoDivisionButtons button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 30px;
+}
+
+.headerTwoDivisionButtons img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+/* Content Styles */
+.contentOneDivision {
+    display: flex;
+    gap: 70px;
+    margin-top: 100px;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentOneDivision img {
+    height: 250px;
+    width: 250px;
+}
+
+.contentOneDivision figcaption {
+    display: none;
+}
+
+.contentTwoDivision {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 150px;
+    padding: 20px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentTwoImageDiv {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.contentTwoImageDivPartOne {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contentTwoDivision img {
+    height: 250px;
+    width: 250px;
+}
+
+.ourServicesDivision {
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.servicesDescDivisionOne,
+.servicesDescDivisionTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesDescDivisionOne div,
+.servicesDescDivisionTwo div {
+    height: 300px;
+    width: 300px; /* Adjusted for mobile */
+    margin-bottom: 10px;
+}
+
+.contentThreeDivision {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-image: url(../images/contentThree.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.statisticDivision {
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.statsRightDivision {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.statsRightOneDivision,
+.statsRightTwoDivision {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forumDivision {
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.forumDivisionForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.forumInputDivision {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.forumInputDivision div {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.pricingDivision {
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.pricingDivisionsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.pricingDivisionsDiv div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.partnersDivision {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+
+.partnersDivision a {
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+
+.collabImagesDivisionScroll {
+    width: 100%;
+    overflow: hidden;
+}
+
+.collabImagesDivision {
+    display: flex;
+    gap: 40px;
+    min-width: max-content;
+    animation: marquee 20s linear infinite;
+}
+
+.collabImagesDivision img {
+    height: 90px;
+    object-fit: cover;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.collabImagesDivisionScroll:hover .collabImagesDivision {
+    animation-play-state: paused;
+}
+
+.callBookingDivision {
+    padding: 20px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: lightgrey;
+}
+
+.callBookingImgDivision {
+    display: flex;
+    justify-content: center;
+}
+
+.callBookingDivision img {
+    height: 500px;
+    width: 500px;
+}
+
+.storyDivisionscroll {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.storyDivision {
+    display: flex;
+    gap: 30px;
+    min-width: max-content;
+    animation: scroll 12s linear infinite;
+    margin-top: 100px;
+}
+
+.storyDivision img {
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.storyDivisionscrollTwo {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.storyDivisionTwo {
+    display: flex;
+    gap: 30px;
+    min-width: max-content;
+    margin-top: 100px;
+    animation: scrollTwo 12s linear infinite;
+}
+
+.storyDivisionTwo img {
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes scrollTwo {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.teamPartDivision {
+    margin-top: 150px;
+    padding: 20px;
+    display: flex;
+}
