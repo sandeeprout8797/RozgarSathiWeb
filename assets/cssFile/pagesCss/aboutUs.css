@@ -315,14 +315,14 @@ body {
     }
 
     .successImageSection img {
-        width: 400px;
-        height: 400px;
+        width: 150px;
+        height: 150px;
         border-radius: 20px;
     }
 
     .image-section img {
         border: 3px solid black;
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
     }
 }
