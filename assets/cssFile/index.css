@@ -85,19 +85,21 @@ body {
 }
 
 .headerTwoDivisionButtons button {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     border-radius: 50px;
     margin-right: 10px;
-    border: 1px solid black;
+    border: 3px solid black;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    background-color: white;
+    font-size: 30px;
 }
 
 .headerTwoDivisionButtons img {
-    width: 70px;
-    height: 70px;
+    width: 48px;
+    height: 48px;
     border-radius: 50px;
 }
 
