@@ -581,11 +581,12 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and (min-width: 400px) and (max-width: 1024px) {
 
     body {
         padding: 0px;
         margin: 0px;
+        background-color: red;
     }
 
 
