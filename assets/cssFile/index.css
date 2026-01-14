@@ -61,18 +61,18 @@ p {
     display: flex;
     flex-direction: column;
     top: 42px;
-    left: -400px;
+    left: 0;                 /* always 0 */
     width: 200px;
     height: 100%;
     background-color: white;
     color: black;
-    z-index: 2;
-    transform: translateX(200px);
-    transition: left 0.8s ease;
+    z-index: 999;
+    transform: translateX(-100%); /* hide off-screen */
+    transition: transform 0.4s ease; /* smooth slide */
 }
 
 .navigationButtonDivision.active {
-    left: -200px;
+    transform: translateX(0);  /* slide in */
 }
 
 .navigationButtonDivision:hover {
