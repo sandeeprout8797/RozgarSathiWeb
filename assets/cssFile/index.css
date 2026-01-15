@@ -50,8 +50,8 @@ button img {
 }
 
 .headerSectionDivsionTwo img {
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 48px;
 }
 
 .headerSectionDivsionTwo button {
@@ -62,7 +62,7 @@ button img {
     width: 50px;
     margin-right: 5px;
     border-radius: 50%;
-    border: solid black 5px;
+    border: solid black 3px;
     background-color: white;
 }
 
@@ -108,6 +108,12 @@ button img {
 
 .navigationButtonDivision a:hover {
     text-decoration: underline;
+}
+
+.headerTwoDivisionButtons img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
 }
 
 .cotentOneDivision {
