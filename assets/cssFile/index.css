@@ -117,10 +117,17 @@ button img {
     padding-right: 20px;
 }
 
+.contentOneImageDivision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cotentOneDivision img {
     height: 300px;
     width: 300px;
 }
+
 
 .contentTwoDivision {
     display: flex;
@@ -130,16 +137,26 @@ button img {
     gap: 50px;
 }
 
-.contentTwoImageDiv {
+.contentTwoImageDivision {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .contentTwoImageDivPartOne {
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
+
+.contentTwoImageOneTwo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 .contentTwoDivision img {
     height: 200px;
@@ -196,6 +213,7 @@ button img {
 
 .statsRightDivision {
     display: flex;
+    justify-content: space-evenly;
     padding: 50px;
     gap: 50px;
 }
@@ -241,6 +259,8 @@ button img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
     gap: 20px;
 }
 
@@ -430,8 +450,10 @@ button img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     gap: 50px;
     padding: 20px;
+    height: 100%;
 }
 
 .testimonialDivision img {
@@ -603,4 +625,39 @@ button img {
     color: grey;
     font-size: 10px;
     text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .cotentOneDivision {
+        flex-direction: row;
+    }
+
+    .contentTwoDivision {
+        flex-direction: row;
+        align-items: center;
+    }
+    .contentTwoImageDivision  {
+        align-items: start;
+    }
+
+    .servicesDescDivisionOne , .servicesDescDivisionTwo {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .pricingDivisionsDiv {
+        height: 100%;
+        align-items: start;
+        flex-direction: row;
+    }
+
+    .pricingDivisionsDiv div {
+        height: 600px;
+    }
+
+    .testimonialDivision {
+        flex-direction: row;
+    }
+
 }
