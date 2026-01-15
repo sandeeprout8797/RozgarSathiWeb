@@ -119,10 +119,17 @@ button img {
     padding-right: 20px;
 }
 
+.contentOneImageDivision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cotentOneDivision img {
     height: 300px;
     width: 300px;
 }
+
 
 .contentTwoDivision {
     display: flex;
@@ -132,21 +139,32 @@ button img {
     gap: 50px;
 }
 
-.contentTwoImageDiv {
+.contentTwoImageDivision {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .contentTwoImageDivPartOne {
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
+
+.contentTwoImageOneTwo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 .contentTwoDivision img {
     height: 200px;
     width: 200px;
 }
+
 
 .ourServicesDivision {
     padding: 20px;
@@ -197,15 +215,15 @@ button img {
 
 .statsRightDivision {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 50px;
+    gap: 50px;
 }
 
-.statsRightDivision div div  {
-    width: 100%;
-    margin-top: 30px;
+.statsRightOneDivision div , .statsRightTwoDivision div {
+    height: 30%;
 }
+
 
 
 .forumDivision {
@@ -243,6 +261,8 @@ button img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100%;
     gap: 20px;
 }
 
@@ -254,6 +274,7 @@ button img {
     border: 3px solid black;
     border-radius: 15px;
     padding: 10px;
+    width: 60%;
 }
 
 .pricingDivisionsDiv div div {
@@ -431,8 +452,10 @@ button img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     gap: 50px;
     padding: 20px;
+    height: 100%;
 }
 
 .testimonialDivision img {
@@ -441,15 +464,16 @@ button img {
 }
 
 .testimonialOne, .testimonialTwo, .testimonialThree {
-    width: 50%;
+    width: 60%;
     height: auto;
     border: 2px solid black;
     padding: 15px;
+    border-radius: 10px;
 }
 
 .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
     transform: translateY(-10px);
-    translate: tranform 0.5s ease;
+    translate: tranform 5s ease;
 }
 
 
@@ -558,6 +582,10 @@ button img {
     text-decoration: underline;
 }
 
+.footercompanyaddress a {
+    color: white;
+}
+
 
 .backToTopDivision {
     margin-top: 100px;
@@ -578,20 +606,20 @@ button img {
 
 .footerWhatsAppMessage {
     position: fixed;
-    bottom: 150px;
+    bottom: 120px;
     right: 50px;
 }
 
 .footerMailMesssage {
     position: fixed;
-    bottom: 70px;
+    bottom: 40px;
     right: 50px;
 }
 
 .backToTopDivision img {
     height: 70px;
     width: 70px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 .privacyPolicyDivision {
@@ -599,4 +627,39 @@ button img {
     color: grey;
     font-size: 10px;
     text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .cotentOneDivision {
+        flex-direction: row;
+    }
+
+    .contentTwoDivision {
+        flex-direction: row;
+        align-items: center;
+    }
+    .contentTwoImageDivision  {
+        align-items: start;
+    }
+
+    .servicesDescDivisionOne , .servicesDescDivisionTwo {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .pricingDivisionsDiv {
+        height: 100%;
+        align-items: start;
+        flex-direction: row;
+    }
+
+    .pricingDivisionsDiv div {
+        height: 600px;
+    }
+
+    .testimonialDivision {
+        flex-direction: row;
+    }
+
 }
