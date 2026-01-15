@@ -146,6 +146,7 @@ button img {
     width: 200px;
 }
 
+
 .ourServicesDivision {
     padding: 20px;
     margin-top: 150px;
@@ -195,15 +196,14 @@ button img {
 
 .statsRightDivision {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 50px;
+    gap: 50px;
 }
 
-.statsRightDivision div div  {
-    width: 100%;
-    margin-top: 30px;
+.statsRightOneDivision div , .statsRightTwoDivision div {
+    height: 30%;
 }
+
 
 
 .forumDivision {
@@ -252,6 +252,7 @@ button img {
     border: 3px solid black;
     border-radius: 15px;
     padding: 10px;
+    width: 60%;
 }
 
 .pricingDivisionsDiv div div {
@@ -439,15 +440,16 @@ button img {
 }
 
 .testimonialOne, .testimonialTwo, .testimonialThree {
-    width: 50%;
+    width: 60%;
     height: auto;
     border: 2px solid black;
     padding: 15px;
+    border-radius: 10px;
 }
 
 .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
     transform: translateY(-10px);
-    translate: tranform 0.5s ease;
+    translate: tranform 5s ease;
 }
 
 
@@ -556,6 +558,10 @@ button img {
     text-decoration: underline;
 }
 
+.footercompanyaddress a {
+    color: white;
+}
+
 
 .backToTopDivision {
     margin-top: 100px;
@@ -576,20 +582,20 @@ button img {
 
 .footerWhatsAppMessage {
     position: fixed;
-    bottom: 150px;
+    bottom: 120px;
     right: 50px;
 }
 
 .footerMailMesssage {
     position: fixed;
-    bottom: 70px;
+    bottom: 40px;
     right: 50px;
 }
 
 .backToTopDivision img {
     height: 70px;
     width: 70px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 .privacyPolicyDivision {
