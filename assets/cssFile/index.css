@@ -17,6 +17,7 @@ button img {
     justify-content: center;
     align-items: center;
     display: flex;
+    background-color: white;
 }
 
 .headerSectionDivisionOne {
@@ -62,6 +63,7 @@ button img {
     margin-right: 5px;
     border-radius: 50%;
     border: solid black 5px;
+    background-color: white;
 }
 
 .companyLogoImgNameDivision {
