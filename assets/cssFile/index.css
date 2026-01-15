@@ -159,7 +159,7 @@ button img {
 
 .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
     margin-bottom: 20px;
-    width: 100%;
+    width: 50%;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -187,6 +187,7 @@ button img {
     border-radius: 10px;
 }
 
+
 .statisticDivision {
     padding: 20px;
     margin-top: 150px;
@@ -195,8 +196,13 @@ button img {
 .statsRightDivision {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 40px;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.statsRightDivision div div  {
+    width: 100%;
+    margin-top: 30px;
 }
 
 
@@ -431,8 +437,9 @@ button img {
 }
 
 .testimonialOne, .testimonialTwo, .testimonialThree {
-    width: 100%;
-    border: 1px solid black;
+    width: 50%;
+    height: auto;
+    border: 2px solid black;
     padding: 15px;
 }
 
