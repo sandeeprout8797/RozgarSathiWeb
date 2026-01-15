@@ -383,6 +383,10 @@ body {
     flex-direction: column;
     gap: 50px;
 }
+.teamPartDivision button {
+    background-color: white;
+    color: black;
+}
 
 .teamPartButtonDivision {
     display: flex;
