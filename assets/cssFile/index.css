@@ -5,74 +5,86 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
-      font-size: 2.2rem;
-}
-h2 {
-      font-size: 2rem;
-}
-h3 {
-    font-size: 1.2rem;
-}
-p {
-    font-size: 1.2rem;
+h1 {font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1.2rem;}
+p {font-size: 1rem;}
+
+button img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-.headerOneDivision {
-    display: flex;
+.headerSectionDivisionOne {
     position: fixed;
-    color: white;
-    background-color: black;
     top: 0px;
     left: 0px;
     right: 0px;
-    justify-content: center;
-    align-items: center;
+    background-color: black;
+    color: white;
     height: 40px;
-    z-index: 5;
-}
-
-.headerTwoDivision {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.headerSectionDivsionTwo {
+    padding-top: 70px;
+    display: flex;
     justify-content: space-between;
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
     border-bottom: 1px solid black;
 }
 
-.companylogoImgName {
+.headerSectionDivsionTwo div {
     display: flex;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid black;
     align-items: center;
 }
 
-.companylogoImgName img {
-    width: 50px;
+.headerSectionDivsionTwo img {
+    height: 48px;
+    width: 48px;
+}
+
+.headerSectionDivsionTwo button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: solid black 5px;
+}
+
+.companyLogoImgNameDivision {
+    border: 1px solid black;
+    padding: 5px;
 }
 
 .navigationButtonDivision {
     position: fixed;
     display: flex;
     flex-direction: column;
-    top: 42px;
-    left: 0;                 /* always 0 */
+    top: 40px;
+    left: -400px;
     width: 200px;
     height: 100%;
     background-color: white;
     color: black;
-    z-index: 999;
-    transform: translateX(-100%); /* hide off-screen */
-    transition: transform 0.4s ease; /* smooth slide */
+    z-index: 2;
+    transform: translateX(200px);
+    transition: left 0.8s ease;
 }
 
 .navigationButtonDivision.active {
-    transform: translateX(0);  /* slide in */
+    left: -200px;
 }
 
 .navigationButtonDivision:hover {
@@ -81,840 +93,30 @@ p {
 
 .navigationButtonDivision a {
     border: 1px solid black;
+    background-color: white;
     text-decoration: none;
     color: black;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 180px;
 }
 
 .navigationButtonDivision a:hover {
     text-decoration: underline;
 }
 
-.headerTwoDivisionButtons {
+.cotentOneDivision {
     display: flex;
-}
-
-.headerTwoDivisionButtons button {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    margin-right: 10px;
-    border: 3px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    font-size: 30px;
-}
-
-.headerTwoDivisionButtons img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50px;
-}
-
-
-.contentOneDivision {
-    display: flex;
-    gap: 40px;
+    gap: 70px;
     margin-top: 100px;
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.contentOneDivision img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-}
-
-.contentOneDivision figcaption {
-    display: none;
-}
-
-
-.contentTwoDivision {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 50px;
-}
-
-.contentTwoImageDiv {
-    display: flex;
-    gap: 20px;
-}
-
-.contentTwoImageDivPartOne {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contentTwoDivision img {
-    height: 300px;
-}
-
-
-.ourServicesDivision {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 150px;
-}
-
-.servicesDescDivisionOne, .servicesDescDivisionTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-    max-width: 400px;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 20px;
-}
-
-
-.contentThreeDivision {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-    background-image: url(../images/contentThree.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    margin-top: 150px;
-}
-
-
-.statisticDivision {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 150px;
-}
-
-.statsRightDivision {
-    display: flex;
-    gap: 40px;
-    align-items: top;
-    justify-content: space-around;
-}
-
-.statsRightOneDivision, .statsRightTwoDivision {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-.forumDivision {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 150px;
-}
-
-.forumDivisionForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-.forumInputDivision {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.forumInputDivision div {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-}
-
-
-.pricingDivision {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 150px;
-}
-
-.pricingDivisionsDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.pricingDivisionsDiv div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    padding: 20px;
-}
-
-
-.partnersDivision {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.partnersDivision a {
-    text-decoration: underline;
-    color: black;
-    text-align: center;
-}
-
-.collabImagesDivisionScroll {
-    width: 100%;
-    overflow: hidden;
-}
-    
-.collabImagesDivision {
-    display: flex;
-    gap: 40px; 
-    animation: marquee 20s linear infinite;
-}
-    
-.collabImagesDivision img {
-    height: 90px; 
-    object-fit: cover;            
-}
-    
-@keyframes marquee {
-    100% {
-        transform: translateX(0);
-    }
-    0% {
-        transform: translateX(-50%);
-    }
-}
-
-.collabImagesDivisionScroll:hover .collabImagesDivision {
-    animation-play-state: paused;
-}
-
-
-.callBookingDivision {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    background-color: lightgrey;
-    padding: 20px;
-}
-
-.callBookingImgDivision {
-    display: flex;
-    justify-content: center;
-}
-
-.callBookingDivision img {
+.cotentOneDivision img {
     height: 300px;
     width: 300px;
 }
-
-
-.storyDivisionscroll {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 100px;
-}
-
-.storyDivision {
-    display: flex;
-    gap: 30px;               
-    animation: scroll 12s linear infinite;
-    margin-top: 100px;
-}
-
-.storyDivision img {
-    height: 250px;
-    width: 250px;
-}
-
-@keyframes scroll {
-    100% {
-        transform: translateX(0);
-    }
-    0% {
-        transform: translateX(-50%);
-    }
-}
-
-
-.storyDivisionscrollTwo {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 100px;
-}
-
-.storyDivisionTwo {
-    display: flex;
-    gap: 30px;               
-    margin-top: 100px;
-    animation: scrollTwo 12s linear infinite;
-}
-
-.storyDivisionTwo img {
-    height: 250px;
-    width: 250px;
-}
-
-@keyframes scrollTwo {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-.collabImagesDivisionScroll:hover .collabImagesDivision {
-    animation-play-state: paused;
-}
-
-
-.teamPartDivision {
-    margin-top: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.teamPartButtonDivision {
-    display: flex;
-    justify-content: center;
-}
-
-.teamPartButtonDivision button {
-    font-size: 25px;
-}
-
-
-.singnInDivision {
-    display: flex;
-    margin-top: 150px;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    background-color: black;
-    color: white;
-}
-
-.singnInDivision a {
-    color: white;
-}
-
-
-.testimonialDivision {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-.testimonialDivision img {
-    height: 40px;
-    width: 40px;
-}
-
-.testimonialOne, .testimonialTwo, .testimonialThree {
-    max-width: 350px;
-    width: 100%;
-    border: 1px solid black;
-    padding: 15px;
-}
-
-.testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
-    transform: translateY(-10px);
-    translate: tranform 0.5s ease;
-}
-
-
-.faq-section {
-    max-width: 100%;
-    margin: 2rem auto;
-    font-family: Arial, sans-serif;
-    margin-top: 150px;
-    overflow: hidden;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.faq-section h2 {
-    text-align: left;
-    margin-bottom: 1rem;
-    font-size: 2.0rem;
-}
-
-.faq-item {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 0.5rem;
-}
-
-.faq-question {
-    width: 100%;
-    background: #fff;
-    border: none;
-    padding: 1rem;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-}
-
-.faq-question::after {
-    content: "＋";
-    position: absolute;
-    right: 1rem;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-}
-
-.faq-question.active::after {
-    transform: rotate(45deg);
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 1rem;
-}
-
-.faq-answer p {
-    margin: 0.8rem 0;
-    font-size: 0.95rem;
-    color: #444;
-}
-
-
-.footerdivision {
-    margin-top: 150px;
-    background-color: black;
-    color: white;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.footerDivisionMain {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.footerdivision img {
-    height: 50px;
-    width: 50px;
-}
-
-.footerRightCompanyQuickLinks {
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-}
-
-.footerRightCompanyQuickLinks div {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.footerRightCompanyQuickLinks h3 {
-    color: grey;
-}
-.footerRightCompanyQuickLinks a {
-    text-decoration: none;
-    color: white;
-}
-.footerRightCompanyQuickLinks a:hover {
-    text-decoration: underline;
-}
-
-
-.backToTopDivision {
-    margin-top: 100px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    position: relative;
-}
-
-.backToTopDivision a {
-    color: white;
-    text-decoration: none;
-}
-
-.backToTopDivision a:hover {
-    text-decoration: underline;
-}
-
-.footerWhatsAppMessage {
-    position: fixed;
-    bottom: 150px;
-    right: 50px;
-}
-
-.footerMailMesssage {
-    position: fixed;
-    bottom: 70px;
-    right: 50px;
-}
-
-.backToTopDivision img {
-    height: 70px;
-    width: 70px;
-    border-radius: 50px;
-}
-
-.privacyPolicyDivision {
-    margin-top: 100px;
-    color: grey;
-    font-size: 10px;
-    text-align: center;
-}
-
-@media screen and (max-width: 500px) {
-
-    body {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .headerTwoDivision {
-        justify-content: space-between;
-        gap: 50px;
-    }
-
-    .contentOneDivision {
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contentOneDivision img {
-        height: 300px;
-        width: 300px;
-    }
-
-
-    .contentTwoDivision {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contentTwoImageDiv div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .contentTwoDivision img {
-        height: 300px;
-        width: 300px;
-    }   
-
-    .contentTwoImageDiv {
-        flex-direction: column;
-    } 
-
-
-    .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-        margin-left: 40px;
-        height: 300px;
-        margin-bottom: 30px;
-    }
-    
-    .storyDivisionTwo img, .storyDivision img {
-        height: 100px;
-        width: 100px;
-    }
-
-    .partnersDivision img {
-        height: 50px;
-    }
-
-    .pricingDivisionsDiv {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .backToTopDivision img {
-        height: 70px;
-        width: 70px;
-        border-radius: 50px;
-    }
-
-    .testimonialDivision {
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .testimonialDivision img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .testimonialOne, .testimonialTwo, .testimonialThree {
-        height: 450px;
-        width: 350px;
-        align-items: center;
-    }
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 835px) {
-
-    body {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.2rem;
-    }
-    p {
-        font-size: 1.2rem;
-    }
-
-    label {
-        font-size: 1.2rem;
-    }
-
-    .contentOneDivision {
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contentOneDivision img {
-        height: 400px;
-        width: 400px;
-    }
-
-
-    .contentTwoDivision {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contentTwoImageDiv div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .contentTwoDivision img {
-        height: 350px;
-        width: 350px;
-    }   
-
-    .contentTwoImageDiv {
-        flex-direction: column;
-    }
-
-
-    .servicesDescDivisionOne, .servicesDescDivisionTwo {
-        margin-bottom: 40px;
-        gap: 40px;
-    }
-
-    .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-        height: 250px;
-    }
-
-    .ourServicesDivision {
-        gap: 40px;
-    }
-
-    .collabImagesDivision img {
-        height: 50px;
-    }
-
-    
-    .storyDivisionTwo img, .storyDivision img {
-        height: 100px;
-        width: 100px;
-        border-radius: 20px;
-    }
-
-    .pricingDivisionsDiv {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .backToTopDivision img {
-        height: 70px;
-        width: 70px;
-        border-radius: 50px;
-    }
-
-    .testimonialDivision {
-        justify-content: space-evenly;
-        align-items: center;
-
-    }
-
-    .testimonialDivision img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .testimonialOne, .testimonialTwo, .testimonialThree {
-        height: 400px;
-        width: 400px;
-        align-items: center;
-    }
-
-}
-
-@media screen and (min-width: 835px) and (max-width: 1024px) {
-
-    body {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.2rem;
-    }
-    p {
-        font-size: 1.2rem;
-    }
-
-    label {
-        font-size: 1.2rem;
-    }
-
-    .contentOneDivision {
-        padding: 20px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contentOneDivision img {
-        height: 300px;
-        width: 300px;
-        gap: 30px
-    }
-
-
-    .contentTwoDivision {
-        padding: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contentTwoImageDiv div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .contentTwoDivision img {
-        height: 350px;
-        width: 350px;
-    }   
-
-    .contentTwoImageDiv {
-        flex-direction: column;
-    }
-
-
-    .servicesDescDivisionOne, .servicesDescDivisionTwo {
-        margin-bottom: 40px;
-        gap: 40px;
-        flex-direction: row;
-    }
-
-    .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-        height: 350px;
-    }
-
-    .ourServicesDivision {
-        gap: 40px;
-    }
-    
-    .storyDivisionTwo img, .storyDivision img {
-        height: 100px;
-        width: 100px;
-    }
-
-    .pricingDivisionsDiv {
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .backToTopDivision img {
-        height: 70px;
-        width: 70px;
-        border-radius: 50px;
-    }
-
-    .testimonialDivision {
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    .testimonialDivision img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .testimonialOne, .testimonialTwo, .testimonialThree {
-        height: 450px;
-        width: 400px;
-        align-items: center;
-    }
-
-}
-
-

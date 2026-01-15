@@ -2,2620 +2,41 @@
 <html lang="en‑IN">
 
     <head>
-        <meta charset="UTF-8">
-        <meta lang="en-IN">
         
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> RozgarSathi | Personalized Job Assistance - Jobs in Delhi, Noida, Gurgaon, Pune, Bangalore & Mumbai</title>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5949TFDF');
+        </script>
+
         <meta name="description" content="Find jobs & internships across India with RozgarSathi. Get personalized career assistance, resume help & top job listings to kickstart your career today.">
 
         <link rel="icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/favicon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/favicon-192x192.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon/favicon-120x120.png">
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-
-        <style>
-            
-            body {
-                padding-right: 10px;
-                padding-left: 10px;
-                margin: 0px;
-                background-color: rebeccapurple;
-            }
-
-
-            .headerOneDivision {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: black;
-                color: white;
-                height: 25px;
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                right: 0px;
-                z-index: 5;
-            }
-
-
-            .headerTwoDivision {
-                display: flex;
-                padding-top: 50px;
-                justify-content: space-between;
-                position: relative;
-                align-items: center;
-            }
-
-            .companylogoImgName {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid black;
-                padding-right: 5px;
-                padding-left: 5px;
-                gap: 5px;
-                height: 40px;
-            }
-
-            .companylogoImgName img {
-                width: 30px;
-                height: 30px;
-            }
-
-            .navigationButtonDivision {
-                position: fixed;
-                display: flex;
-                flex-direction: column;
-                top: 20px;
-                left: -400px;
-                width: 200px;
-                height: 100%;
-                background-color: white;
-                color: black;
-                z-index: 2;
-                transform: translateX(200px);
-                transition: left 0.8s ease;
-            }
-
-            .navigationButtonDivision.active {
-                left: -200px;
-            }
-
-            .navigationButtonDivision:hover {
-                cursor: pointer;
-            }
-
-            .navigationButtonDivision a {
-                border: 1px solid black;
-                text-decoration: none;
-                color: black;
-                padding-left: 20px;
-                padding-right: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-
-            .navigationButtonDivision a:hover {
-                text-decoration: underline;
-            }
-
-            .headerTwoDivisionButtons {
-                display: flex;
-            }
-
-            .headerTwoDivisionButtons button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: white;
-                width: 30px;
-                height: 30px;
-                border-radius: 20px;
-                border: none;
-                margin-right: 5px;
-            }
-
-            .headerTwoDivisionButtons img {
-                width: 30px;
-                height: 30px;
-                border-radius: 20px;
-                border: 2px solid black;
-            }
-
-            .contentOneDivision {
-                margin-top: 100px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-            .contentOneDivision a {
-                color: blue;
-                text-decoration: underline;
-                border: 1px solid black;
-                margin-left: 100px;
-            }
-
-            .contentOneDivision img {
-                width: 300px;
-                height: 300px;
-            }
-
-            .contenOneImageOneDiv figcaption {
-                display: none;
-            }
-
-
-            .contentTwoDivision {
-                display: flex;
-                flex-direction: column-reverse;
-                margin-top: 100px;
-            }
-
-            .contentTwoImageDiv {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                gap: 10px;
-            }
-            .contentTwoImageDiv div {
-                display: flex;
-                justify-content: right;
-                gap: 10px;
-            }
-
-            .contentTwoDivision img {
-                width: 150px;
-                height: 150px;
-            }
-
-
-            .ourServicesDivision {
-                margin-top: 100px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .servicesDescDivisionOne h3 {
-                border-top: 1px solid black;
-            }
-            .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
-                color: grey;
-            }
-
-            .servicesDescDivisionOne, .servicesDescDivisionTwo {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .servicesDescDivisionOne div, .servicesDescDivisionTwo div{
-                height: 250px;
-                width: 250px;
-            }
-
-            .servicesDescDivisionTwo h3 {
-                border-top: 1px solid black;
-            }
-            .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
-                color: grey;
-            }
-
-
-            .contentThreeDivision {
-                display: flex;
-                flex-direction: column;
-                height: 300px;
-                justify-content: center;
-                align-items: center;
-                font-size: 25px;
-                padding: 100px;
-                background-image: url(../assets/images/contentThree.jpg);
-                background-size: cover;
-                background-position: center;
-                color: white;
-                margin-left: -20px;
-                margin-right: -20px;
-                margin-top: 100px;
-            }
-
-
-            .statisticDivision {
-                margin-top: 100px;
-            }
-
-            .statsRightDivision {
-                display: flex;
-                gap: 30px;
-                border-top: 1px solid black;
-                justify-content: center;
-            }
-
-            .statsRightOneDivision, .statsRightTwoDivision {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-
-            .forumDivision {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 30px;
-                margin-top: 100px;
-            }
-
-            .forumDivision form {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 50px;
-            }
-
-            .forumInputDivision  {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-            .forumInputDivision div {
-                display: flex;
-                justify-content: space-between;
-                padding-left: 40px;
-                padding-right: 40px;
-                gap: 30px;
-            }
-
-
-            .pricingDivision {
-                margin-top: 100px;
-            }
-
-            .pricingDivisionsDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-
-            .pricingDivisionsDiv div {
-                border-bottom: 1px solid black;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid black;
-            }
-
-
-            .partnersDivision {
-                margin-top: 100px;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-            }
-
-            .partnersDivision a {
-                text-decoration: underline;
-                color: black;
-                text-align: center;
-            }
-
-
-
-            .collabImagesDivisionScroll {
-                width: 100%;
-                overflow: hidden;
-            }
-                
-            .collabImagesDivision {
-                display: flex;
-                gap: 40px;               
-                min-width: max-content; 
-                animation: marquee 12s linear infinite;
-            }
-                
-            .collabImagesDivision img {
-                width: 40px;
-                height: 30px; 
-                object-fit: cover;            
-            }
-                
-            @keyframes marquee {
-                100% {
-                    transform: translateX(0);
-                }
-                0% {
-                    transform: translateX(-50%);
-                }
-            }
-
-            .collabImagesDivisionScroll:hover .collabImagesDivision {
-                animation-play-state: paused;
-            }
-
-
-            .callBookingDivision {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-                margin-top: 100px;
-                padding: 10px;
-                background-color: rgb(207, 207, 207);
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .callBookingDivision img {
-                width: 200px;
-                height: 200px;
-            }
-
-            .callBookingDivision a {
-                background-color: white;
-                color: black;
-                border: black 1px solid;
-                padding: 5px;
-                border-radius: 5px;
-                font-size: 10px;
-            }
-
-
-            .storyDivisionscroll {
-                width: 100%;
-                overflow: hidden;
-                margin-top: 100px;
-            }
-
-            .storyDivision {
-                display: flex;
-                gap: 30px;               
-                min-width: max-content; 
-                animation: scroll 12s linear infinite;
-            }
-
-            .storyDivision img {
-                height: 80px;
-                width: 80px;
-            }
-
-            @keyframes scroll {
-                100% {
-                    transform: translateX(0);
-                }
-                0% {
-                    transform: translateX(-50%);
-                }
-            }
-
-            .collabImagesDivisionScroll:hover .collabImagesDivision {
-                animation-play-state: paused;
-            }
-
-
-            .storyDivisionscrollTwo {
-                width: 100%;
-                overflow: hidden;
-                margin-top: 100px;
-            }
-
-            .storyDivisionTwo {
-                display: flex;
-                gap: 30px;               
-                min-width: max-content; 
-                animation: scrollTwo 12s linear infinite;
-            }
-
-            .storyDivisionTwo img {
-                height: 80px;
-                width: 80px;
-            }
-
-            @keyframes scrollTwo {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(-50%);
-                }
-            }
-
-            .collabImagesDivisionScroll:hover .collabImagesDivision {
-                animation-play-state: paused;
-            }
-
-
-            .teamPartDivision {
-                margin-top: 100px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 30px;
-            }
-
-            .teamPartDivision button {
-                height: 40px;
-                border: 1px solid black;
-                border-radius: 10px;
-            }
-
-            .singnInDivision {
-                margin-top: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 30px;
-                background-color: black;
-                color: white;
-                height: 20px;
-                margin-left: -20px;
-                margin-right: -20px;
-            }
-
-            .singnInDivision a {
-                color: white;
-                text-decoration: none;
-            }
-
-            .singnInDivision a:hover {
-                text-decoration: underline;
-            }
-
-            .testimonialDivision {
-                margin-top: 100px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 50px;
-            }
-
-            .testimonialDivision img {
-                background-color: red;
-                height: 40px;
-                width: 40px;
-            }
-
-            .testimonialOne, .testimonialTwo, .testimonialThree {
-                width: 250px;
-                border: 1px solid black;
-                padding: 5px;
-            }
-
-            .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
-                transform: translateY(-10px);
-                translate: tranform 0.5s ease;
-            }
-
-
-            .faq-section {
-                max-width: 700px;
-                margin: 2rem auto;
-                font-family: Arial, sans-serif;
-                margin-top: 100px;
-                overflow: hidden;
-            }
-
-            .faq-section h2 {
-                text-align: center;
-                margin-bottom: 1rem;
-                font-size: 1.8rem;
-            }
-
-            .faq-item {
-                border-bottom: 1px solid #ddd;
-                margin-bottom: 0.5rem;
-            }
-
-            .faq-question {
-                width: 100%;
-                background: #fff;
-                border: none;
-                padding: 1rem;
-                text-align: left;
-                font-size: 0.7rem;
-                font-weight: bold;
-                cursor: pointer;
-                outline: none;
-                position: relative;
-            }
-
-            .faq-question::after {
-                content: "＋";
-                position: absolute;
-                right: 1rem;
-                font-size: 1.2rem;
-                transition: transform 0.3s ease;
-            }
-
-            .faq-question.active::after {
-                transform: rotate(45deg);
-            }
-
-            .faq-answer {
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s ease;
-                padding: 0 1rem;
-            }
-
-            .faq-answer p {
-                margin: 0.8rem 0;
-                font-size: 0.95rem;
-                color: #444;
-            }
-
-
-            .footerdivision {
-                margin-top: 100px;
-                background-color: black;
-                color: white;
-                padding: 40px;
-                margin-left: -20px;
-                margin-right: -20px;
-                display: flex;
-                flex-direction: column;
-                gap: 100px;
-            }
-
-            .footerDivisionMain {
-                display: flex;
-                flex-direction: column;
-                gap: 50px;
-            }
-
-            .footerdivision img {
-                height: 50px;
-                width: 50px;
-            }
-
-            .footerRightCompanyQuickLinks {
-                display: flex;
-                gap: 50px;
-            }
-
-            .footerRightCompanyQuickLinks div {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
-            .footerRightCompanyQuickLinks h3 {
-                color: grey;
-            }
-            .footerRightCompanyQuickLinks a {
-                text-decoration: none;
-                color: white;
-            }
-            .footerRightCompanyQuickLinks a:hover {
-                text-decoration: underline;
-            }
-
-            .backToTopDivision {
-                margin-top: 100px;
-                background-color: black;
-                color: white;
-                margin-left: -20px;
-                margin-right: -20px;
-                text-align: center;
-                position: relative;
-            }
-
-            .backToTopDivision a {
-                color: white;
-                text-decoration: none;
-            }
-
-            .backToTopDivision a:hover {
-                text-decoration: underline;
-            }
-
-            .footerWhatsAppMessage {
-                position: fixed;
-                bottom: 100px;
-                right: 20px;
-            }
-
-            .footerMailMesssage {
-                position: fixed;
-                bottom: 50px;
-                right: 20px;
-            }
-
-            .backToTopDivision img {
-                height: 40px;
-                width: 40px;
-                border-radius: 20px;
-            }
-
-            .privacyPolicyDivision {
-                margin-top: 100px;
-                color: grey;
-                font-size: 10px;
-                text-align: center;
-            }
-
-  
-            @media screen and (max-width: 850px) and (min-width: 450px) {
-              body {
-                  padding-right: 10px;
-                  padding-left: 10px;
-              }
-  
-  
-              .headerOneDivision {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  background-color: black;
-                  color: white;
-                  height: 20px;
-                  position: fixed;
-                  top: 0px;
-                  left: 0px;
-                  right: 0px;
-                  z-index: 5;
-              }
-  
-  
-              .headerTwoDivision {
-                  display: flex;
-                  padding-top: 25px;
-                  justify-content: space-between;
-                  position: relative;
-                  align-items: center;
-              }
-  
-              .companylogoImgName {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  border: 1px solid black;
-                  padding-right: 5px;
-                  padding-left: 5px;
-                  gap: 5px;
-                  height: 40px;
-              }
-  
-              .companylogoImgName img {
-                  width: 30px;
-                  height: 30px;
-              }
-  
-              .navigationButtonDivision {
-                  position: fixed;
-                  display: flex;
-                  flex-direction: column;
-                  top: 20px;
-                  left: -400px;
-                  width: 200px;
-                  height: 100%;
-                  background-color: white;
-                  color: black;
-                  z-index: 2;
-                  transform: translateX(200px);
-                  transition: left 0.8s ease;
-              }
-  
-              .navigationButtonDivision.active {
-                  left: -200px;
-              }
-  
-              .navigationButtonDivision:hover {
-                  cursor: pointer;
-              }
-  
-              .navigationButtonDivision a {
-                  border: 1px solid black;
-                  text-decoration: none;
-                  color: black;
-                  padding-left: 20px;
-                  padding-right: 10px;
-                  padding-top: 10px;
-                  padding-bottom: 10px;
-              }
-  
-              .navigationButtonDivision a:hover {
-                  text-decoration: underline;
-              }
-  
-              .headerTwoDivisionButtons {
-                  display: flex;
-              }
-  
-              .headerTwoDivisionButtons button {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  background-color: white;
-                  width: 30px;
-                  height: 30px;
-                  border-radius: 20px;
-                  border: none;
-                  margin-right: 5px;
-              }
-            
-              .headerTwoDivisionButtons img {
-                  width: 30px;
-                  height: 30px;
-                  border-radius: 20px;
-                  border: 2px solid black;
-              }
-  
-              .contentOneDivision {
-                  margin-top: 100px;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-              }
-              .contentOneDivision a {
-                  color: blue;
-                  text-decoration: underline;
-                  border: 1px solid black;
-                  margin-left: 100px;
-              }
-  
-              .contentOneDivision img {
-                  width: 300px;
-                  height: 300px;
-              }
-  
-              .contenOneImageOneDiv figcaption {
-                  display: none;
-              }
-  
-              
-              .contentTwoDivision {
-                  display: flex;
-                  flex-direction: column-reverse;
-                  margin-top: 100px;
-              }
-  
-              .contentTwoImageDiv {
-                  display: flex;
-                  flex-direction: column;
-                  text-align: center;
-                  gap: 10px;
-              }
-              .contentTwoImageDiv div {
-                  display: flex;
-                  justify-content: right;
-                  gap: 10px;
-              }
-  
-              .contentTwoDivision img {
-                  width: 150px;
-                  height: 150px;
-              }
-  
-  
-              .ourServicesDivision {
-                  margin-top: 100px;
-                  display: flex;
-                  flex-direction: column;
-                  gap: 3px;
-              }
-  
-              .servicesDescDivisionOne, .servicesDescDivisionTwo {
-                  display: flex;
-                  gap: 45px;
-                  align-items: top;    
-                  justify-content: space-between;
-              }
-  
-              .servicesDescDivisionOne div, .servicesDescDivisionTwo div{
-                  height: 350px;
-                  width: 250px;
-              }
-  
-              .servicesDescDivisionOne h3, .servicesDescDivisionTwo h3 {
-                  border-top: 1px solid black;
-              }
-  
-              .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
-                  color: grey;
-              }
-  
-              .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
-                  color: grey;
-              }
-  
-  
-              .contentThreeDivision {
-                  display: flex;
-                  flex-direction: column;
-                  height: 300px;
-                  justify-content: center;
-                  align-items: center;
-                  font-size: 25px;
-                  padding: 100px;
-                  background-image: url(../assets/images/contentThree.jpg);
-                  background-size: cover;
-                  background-position: center;
-                  color: white;
-                  margin-left: -20px;
-                  margin-right: -20px;
-                  margin-top: 100px;
-              }
-  
-  
-              .statisticDivision {
-                  margin-top: 100px;
-              }
-  
-              .statsRightDivision {
-                  display: flex;
-                  border-top: 1px solid black;
-                  justify-content: space-around;
-              }
-  
-              .statsRightOneDivision, .statsRightTwoDivision {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 10px;
-              }
-  
-  
-              .forumDivision {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 30px;
-                  margin-top: 100px;
-              }
-  
-              .forumDivision form {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 50px;
-              }
-  
-              .forumInputDivision  {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 10px;
-              }
-              .forumInputDivision div {
-                  display: flex;
-                  justify-content: space-between;
-                  padding-left: 40px;
-                  padding-right: 40px;
-                  gap: 30px;
-              }
-  
-  
-              .pricingDivision {
-                  margin-top: 100px;
-              }
-  
-              .pricingDivisionsDiv {
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-around;
-                  gap: 10px;
-                  text-align: center;
-              }
-  
-              .pricingDivisionsDiv div {
-                  border-bottom: 1px solid black;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-              }
-  
-  
-              .partnersDivision {
-                  margin-top: 100px;
-                  display: flex;
-                  flex-direction: column;
-                  gap: 100px;
-              }
-  
-              .partnersDivision a {
-                  text-decoration: underline;
-                  color: black;
-                  text-align: center;
-              }
-  
-              .partnersDivision a {
-                  text-decoration: none;
-                  color: black;
-                  text-align: center;
-              }
-  
-              .partnersDivision a:hover {
-                  text-decoration: underline;
-              }
-  
-              .collabImagesDivisionScroll {
-                  width: 100vw;
-                  overflow: hidden;
-                  position: relative;
-              }
-              
-              .collabImagesDivision {
-                  display: flex;
-                  gap: 150px;
-                  /* duplicate content for seamless loop */
-                  animation: scrollLeft 15s linear infinite;
-              }
-              
-              .collabImagesDivision img {
-                  width: 100px;
-                  height: 80px;
-                  object-fit: cover;
-              }
-              
-              /* scroll from right to left */
-              @keyframes scrollLeft {
-                  0% {
-                      transform: translateX(-50%);
-                  }
-                  100% {
-                      transform: translateX(100%);
-                  }
-              }
-                
-  
-              .callBookingDivision {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 30px;
-                  margin-top: 100px;
-              }
-  
-              .callBookingDivision img {
-                  width: 400px;
-                  height: 400px;
-              }
-  
-              .callBookingDivision a {
-                  background-color: white;
-                  color: black;
-                  border: black 1px solid;
-                  padding: 5px;
-                  border-radius: 5px;
-                  font-size: 10px;
-              }
-  
-  
-              .storyDivisionscroll {
-                  width: 100%;
-                  overflow: hidden;
-                  margin-top: 100px;
-              }
-  
-              .storyDivision {
-                  display: flex;
-                  gap: 30px;               
-                  min-width: max-content; 
-                  animation: scroll 12s linear infinite;
-              }
-  
-              .storyDivision img {
-                  height: 80px;
-                  width: 80px;
-              }
-  
-              @keyframes scroll {
-                  0% {
-                    transform: translateX(0);
-                  }
-                  100% {
-                    transform: translateX(50%);
-                  }
-              }
-              
-              .collabImagesDivisionScroll:hover .collabImagesDivision {
-                  animation-play-state: paused;
-              }
-  
-  
-              .storyDivisionscrollTwo {
-                  width: 100%;
-                  overflow: hidden;
-                  margin-top: 100px;
-              }
-  
-              .storyDivisionTwo {
-                  display: flex;
-                  gap: 30px;               
-                  min-width: max-content; 
-                  animation: scrollTwo 12s linear infinite;
-              }
-  
-              .storyDivisionTwo img {
-                  height: 80px;
-                  width: 80px;
-              }
-  
-              @keyframes scrollTwo {
-                  0% {
-                    transform: translateX(0);
-                  }
-                  100% {
-                    transform: translateX(-50%);
-                  }
-              }
-              
-              .collabImagesDivisionScroll:hover .collabImagesDivision {
-                  animation-play-state: paused;
-              }
-  
-  
-              .teamPartDivision {
-                  margin-top: 100px;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 30px;
-              }
-  
-              .teamPartDivision button {
-                  height: 40px;
-                  border: 1px solid black;
-                  border-radius: 10px;
-              }
-  
-              .singnInDivision {
-                  margin-top: 100px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 30px;
-                  background-color: black;
-                  color: white;
-                  height: 20px;
-                  margin-left: -20px;
-                  margin-right: -20px;
-              }
-  
-              .singnInDivision a {
-                  color: white;
-                  text-decoration: none;
-              }
-  
-              .singnInDivision a:hover {
-                  text-decoration: underline;
-              }
-  
-  
-              .testimonialDivision {
-                  margin-top: 100px;
-                  display: flex;
-                  align-items: center;
-                  gap: 50px;
-              }
-  
-              .testimonialDivision img {
-                  background-color: red;
-                  height: 40px;
-                  width: 40px;
-              }
-  
-              .testimonialOne, .testimonialTwo, .testimonialThree {
-                  width: 250px;
-                  height: 350px;
-                  border: 1px solid black;
-                  padding: 5px;
-              }
-  
-              .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
-                  transform: translateY(-10px);
-                  translate: tranform 0.5s ease;
-              }
-  
-  
-              .faq-section {
-                  max-width: 700px;
-                  margin: 2rem auto;
-                  font-family: Arial, sans-serif;
-                  margin-top: 100px;
-              }
-              
-              .faq-section h2 {
-                  text-align: center;
-                  margin-bottom: 1rem;
-                  font-size: 1.8rem;
-              }
-              
-              .faq-item {
-                  border-bottom: 1px solid #ddd;
-                  margin-bottom: 0.5rem;
-              }
-              
-              .faq-question {
-                  width: 100%;
-                  background: #fff;
-                  border: none;
-                  padding: 1rem;
-                  text-align: left;
-                  font-size: 1rem;
-                  font-weight: bold;
-                  cursor: pointer;
-                  outline: none;
-                  position: relative;
-              }
-              
-              .faq-question::after {
-                  content: "＋";
-                  position: absolute;
-                  right: 1rem;
-                  font-size: 1.2rem;
-                  transition: transform 0.3s ease;
-              }
-              
-              .faq-question.active::after {
-                  transform: rotate(45deg);
-              }
-              
-              .faq-answer {
-                  max-height: 0;
-                  overflow: hidden;
-                  transition: max-height 0.3s ease;
-                  padding: 0 1rem;
-              }
-              
-              .faq-answer p {
-                  margin: 0.8rem 0;
-                  font-size: 0.95rem;
-                  color: #444;
-              }
-            
-  
-              .footerdivision {
-                  margin-top: 100px;
-                  background-color: black;
-                  color: white;
-                  padding: 40px;
-                  margin-left: -20px;
-                  margin-right: -20px;
-                  display: flex;
-                  flex-direction: column;
-                  gap: 100px;
-              }
-  
-              .footerDivisionMain {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 50px;
-              }
-  
-              .footerdivision img {
-                  height: 50px;
-                  width: 50px;
-              }
-  
-              .footerRightCompanyQuickLinks {
-                  display: flex;
-                  gap: 50px;
-                  align-items: top;
-                  justify-content: space-around;
-              }
-  
-              .footerRightCompanyQuickLinks div {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 15px;
-              }
-              .footerRightCompanyQuickLinks h3 {
-                  color: grey;
-              }
-              .footerRightCompanyQuickLinks a {
-                  text-decoration: none;
-                  color: white;
-              }
-              .footerRightCompanyQuickLinks a:hover {
-                  text-decoration: underline;
-              }
-  
-  
-              .backToTopDivision {
-                  margin-top: 100px;
-                  background-color: black;
-                  color: white;
-                  margin-left: -20px;
-                  margin-right: -20px;
-                  text-align: center;
-                  position: relative;
-              }
-  
-              .backToTopDivision a {
-                  color: white;
-                  text-decoration: none;
-              }
-  
-              .backToTopDivision a:hover {
-                  text-decoration: underline;
-              }
-  
-              .backToTopDivision img {
-                  height: 40px;
-                  width: 40px;
-                  border-radius: 20px;
-              }
-  
-  
-              .footerWhatsAppMessage {
-                  position: fixed;
-                  bottom: 100px;
-                  right: 20px;
-              }
-  
-              .footerMailMesssage {
-                  position: fixed;
-                  bottom: 50px;
-                  right: 20px;
-              }
-  
-  
-              .privacyPolicyDivision {
-                  margin-top: 100px;
-                  color: grey;
-                  font-size: 10px;
-                  text-align: center;
-              }
-            }
-  
-            @media screen and (max-width: 1100px) and (min-width: 800px) {
-  
-                body {
-                    padding-right: 10px;
-                    padding-left: 10px;
-                    padding-top: 20px;
-                }
-  
-                .headerOneDivision {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: black;
-                    color: white;
-                    height: 25px;
-                    position: fixed;
-                    top: 0px;
-                    left: 0px;
-                    right: 0px;
-                    z-index: 5;
-                }
-  
-  
-                .headerTwoDivision {
-                    display: flex;
-                    padding-top: 20px;
-                    justify-content: space-between;
-                    position: relative;
-                    align-items: center;
-                    gap: 10px;
-                }
-  
-                .companylogoImgName {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid black;
-                    padding-right: 5px;
-                    padding-left: 5px;
-                    gap: 5px;
-                }
-  
-                .companylogoImgName img {
-                    width: 30px;
-                    height: 30px;
-                }
-  
-                .navigationButtonDivision {
-                    position: fixed;
-                    display: flex;
-                    flex-direction: column;
-                    top: 20px;
-                    left: -400px;
-                    width: 200px;
-                    height: 100%;
-                    background-color: white;
-                    color: black;
-                    z-index: 2;
-                    transform: translateX(200px);
-                    transition: left 0.8s ease;
-                }
-  
-                .navigationButtonDivision.active {
-                    left: -200px;
-                }
-  
-                .navigationButtonDivision:hover {
-                    cursor: pointer;
-                }
-  
-                .navigationButtonDivision a {
-                    border: 1px solid black;
-                    text-decoration: none;
-                    color: black;
-                    padding-left: 20px;
-                    padding-right: 10px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                }
-  
-                .navigationButtonDivision a:hover {
-                    text-decoration: underline;
-                }
-  
-                .headerTwoDivisionButtons {
-                    display: flex;
-                }
-  
-                .headerTwoDivisionButtons button {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: white;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 40px;
-                    border: none;
-                    margin-right: 5px;
-                }
-              
-                .headerTwoDivisionButtons img {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50px;
-                    border: 2px solid black;
-                }
-  
-  
-                .contentOneDivision {
-                    margin-top: 100px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding-left: 10px;
-                }
-                .contentOneDivision a {
-                    color: blue;
-                    text-decoration: underline;
-                    border: 1px solid black;
-                    margin-left: 100px;
-                }
-  
-                .contentOneDivision img {
-                    width: 300px;
-                    height: 300px;
-                }
-  
-                .contenOneImageOneDiv figcaption {
-                    display: none;
-                }
-  
-                
-                .contentTwoDivision {
-                    display: flex;
-                    gap: 50px;
-                    margin-top: 100px;
-                    align-items: center;
-                    justify-content: center;
-                }
-  
-                .contentTwoImageDiv {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    gap: 10px;
-                }
-                .contentTwoImageDiv div {
-                    display: flex;
-                    gap: 10px;
-                }
-  
-                .contentTwoImgOne, .contentTwoImgTwo {
-                    width: 250px;
-                    height: 250px;
-                }
-  
-                .contentTwoImgThree {
-                    width: 511px;
-                }
-  
-  
-                .ourServicesDivision {
-                    margin-top: 100px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 50px;
-                }
-  
-                .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
-                    color: grey;
-                }
-  
-                .servicesDescDivisionOne, .servicesDescDivisionTwo {
-                    display: flex;
-                    justify-content: space-evenly;
-                    gap: 100px;
-                }
-  
-                .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-                    width: 450px;
-                }
-  
-                .servicesDescDivisionTwo h3, .servicesDescDivisionOne h3 {
-                    border-bottom: 1px solid black;
-                }
-  
-                .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
-                    color: grey;
-                }
-  
-  
-                .contentThreeDivision {
-                    display: flex;
-                    flex-direction: column;
-                    height: 500px;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 100px;
-                    background-image: url(../assets/images/contentThree.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    color: white;
-                    margin-right: -20px;
-                    margin-left: -20px;
-                    margin-top: 100px;
-                }
-  
-  
-                .statisticDivision {
-                    margin-top: 100px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-  
-                }
-  
-                .statsRightDivision {
-                    display: flex;
-                    align-items: center;
-                    gap: 200px;
-                    justify-content: space-evenly;
-                    border-top: 1px solid black;
-                }
-  
-                .statsRightOneDivision, .statsRightTwoDivision {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
-                }
-  
-  
-                .forumDivision {
-                    margin-top: 100px;
-                }
-  
-                .forumDivisionForm {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: 30px;
-                    align-items: center;
-                }
-  
-                .forumInputDivision  {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    padding-left: 100px;
-                    padding-right: 100px;
-                }
-  
-                .forumInputDivision div {
-                    display: flex;
-                    justify-content: space-between;
-                    padding-left: 50px;
-                    padding-right: 50px;
-                    align-items: center;
-                    gap: 30px;
-                }
-  
-                .forumSubmitButton {
-                    width: 100px;
-                }
-  
-  
-                .pricingDivision {
-                    margin-top: 100px;
-                }
-  
-                .pricingDivisionsDiv {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    gap: 50px;
-                }
-  
-                .pricingDivisionsDiv div {
-                    border-bottom: 1px solid black;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-  
-  
-                .partnersDivision {
-                    margin-top: 100px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
-                }
-  
-                .partnersDivision a {
-                    text-decoration: underline;
-                    color: black;
-                    text-align: center;
-                }
-  
-  
-  
-                .collabImagesDivisionScroll {
-                    width: 100%;
-                    overflow: hidden;
-                }
-                  
-                .collabImagesDivision {
-                    display: flex;
-                    gap: 40px;               
-                    min-width: max-content; 
-                    animation: marquee 12s linear infinite;
-                }
-                  
-                .collabImagesDivision img {
-                    width: 40px;
-                    height: 30px; 
-                    object-fit: cover;            
-                }
-                  
-                @keyframes marquee {
-                    100% {
-                      transform: translateX(0);
-                    }
-                    0% {
-                      transform: translateX(-50%);
-                    }
-                }
-                
-                .collabImagesDivisionScroll:hover .collabImagesDivision {
-                    animation-play-state: paused;
-                }
-  
-  
-                .callBookingDivision {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
-                    margin-top: 100px;
-                    padding: 10px;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-  
-                .callBookingDivision img {
-                    width: 200px;
-                    height: 200px;
-                }
-  
-  
-                .partnersDivision {
-                    margin-top: 100px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 100px;
-                }
-  
-                .partnersDivision a {
-                    text-decoration: underline;
-                    color: black;
-                    text-align: center;
-                }
-  
-                .partnersDivision a {
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                }
-  
-                .partnersDivision a:hover {
-                    text-decoration: underline;
-                }
-  
-                .collabImagesDivisionScroll {
-                    width: 100vw;
-                    overflow: hidden;
-                    position: relative;
-                }
-                
-                .collabImagesDivision {
-                    display: flex;
-                    gap: 150px;
-                    /* duplicate content for seamless loop */
-                    animation: scrollLeft 15s linear infinite;
-                }
-                
-                .collabImagesDivision img {
-                    width: 120px;
-                    height: 100px;
-                    object-fit: cover;
-                }
-                
-                /* scroll from right to left */
-                @keyframes scrollLeft {
-                    0% {
-                        transform: translateX(-50%);
-                    }
-                    100% {
-                        transform: translateX(100%);
-                    }
-                }
-                  
-  
-                .callBookingDivision {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 30px;
-                    margin-top: 100px;
-                }
-  
-                .callBookingDivision img {
-                    width: 400px;
-                    height: 400px;
-                }
-  
-                .callBookingDivision a {
-                    background-color: white;
-                    color: black;
-                    border: black 1px solid;
-                    padding: 5px;
-                    border-radius: 5px;
-                    font-size: 10px;
-                }
-  
-  
-                .storyDivisionscroll {
-                    width: 100%;
-                    overflow: hidden;
-                    margin-top: 100px;
-                }
-  
-                .storyDivision {
-                    display: flex;
-                    gap: 30px;               
-                    min-width: max-content; 
-                    animation: scroll 12s linear infinite;
-                }
-  
-                .storyDivision img {
-                    height: 80px;
-                    width: 80px;
-                }
-  
-                @keyframes scroll {
-                    100% {
-                      transform: translateX(0);
-                    }
-                    0% {
-                      transform: translateX(-50%);
-                    }
-                }
-                
-                .collabImagesDivisionScroll:hover .collabImagesDivision {
-                    animation-play-state: paused;
-                }
-  
-  
-                .storyDivisionscrollTwo {
-                    width: 100%;
-                    overflow: hidden;
-                    margin-top: 100px;
-                }
-  
-                .storyDivisionTwo {
-                    display: flex;
-                    gap: 30px;               
-                    min-width: max-content; 
-                    animation: scrollTwo 12s linear infinite;
-                }
-  
-                .storyDivisionTwo img {
-                    height: 80px;
-                    width: 80px;
-                }
-  
-                @keyframes scrollTwo {
-                    0% {
-                      transform: translateX(0);
-                    }
-                    100% {
-                      transform: translateX(-50%);
-                    }
-                }
-                
-                .collabImagesDivisionScroll:hover .collabImagesDivision {
-                    animation-play-state: paused;
-                }
-  
-  
-                .teamPartDivision {
-                    margin-top: 100px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 30px;
-                }
-  
-                .teamPartDivision button {
-                    height: 40px;
-                    border: 1px solid black;
-                    border-radius: 10px;
-                }
-  
-  
-                .singnInDivision {
-                    margin-top: 100px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 30px;
-                    background-color: black;
-                    color: white;
-                    height: 25px;
-                    margin-left: -20px;
-                    margin-right: -20px;
-                }
-  
-                .singnInDivision a {
-                    color: white;
-                    text-decoration: none;
-                }
-  
-                .singnInDivision a:hover {
-                    text-decoration: underline;
-                }
-  
-  
-                .testimonialDivision {
-                    margin-top: 100px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    gap: 50px;
-                }
-  
-                .testimonialDivision img {
-                    background-color: red;
-                    height: 45px;
-                    width: 45px;
-                }
-  
-                .testimonialOne, .testimonialTwo, .testimonialThree {
-                    width: 350px;
-                    height: 400px;
-                    border: 1px solid black;
-                    padding: 10px;
-                }
-  
-                .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
-                    transform: translateY(-10px);
-                    translate: tranform 0.5s ease;
-                }
-  
-  
-                .faq-section {
-                    max-width: 900px;
-                    margin: 2rem auto;
-                    font-family: Arial, sans-serif;
-                    margin-top: 150px;
-                }
-                
-                .faq-section h2 {
-                    text-align: center;
-                    margin-bottom: 1rem;
-                    font-size: 1.8rem;
-                }
-                
-                .faq-item {
-                    border-bottom: 1px solid #ddd;
-                    margin-bottom: 0.5rem;
-                }
-                
-                .faq-question {
-                    width: 100%;
-                    background: #fff;
-                    border: none;
-                    padding: 1rem;
-                    text-align: left;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    cursor: pointer;
-                    outline: none;
-                    position: relative;
-                }
-                
-                .faq-question::after {
-                    content: "＋";
-                    position: absolute;
-                    right: 1rem;
-                    font-size: 1.2rem;
-                    transition: transform 0.3s ease;
-                }
-                
-                .faq-question.active::after {
-                    transform: rotate(45deg);
-                }
-                
-                .faq-answer {
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: max-height 0.3s ease;
-                    padding: 0 1rem;
-                }
-                
-                .faq-answer p {
-                    margin: 0.8rem 0;
-                    font-size: 0.95rem;
-                    color: #444;
-                }
-              
-  
-                .footerdivision {
-                    margin-top: 100px;
-                    background-color: black;
-                    color: white;
-                    padding: 40px;
-                    margin-left: -20px;
-                    margin-right: -20px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 100px;
-                }
-  
-                .footerRightCompanyQuickLinks {
-                    display: flex;
-                    justify-content: space-around;
-                    margin-top: 50px;
-                }
-  
-                .footerdivision img {
-                    height: 50px;
-                    width: 50px;
-                }
-  
-                .footerRightCompanyQuickLinks {
-                    display: flex;
-                }
-                .footerRightCompanyQuickLinks div {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                }
-                .footerRightCompanyQuickLinks h3 {
-                    color: grey;
-                }
-                .footerRightCompanyQuickLinks a {
-                    text-decoration: none;
-                    color: white;
-                }
-                .footerRightCompanyQuickLinks a:hover {
-                    text-decoration: underline;
-                }
-  
-  
-                .backToTopDivision {
-                    margin-top: 100px;
-                    background-color: black;
-                    color: white;
-                    margin-left: -20px;
-                    margin-right: -20px;
-                    text-align: center;
-                    position: relative;
-                }
-  
-                .backToTopDivision a {
-                    color: white;
-                    text-decoration: none;
-                }
-  
-                .backToTopDivision a:hover {
-                    text-decoration: underline;
-                }
-  
-                .footerWhatsAppMessage {
-                    position: fixed;
-                    bottom: 130px;
-                    right: 40px;
-                }
-                .footerMailMesssage {
-                    position: fixed;
-                    bottom: 50px;
-                    right: 40px;
-                }
-  
-                .backToTopDivision img {
-                    height: 60px;
-                    width: 60px;
-                    border-radius: 30px;
-                }
-  
-  
-                .privacyPolicyDivision {
-                    margin-top: 100px;
-                    color: grey;
-                    text-align: center;
-                }
-              
-            }
-  
-            @media screen and (min-width: 1100px) {
-                * {
-                    font-size: 25px;
-                }
-                body {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-  
-  
-                .headerOneDivision {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: black;
-                    color: white;
-                    height: 50px;
-                    position: fixed;
-                    top: 0px;
-                    left: 0px;
-                    right: 0px;
-                    z-index: 5;
-                }
-  
-  
-                .headerTwoDivision {
-                    display: flex;
-                    padding-top: 65px;
-                    justify-content: space-between;
-                    position: relative;
-                    align-items: center;
-                    gap: 25px;
-                    margin-left: -10px;
-                    margin-right: -10px;
-                    padding-bottom: 50px;
-                    border-bottom: 1px solid black;
-                }
-  
-                .companylogoImgName {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid black;
-                    padding-right: 5px;
-                    padding-left: 5px;
-                    gap: 5px;
-                }
-  
-                .companylogoImgName img {
-                    width: 50px;
-                    height: 50px;
-                }
-  
-                .navigationButtonDivision {
-                    color: black;
-                    font-size: 15px;
-                    gap: 10px;
-                    padding-top: 10px;
-                }
-  
-                .navigationButtonDivision a {
-                    text-decoration: none;
-                    color: black;
-                    margin: 5px;
-                    padding: 10px;
-                    margin-bottom: 5px;
-                }
-  
-                .navigationButtonDivision a:hover {
-                    text-decoration: underline;
-                }
-  
-                .headerTwoDivisionButtons {
-                    display: flex;
-                }
-  
-                .headerTwoDivisionButtons button {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: white;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50px;
-                    border: none;
-                    margin-right: 5px;
-                }
-              
-                .headerTwoDivisionButtons img {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50px;
-                    border: 2px solid black;
-                }
-  
-  
-                .contentOneDivision {
-                    margin-top: 150px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 100px;
-                    padding-left: 10px;
-                }
-  
-                .contentOneDivision a {
-                    color: blue;
-                    text-decoration: underline;
-                    border: 1px solid black;
-                    margin-left: 100px;
-                }
-  
-                .contentOneDivision img {
-                    width: 400px;
-                    height: 400px;
-                }
-  
-                .contenOneImageOneDiv figcaption {
-                    display: none;
-                }
-  
-  
-                .contentTwoDivision {
-                    display: flex;
-                    gap: 100px;
-                    margin-top: 300px;
-                    align-items: center;
-                    justify-content: center;
-                }
-  
-                .contentTwoImageDiv {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    gap: 10px;
-                }
-                .contentTwoImageDiv div {
-                    display: flex;
-                    gap: 10px;
-                }
-  
-                .contentTwoImgOne, .contentTwoImgTwo {
-                    width: 250px;
-                    height: 250px;
-                }
-  
-                .contentTwoImgThree {
-                    width: 510px;
-                }
-  
-  
-                .ourServicesDivision {
-                    margin-top: 150px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 50px;
-                }
-  
-                .servicesDescDivisionOne h2, .servicesDescDivisionOne p {
-                    color: grey;
-                }
-  
-                .servicesDescDivisionOne, .servicesDescDivisionTwo {
-                    display: flex;
-                    justify-content: space-evenly;
-                    gap: 100px;
-                }
-  
-                .servicesDescDivisionOne div, .servicesDescDivisionTwo div {
-                    width: 450px;
-                }
-  
-                .servicesDescDivisionTwo h3, .servicesDescDivisionOne h3 {
-                    border-bottom: 1px solid black;
-                }
-  
-                .servicesDescDivisionTwo h2, .servicesDescDivisionTwo p {
-                    color: grey;
-                }
-  
-  
-                .contentThreeDivision {
-                    display: flex;
-                    flex-direction: column;
-                    height: 1000px;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 25px;
-                    padding: 100px;
-                    background-image: url(../assets/images/contentThree.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    color: white;
-                    margin-right: -20px;
-                    margin-left: -20px;
-                    margin-top: 200px;
-                }
-  
-  
-                .statisticDivision {
-                    margin-top: 200px;
-                    display: flex;
-                    flex-direction: column;
-                }
-  
-                .statsRightDivision {
-                    display: flex;
-                    gap: 300px;
-                    justify-content: space-evenly;
-                    border-top: 1px solid black;
-                }
-  
-                .statsRightOneDivision, .statsRightTwoDivision {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 50px;
-                }
-  
-  
-                .forumDivision {
-                    margin-top: 150px;
-                }
-  
-                .forumDivisionForm {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: 90px;
-                }
-  
-                .forumInputDivision  {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 50px;
-                    padding-left: 100px;
-                    padding-right: 100px;
-                    margin-top: 50px;
-                }
-  
-                .forumInputDivision div {
-                    display: flex;
-                    justify-content: space-between;
-                    padding-left: 50px;
-                    padding-right: 50px;
-                    align-items: center;
-                    gap: 100px;
-                }
-  
-                .forumSubmitButton {
-                    width: 400px;
-                }
-  
-                .forumDivisionForm {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-  
-  
-                .pricingDivision {
-                    margin-top: 150px;
-                }
-  
-                .pricingDivision div {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-evenly;
-                }
-  
-                .pricingDivisionsDiv {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 10px;
-                }
-  
-                .pricingDivisionsDiv div {
-                    border-bottom: 1px solid black;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-  
-  
-                .partnersDivision {
-                    margin-top: 150px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 100px;
-                }
-  
-                .partnersDivision a {
-                    text-decoration: underline;
-                    color: black;
-                    text-align: center;
-                }
-  
-                .partnersDivision a {
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                }
-  
-                .partnersDivision a:hover {
-                    text-decoration: underline;
-                }
-  
-                .collabImagesDivisionScroll {
-                    width: 100vw;
-                    overflow: hidden;
-                    position: relative;
-                }
-                
-                .collabImagesDivision {
-                    display: flex;
-                    gap: 150px;
-                    /* duplicate content for seamless loop */
-                    animation: scrollLeft 15s linear infinite;
-                }
-                
-                .collabImagesDivision img {
-                    width: 120px;
-                    height: 100px;
-                    object-fit: cover;
-                }
-                
-                /* scroll from right to left */
-                @keyframes scrollLeft {
-                    0% {
-                        transform: translateX(-50%);
-                    }
-                    100% {
-                        transform: translateX(100%);
-                    }
-                }
-                  
-  
-                .callBookingDivision {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 30px;
-                    margin-top: 150px;
-                }
-  
-                .callBookingDivision img {
-                    width: 400px;
-                    height: 400px;
-                }
-  
-                .callBookingDivision a {
-                    background-color: white;
-                    color: black;
-                    border: black 1px solid;
-                    padding: 5px;
-                    border-radius: 5px;
-                    font-size: 10px;
-                }
-  
-                .storyDivisionscroll {
-                    width: 100vw;
-                    overflow: hidden;
-                    margin-top: 300px;
-                }
-  
-                .storyDivision {
-                    display: flex;
-                    gap: 30px;               
-                    min-width: max-content; 
-                    animation: scroll 12s linear infinite;
-                }
-  
-                .storyDivision img {
-                    height: 80px;
-                    width: 80px;
-                }
-  
-                @keyframes scroll {
-                    100% {
-                      transform: translateX(0);
-                    }
-                    0% {
-                      transform: translateX(-50%);
-                    }
-                }
-                
-                .collabImagesDivisionScroll:hover .collabImagesDivision {
-                    animation-play-state: paused;
-                }
-  
-  
-                .storyDivisionscrollTwo {
-                    width: 100%;
-                    overflow: hidden;
-                    margin-top: 100px;
-                }
-  
-                .storyDivisionTwo {
-                    display: flex;
-                    gap: 30px;               
-                    min-width: max-content; 
-                    animation: scrollTwo 12s linear infinite;
-                }
-  
-                .storyDivisionTwo img {
-                    height: 80px;
-                    width: 80px;
-                }
-  
-                @keyframes scrollTwo {
-                    0% {
-                      transform: translateX(0);
-                    }
-                    100% {
-                      transform: translateX(-50%);
-                    }
-                }
-                
-                .collabImagesDivisionScroll:hover .collabImagesDivision {
-                    animation-play-state: paused;
-                }
-  
-  
-                .teamPartDivision {
-                    margin-top: 150px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 30px;
-                }
-  
-                .teamPartDivision button {
-                    height: 70px;
-                    border: 1px solid black;
-                    border-radius: 10px;
-                }
-  
-  
-                .singnInDivision {
-                    margin-top: 200px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 30px;
-                    background-color: black;
-                    color: white;
-                    height: 50px;
-                    position: absolute;
-                    left: 0px;
-                    right: 0px;
-                }
-  
-                .singnInDivision a {
-                    color: white;
-                    text-decoration: none;
-                }
-  
-                .singnInDivision a:hover {
-                    text-decoration: underline;
-                }
-  
-  
-                .testimonialDivision {
-                    margin-top: 500px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 50px;
-                }
-  
-                .testimonialDivision img {
-                    background-color: red;
-                    height: 50px;
-                    width: 50px;
-                }
-  
-                .testimonialOne, .testimonialTwo, .testimonialThree {
-                    width: 750px;
-                    height: 500px;
-                    border: 1px solid black;
-                    padding: 5px;
-                }
-  
-                .testimonialOne:hover, .testimonialTwo:hover, .testimonialThree:hover {
-                    transform: translateY(-10px);
-                    translate: tranform 0.5s ease;
-                }
-  
-  
-                .faq-section {
-                    max-width: 1300px;
-                    margin: 2rem auto;
-                    font-family: Arial, sans-serif;
-                    margin-top: 150px;
-                }
-                
-                .faq-section h2 {
-                    text-align: center;
-                    margin-bottom: 1rem;
-                    font-size: 1.8rem;
-                }
-                
-                .faq-item {
-                    border-bottom: 1px solid #ddd;
-                    margin-bottom: 0.5rem;
-                }
-                
-                .faq-question {
-                    width: 100%;
-                    background: #fff;
-                    border: none;
-                    padding: 1rem;
-                    text-align: left;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    cursor: pointer;
-                    outline: none;
-                    position: relative;
-                }
-                
-                .faq-question::after {
-                    content: "＋";
-                    position: absolute;
-                    right: 1rem;
-                    font-size: 1.2rem;
-                    transition: transform 0.3s ease;
-                }
-                
-                .faq-question.active::after {
-                    transform: rotate(45deg);
-                }
-                
-                .faq-answer {
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: max-height 0.3s ease;
-                    padding: 0 1rem;
-                }
-                
-                .faq-answer p {
-                    margin: 0.8rem 0;
-                    font-size: 0.95rem;
-                    color: #444;
-                }
-              
-  
-                .footerdivision {
-                    margin-top: 250px;
-                    background-color: black;
-                    color: white;
-                    padding: 40px;
-                    margin-left: -20px;
-                    margin-right: -20px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 100px;
-                }
-  
-                .footerRightCompanyQuickLinks {
-                    display: flex;
-                    justify-content: space-around;
-                    margin-top: 150px;
-                }
-  
-                .footerdivision img {
-                    height: 150px;
-                    width: 150px;
-                }
-  
-                .footerRightCompanyQuickLinks {
-                    display: flex;
-                }
-                .footerRightCompanyQuickLinks div {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                }
-                .footerRightCompanyQuickLinks h3 {
-                    color: grey;
-                }
-                .footerRightCompanyQuickLinks a {
-                    text-decoration: none;
-                    color: white;
-                }
-                .footerRightCompanyQuickLinks a:hover {
-                    text-decoration: underline;
-                }
-  
-                .backToTopDivision {
-                    margin-top: 100px;
-                    background-color: black;
-                    color: white;
-                    margin-left: -20px;
-                    margin-right: -20px;
-                    text-align: center;
-                    position: relative;
-                }
-  
-                .backToTopDivision a {
-                    color: white;
-                    text-decoration: none;
-                }
-  
-                .backToTopDivision a:hover {
-                    text-decoration: underline;
-                }
-  
-                .footerWhatsAppMessage {
-                    position: fixed;
-                    bottom: 170px;
-                    right: 50px;
-                }
-                .footerMailMesssage {
-                    position: fixed;
-                    bottom: 60px;
-                    right: 50px;
-                }
-  
-                .backToTopDivision img {
-                    height: 70px;
-                    width: 70px;
-                    border-radius: 50px;
-                }
-  
-                .privacyPolicyDivision {
-                    margin-top: 100px;
-                    color: grey;
-                    font-size: 10px;
-                    text-align: center;
-                }
-            }
-  
-        </style>
-
-        
-        <link rel="icon" href="./assets/images/companyLogoImage.JPG">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/favicon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/favicon-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/favicon-120x120.png">
+        <link rel="icon" href="./assets/images/favicon/favicon-16x16.png" type="image/svg+xml">
+
+        <link rel="stylesheet" href="./assets/cssFile/index.css">
+
+        <link rel="icon" href="./assets/images/companyLogoImage.jpg">
 
         <link rel="canonical" href="https://rozgarsathi.co.in/">
 
         <link rel="alternate" href="https://rozgarsathi.co.in/" hreflang="en-in" />
         <link rel="alternate" href="https://rozgarsathi.co.in/" hreflang="x-default" />
         <meta name="theme-color" content="0d47a1">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -2623,7 +44,7 @@
         <meta property="og:description" content="Search thousands of job listings and internships across India with RozgarSathi. Start your career in Delhi, Gurugram & beyond today!">
         <meta property="og:url" content="https://rozgarsathi.co.in/">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://rozgarsathi.co.in/assets/social-image.jpg" />
+        <meta property="og:image" content="https://rozgarsathi.co.in/assets/social-image.jpg">
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="RozgarSathi Career and Job Assistance Preview Image" />
@@ -2632,7 +53,8 @@
         <meta name="twitter:title" content="RozgarSathi – Job Portal India">
         <meta name="twitter:description" content="Find jobs and internships in Delhi, Gurugram & across India with RozgarSathi.">
         <meta name="twitter:image" content="https://rozgarsathi.co.in/assets/social-image.jpg">
-        <meta name="twitter:site" content="@YourTwitterHandle">
+        <meta name="twitter:site" content="@RozgarSathiCoIn">
+        <meta name="twitter:creator" content="@RozgarSathiCoIn">
     
         <meta name="robots" content="index, follow">
     
@@ -2642,179 +64,85 @@
         <meta name="geo.position" content="28.4595;77.0266">
         <meta name="ICBM" content="28.4595, 77.0266">
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "RozgarSathi",
-            "url": "https://rozgarsathi.co.in/",
-            "logo": "https://rozgarsathi.co.in/assets/logo.png",
-            "sameAs": [
-            "https://www.facebook.com/rozgarsathi.co.in",
-            "https://x.com/RozgarSathiCoIn",
-            "https://www.linkedin.com/in/rozgar-sathi-b83476396/",
-            "https://www.instagram.com/rozgarsathi.co.in/",
-            "https://www.youtube.com/@rozgarsathichannel"
-            ]
-        }
-        </script>
+        <meta name="geo.region" content="IN-DL">
+        <meta name="geo.placename" content="Delhi, Delhi, India">
+        <meta name="geo.position" content="28.65;77.23">
+        <meta name="ICBM" content="28.65, 77.23">
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://rozgarsathi.co.in/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Jobs",
-                "item": "https://rozgarsathi.co.in/jobs"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Frontend Developer"
-            }
-            ]
-        }
-        </script>
-            
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "RozgarSathi",
-            "url": "https://rozgarsathi.co.in/",
-            "logo": "https://rozgarsathi.co.in/assets/logo.png",
-            "description": "RozgarSathi provides personalized job assistance, AI resume tools, career guidance, internships and job placements across India.",
-            "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "telephone": "+91 96259 94420",
-            "email": "privaterozgarsathi@gmail.com"
-            },
-            "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "704/3, Bhawani Enclave, Sector-9",
-            "addressLocality": "Gurugram",
-            "addressRegion": "Haryana",
-            "postalCode": "1220XX",
-            "addressCountry": "IN"
-            },
-            "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "28.4595",
-            "longitude": "77.0266"
-            },
-            "sameAs": [
-            "https://www.facebook.com/rozgarsathi.co.in",
-            "https://x.com/RozgarSathiCoIn",
-            "https://www.linkedin.com/in/rozgar-sathi-b83476396/",
-            "https://www.instagram.com/rozgarsathi.co.in/",
-            "https://www.youtube.com/@rozgarsathichannel"
-            ]
-        }
-        </script>
-            
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "url": "https://rozgarsathi.co.in/",
-            "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://rozgarsathi.co.in/search?query={search_term_string}",
-            "query-input": "required name=search_term_string"
-            }
-        }
-        </script>
+        <meta name="geo.region" content="IN-MH">
+        <meta name="geo.placename" content="Mumbai, Maharashtra, India">
+        <meta name="geo.position" content="18.99;72.84">
+        <meta name="ICBM" content="18.99, 72.84">
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "RozgarSathi – Career Guidance and Job Support",
-            "description": "Career guidance, job placement success, AI resume generator, interview preparation, freelance opportunities in India."
-        }
-        </script>
+        <meta name="geo.region" content="IN-KA">
+        <meta name="geo.placename" content="Bengaluru, Karnataka, India">
+        <meta name="geo.position" content="12.97;77.59">
+        <meta name="ICBM" content="12.97, 77.59">
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "url": "https://rozgarsathi.co.in/",
-            "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://rozgarsathi.co.in/search?query={search_term_string}",
-            "query-input": "required name=search_term_string"
-            }
-        }
-        </script>
-            
-            
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What services does RozgarSathi offer?",
-                "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We provide career counselling, AI resume generation, interview prep, direct referrals to employers, and freelance opportunities."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How can I apply for jobs through RozgarSathi?",
-                "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Create a profile, upload your resume, browse listings, and click “Apply”."
-                }
-            }
-            ]
-        }
-        </script>
+        <meta name="geo.region" content="IN-TG">
+        <meta name="geo.placename" content="Hyderabad, Telangana, India">
+        <meta name="geo.position" content="17.38;78.46">
+        <meta name="ICBM" content="17.38, 78.46">
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rozgarsathi.co.in/"},
-            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://rozgarsathi.co.in/pages/services.html"},
-            {"@type": "ListItem", "position": 3, "name": "Career Guidance", "item": "https://rozgarsathi.co.in/pages/services.html#career-guidance"}
-            ]
-        }
-        </script>
-            
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "RozgarSathi",
-            "url": "https://rozgarsathi.co.in/",
-            "logo": "https://rozgarsathi.co.in/assets/logo.png",
-            "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "telephone": "+91 96259 94420",
-            "email": "privaterozgarsathi@gmail.com"
-            }
-        }
-        </script>
+        <meta name="geo.region" content="IN-TN">
+        <meta name="geo.placename" content="Chennai, Tamil Nadu, India">
+        <meta name="geo.position" content="13.09;80.28">
+        <meta name="ICBM" content="13.09, 80.28">
 
-            
+        <meta name="geo.region" content="IN-WB">
+        <meta name="geo.placename" content="Kolkata, West Bengal, India">
+        <meta name="geo.position" content="22.56;88.36">
+        <meta name="ICBM" content="22.56, 88.36">
+
+        <meta name="geo.region" content="IN-GJ">
+        <meta name="geo.placename" content="Ahmedabad, Gujarat, India">
+        <meta name="geo.position" content="23.03;72.59">
+        <meta name="ICBM" content="23.03, 72.59">
+
+        <meta name="geo.region" content="IN-MH">
+        <meta name="geo.placename" content="Pune, Maharashtra, India">
+        <meta name="geo.position" content="18.52;73.85">
+        <meta name="ICBM" content="18.52, 73.85">
+
+        <meta name="geo.region" content="IN-GJ">
+        <meta name="geo.placename" content="Surat, Gujarat, India">
+        <meta name="geo.position" content="21.20;72.83">
+        <meta name="ICBM" content="21.20, 72.83">
+
+        <meta name="geo.region" content="IN-RJ">
+        <meta name="geo.placename" content="Jaipur, Rajasthan, India">
+        <meta name="geo.position" content="26.92;75.79">
+        <meta name="ICBM" content="26.92, 75.79">
+
+        <meta name="geo.region" content="IN-UP">
+        <meta name="geo.placename" content="Lucknow, Uttar Pradesh, India">
+        <meta name="geo.position" content="26.85;80.95">
+        <meta name="ICBM" content="26.85, 80.95">
+
+        <meta name="geo.region" content="IN-CH">
+        <meta name="geo.placename" content="Chandigarh, India">
+        <meta name="geo.position" content="30.74;76.79">
+        <meta name="ICBM" content="30.74, 76.79">
+
+
     </head>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0X53PZV8L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q0X53PZV8L');
+    </script>
+
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5949TFDF"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+         
         <div class="headerOneDivision">
             <h3> RozgarSathi </h3>
         </div>
@@ -2822,13 +150,13 @@
         <div class="headerTwoDivision">
             <div class="companylogoImgName">
                 <h3> RozgarSathi</h3>
-                <img class="companyLogoImage" src="./assets/images/companyLogoImage.JPG" alt="RozgarSathi logo">
+                <img class="companyLogoImage" src="./assets/images/companyLogoImage" alt="RozgarSathi logo">
             </div>
 
             <div class="navigationButtonDivision">
                 <a class="homePageLink" href="./index.html"> Home </a>
-                <a class="aboutUsPageLink" href="./pages/aboutus.html"> AboutUs </a>
-                <a class="shopPageLink" href=""> Shop </a>
+                <a class="aboutUsPageLink" href="./pages/contentpages/aboutus.html" target="_blank"> AboutUs </a>
+                <a class="blogPageLink" href="./pages/contentpages/blogs.html" target="_blank"> Blog </a>
                 <a class="eventsPageLink" href="./pages/events.html"> Events </a>
                 <a class="newsPageLink" href="./pages/news.html"> News </a>
                 <a class="coursesPageLink" href=""> Courses </a>
@@ -2851,7 +179,7 @@
             <div class="contentOneDescriptionOneDiv">
                 <article>
                     <h1>RozgarSathi – Career Guidance, Jobs & Freelancing Support in India</h1> <br>
-                    <h3> Your Carrer Our Passion </h3>
+                    <h2> Your Carrer Our Passion </h2>
                     <p>We see job search not as a struggle, but as a chance to grow your career and find meaningful employment. At RozgarSathi, we provide personalized career guidance, job placement support, and networking opportunities for job seekers across India. Through skills‑building workshops, internship connections, interview preparation coaching, and ongoing support for career growth, we’re more than a recruiter — we’re your trusted partner in achieving freelance opportunities, professional success, and long‑term employment.</p><br>
                     <a> Learn more </a>
                 </article>
@@ -2929,7 +257,7 @@
         </div>
           
         <div class="contentThreeDivision">
-            <h2> Emabark on your  </h2>
+            <h2 style="color: black;"> Emabark on your  </h2>
             <h2> Next Journey </h2>
             <button class="startNowContentThreeDivisionButton"> Start Now </button>
         </div>
@@ -3090,7 +418,47 @@
                     <img src="./assets/images/datacovetLogo.jpg" alt="Datacovet logo">
                     <img src="./assets/images/ibmLogo.jpg" alt="IBM logo">
                     <img src="./assets/images/cognizentLogo.jpg" alt="Cognizant logo">
-
+                    <img src="./assets/images/3MLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/accentureLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/addidasLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/adityaBirlaLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/adobeLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/airtelLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/amazonLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/appleLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/appoloLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/asianPaintLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/bajajLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/BritaniaLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/casioLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/ciplalogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/Colgatelogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/deloitteLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/drreddyLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/hclLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/hdfcLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/hyundaiLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/infosysLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/LandTLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/techMahindra.png.png" alt="3Mlogo">
+                    <img src="./assets/images/marutiLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/mercedesLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/microsoftLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/nestleLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/NikeLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/oracleLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/pepsicoLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/pfizerLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/pumaLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/pwcLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/relianceLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/s-blob-v1-IMAGE-aGF0ljcCZf8.png" alt="3Mlogo">
+                    <img src="./assets/images/siemensLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/tataLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/toyotaLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/tcsLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/ULogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/WiproLogo.png.jpg" alt="3Mlogo">
 
                     <img src="./assets/images/googleLogo.jpg" alt="Google logo">
                     <img src="./assets/images/yahooLogo.jpg" alt="Yahoo logo">
@@ -3098,7 +466,47 @@
                     <img src="./assets/images/datacovetLogo.jpg" alt="Datacovet logo">
                     <img src="./assets/images/ibmLogo.jpg" alt="IBM logo">
                     <img src="./assets/images/cognizentLogo.jpg" alt="Cognizant logo">
-
+                    <img src="./assets/images/3MLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/accentureLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/addidasLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/adityaBirlaLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/adobeLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/airtelLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/amazonLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/appleLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/appoloLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/asianPaintLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/bajajLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/BritaniaLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/casioLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/ciplalogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/Colgatelogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/deloitteLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/drreddyLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/hclLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/hdfcLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/hyundaiLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/infosysLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/LandTLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/techMahindra.png.png" alt="3Mlogo">
+                    <img src="./assets/images/marutiLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/mercedesLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/microsoftLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/nestleLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/NikeLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/oracleLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/pepsicoLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/pfizerLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/pumaLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/pwcLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/relianceLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/s-blob-v1-IMAGE-aGF0ljcCZf8.png" alt="3Mlogo">
+                    <img src="./assets/images/siemensLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/tataLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/toyotaLogo.png.jpg" alt="3Mlogo">
+                    <img src="./assets/images/tcsLogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/ULogo.png.png" alt="3Mlogo">
+                    <img src="./assets/images/WiproLogo.png.jpg" alt="3Mlogo">
                 </div>
             </div>
 
@@ -3175,7 +583,7 @@
         <div class="testimonialDivision">
             <div class="testimonialOne">
                 <div class="testimonialOneProfile">
-                    <img class="" src="">
+                    <img class="" src="./assets/images/testimonialOne.png.png">
                     <h3> Anjali Sharma </h3>
                     <p> -software engineer </p>
                 </div>
@@ -3187,7 +595,7 @@
 
             <div class="testimonialTwo">
                 <div class="testimonialTwoProfile">
-                    <img class="" src="">
+                    <img class="" src="./assets/images/testimonilTwo.png.png">
                     <h3> Rohan Verma </h3>
                     <p> -marketing specialist</p>
                 </div>
@@ -3199,7 +607,7 @@
 
             <div class="testimonialThree">
                 <div class="testimonialThreeProfile">
-                    <img class="" src="">
+                    <img class="" src="./assets/images/testimonialThree.png.png">
                     <h3>Priya Singh</h3>
                     <p> -freelance graphic designer</p>
 
@@ -3271,7 +679,7 @@
                     <div class="footerRightKnowUsMore">
                         <h3> Know Us More </h3>
     
-                        <a class="" href="./pages/footerpages/fAboutUs.html"> About Us </a>
+                        <a class="" href="./pages/contentpages/aboutus.html" target="_blanks"> About Us </a>
                         <a class="" href="./pages/footerpages/fCarrer.html"> Careers </a>
                         <a class="" href="./pages/footerpages/fBrandCentre.html"> Brand Center </a>
                         <a class="" href="./pages/footerpages/fBlogs.html"> Blogs </a>
@@ -3307,7 +715,7 @@
                 <div>
                     <p> 704/3, Bhawani Enclave,<br> Sector-9, Gurgaon <br> Haryana,<br> India </p><br>
 
-                    <p> +91 xxxxx-xxxxx || privaterozgarsathi@gmail.com </p> 
+                    <p> +91 94676 61992 || privaterozgarsathi@gmail.com </p> 
                 </div>
             </div>
         </div>
@@ -3337,6 +745,175 @@
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
             data-cbid="93afbdd8-7ce1-4753-9ae0-a23add0547fc"
             type="text/javascript" async>
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "RozgarSathi",
+                "url": "https://rozgarsathi.co.in/",
+                "logo": "https://rozgarsathi.co.in/assets/logo.png",
+                "sameAs": [
+                "https://www.facebook.com/rozgarsathi.co.in",
+                "https://x.com/RozgarSathiCoIn",
+                "https://www.linkedin.com/in/rozgar-sathi-b83476396/",
+                "https://www.instagram.com/rozgarsathi.co.in/",
+                "https://www.youtube.com/@rozgarsathichannel"
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://rozgarsathi.co.in/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Jobs",
+                    "item": "https://rozgarsathi.co.in/jobs"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Frontend Developer"
+                }
+                ]
+            }
+        </script>
+            
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "RozgarSathi",
+                "url": "https://rozgarsathi.co.in/",
+                "logo": "https://rozgarsathi.co.in/assets/logo.png",
+                "description": "RozgarSathi provides personalized job assistance, AI resume tools, career guidance, internships and job placements across India.",
+                "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "telephone": "+91 96259 94420",
+                "email": "privaterozgarsathi@gmail.com"
+                },
+                "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "704/3, Bhawani Enclave, Sector-9",
+                "addressLocality": "Gurugram",
+                "addressRegion": "Haryana",
+                "postalCode": "1220XX",
+                "addressCountry": "IN"
+                },
+                "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "28.4595",
+                "longitude": "77.0266"
+                },
+                "sameAs": [
+                "https://www.facebook.com/rozgarsathi.co.in",
+                "https://x.com/RozgarSathiCoIn",
+                "https://www.linkedin.com/in/rozgar-sathi-b83476396/",
+                "https://www.instagram.com/rozgarsathi.co.in/",
+                "https://www.youtube.com/@rozgarsathichannel"
+                ]
+            }
+        </script>
+            
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "url": "https://rozgarsathi.co.in/",
+                "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://rozgarsathi.co.in/search?query={search_term_string}",
+                "query-input": "required name=search_term_string"
+                }
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "RozgarSathi – Career Guidance and Job Support",
+                "description": "Career guidance, job placement success, AI resume generator, interview preparation, freelance opportunities in India."
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "url": "https://rozgarsathi.co.in/",
+                "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://rozgarsathi.co.in/search?query={search_term_string}",
+                "query-input": "required name=search_term_string"
+                }
+            }
+        </script>
+            
+            
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What services does RozgarSathi offer?",
+                    "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We provide career counselling, AI resume generation, interview prep, direct referrals to employers, and freelance opportunities."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How can I apply for jobs through RozgarSathi?",
+                    "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Create a profile, upload your resume, browse listings, and click “Apply”."
+                    }
+                }
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rozgarsathi.co.in/"},
+                {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://rozgarsathi.co.in/pages/services.html"},
+                {"@type": "ListItem", "position": 3, "name": "Career Guidance", "item": "https://rozgarsathi.co.in/pages/services.html#career-guidance"}
+                ]
+            }
+        </script>
+            
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "RozgarSathi",
+                "url": "https://rozgarsathi.co.in/",
+                "logo": "https://rozgarsathi.co.in/assets/logo.png",
+                "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "telephone": "+91 96259 94420",
+                "email": "privaterozgarsathi@gmail.com"
+                }
+            }
         </script>
 
         <script type="application/ld+json">
