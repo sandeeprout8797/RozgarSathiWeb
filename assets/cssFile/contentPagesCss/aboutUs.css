@@ -2,53 +2,80 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: Arial, sans-serif;
-    font-size: 25px;        
     overflow-x: hidden;
 }
 
-.headerOneDivision {
+h1 {font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1.2rem;}
+p {font-size: 1rem;}
+
+button img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    background-color: white;
+}
+
+.headerSectionDivisionOne {
     position: fixed;
-    color: white;
-    background-color: black;
     top: 0px;
     left: 0px;
     right: 0px;
-    justify-content: center;
-    align-items: center;
+    background-color: black;
+    color: white;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 5;
 }
 
-.headerTwoDivision {
+.headerSectionDivsionTwo {
+    padding-top: 70px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
     border-bottom: 1px solid black;
 }
 
-.companylogoImgName {
+.headerSectionDivsionTwo div {
     display: flex;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid black;
     align-items: center;
 }
 
-.companylogoImgName img {
-    width: 50px;
+.headerSectionDivsionTwo img {
+    height: 48px;
+    width: 48px;
+}
+
+.headerSectionDivsionTwo button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: solid black 3px;
+    background-color: white;
+}
+
+.companyLogoImgNameDivision {
+    border: 1px solid black;
+    padding: 5px;
 }
 
 .navigationButtonDivision {
     position: fixed;
     display: flex;
     flex-direction: column;
-    top: 42px;
+    top: 40px;
     left: -400px;
     width: 200px;
     height: 100%;
@@ -69,99 +96,92 @@ body {
 
 .navigationButtonDivision a {
     border: 1px solid black;
+    background-color: white;
     text-decoration: none;
     color: black;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 180px;
 }
 
 .navigationButtonDivision a:hover {
     text-decoration: underline;
 }
 
-.headerTwoDivisionButtons {
-    display: flex;
-}
-
-.headerTwoDivisionButtons button {
-    height: 80px;
-    width: 80px;
-    border-radius: 50px;
-    margin-right: 10px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .headerTwoDivisionButtons img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
 }
 
 
-.blogsControlDivision {
+
+.aboutUsDescriptionDivision {
+    padding: 40px;
+}
+
+.imageSectionCompanyLogo {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.blogsMainDivision {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 100px;
-}
-
-.blogsMainDivision h3 {
-    height: 50px;
-    width: 100%;
-    text-overflow: clip;
-    overflow: hidden;
-    padding: 0px;
-    margin: 0px;
-}
-
-.blogsMainDivision p {
-    height: 40px;
-    width: 100%;
-    text-overflow: clip;
-    overflow: hidden;
-}
-
-.blogsMainDivision div div {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 15px;
-    padding-right: 20px;
-    border: 3px solid black;
-    border-radius: 15px;
+    justify-content: center;
 }
 
-.blogsMainDivision div div:hover {
-    cursor: pointer;
-    background-color: rgb(240, 240, 240);
-    text-decoration: underline;
+.imageSectionCompanyLogo img {
+    width: 40%;
 }
 
-.blogsMainDivision div div div {
+.aboutOurStoryDiv {
+    margin-top: 100px;
+}
+
+.aboutOurStoryDiv img {
+    width: 60%;
+}
+
+.imageSectionTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutGovtDiv {
+    margin-top: 100px;
+}
+
+.successImageSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.successImageSection img {
+    width: 50%;
+}
+
+.whatWeDoDiv {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    text-align: left;
+    align-items: center;
+
+}
+
+.whatWeDoDiv div {
+    padding: 20px;
     width: 70%;
-    border: none;
+}
+.whatWeDoDiv h3 {
+    margin-top: 100px;
 }
 
-.blogsMainDivision div img {
-    height: 150px;
-    width: 150px;
-    border: 1px solid black;
+.coreValuesDivision {
+    margin-top: 100px;
 }
-
+.coreValuesDivision div {
+    padding: 40px;
+}
 
 
 .footerdivision {
@@ -209,6 +229,10 @@ body {
     text-decoration: underline;
 }
 
+.footercompanyaddress a {
+    color: white;
+}
+
 
 .backToTopDivision {
     margin-top: 100px;
@@ -229,20 +253,20 @@ body {
 
 .footerWhatsAppMessage {
     position: fixed;
-    bottom: 150px;
+    bottom: 140px;
     right: 50px;
 }
 
 .footerMailMesssage {
     position: fixed;
-    bottom: 70px;
+    bottom: 60px;
     right: 50px;
 }
 
 .backToTopDivision img {
     height: 70px;
     width: 70px;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 .privacyPolicyDivision {
@@ -250,27 +274,4 @@ body {
     color: grey;
     font-size: 10px;
     text-align: center;
-}
-
-@media screen and (min-width: 500px) and (max-width: 1024px) {
-
-    .blogsMainDivision div div {
-        flex-direction: column;
-        gap: 30px;
-        padding: 0px;
-        vertical-align: top;
-        justify-content: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .blogsMainDivision div img {
-        height: 200px;
-        width: 200px;
-    }
-
-    .blogsMainDivision p {
-        height: 150px;
-    }
-
 }
