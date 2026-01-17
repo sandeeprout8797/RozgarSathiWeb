@@ -123,28 +123,49 @@ button img {
     padding: 20px;
 }
 
-.blogsMainBoxParentDivision{
+.blogsMainBoxParentDivision {
     padding: 40px;
+}
+
+.blogsMainBoxParentDivision > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blogCard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: red;
+    border: 3px solid #b7b7b7;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
 }
 
-.blogsMainBoxParentDivision div  {
-    background-color: blue;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+.blogCard:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
 }
 
-.blogsMainBoxParentDivision div div {
-    background-color: green;
+.blogImage {
+    width: 90%;
+    height: 30%;
     border: 1px solid black;
-    padding: 10px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+    .blogsMainBoxParentDivision > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .blogsMainBoxParentDivision > div {
+        grid-template-columns: 1fr;
+    }
 }
 
 
