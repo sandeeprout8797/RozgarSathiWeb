@@ -366,48 +366,62 @@ button img {
 }
 
 
+
 .storyDivisionscroll {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 100px;
+    padding-top: 150px;
 }
 
-.storyDivision {
-    display: flex;
-    gap: 30px;            
-    width: 100%; 
+.storyDivisionscroll,
+.storyDivisionscrollTwo {
+    width: 100%;
     overflow: hidden;
-    animation: scroll 12s linear infinite;
+    position: relative;
 }
+
+
+.storyDivision,
 .storyDivisionTwo {
     display: flex;
-    gap: 30px;
-    width: 100%;
-    overflow: hidden;
-    animation: scrollTwo 12s linear infinite;
+    width: max-content;
 }
 
-.storyDivision img, .storyDivisionTwo img {
-    height: 100px;
-    width: 100px;
+.storyDivision img,
+.storyDivisionTwo img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    margin-right: 16px;
+    border-radius: 10px;
 }
 
-@keyframes scroll {
-    100% {
+
+.storyDivision {
+    animation: scrollLeft 25s linear infinite;
+}
+
+.storyDivisionTwo {
+    animation: scrollRight 25s linear infinite;
+}
+
+@keyframes scrollLeft {
+    0% {
         transform: translateX(0);
     }
-    0% {
+    100% {
         transform: translateX(-50%);
     }
 }
-@keyframes scrollTwo {
+
+@keyframes scrollRight {
     0% {
-        transform: translateX(0);
-    }
-    100% {
         transform: translateX(-50%);
     }
+    100% {
+        transform: translateX(0);
+    }
 }
+
+
 
 .collabImagesDivisionScroll:hover .collabImagesDivision {
     animation-play-state: paused;
