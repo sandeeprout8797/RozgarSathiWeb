@@ -26,17 +26,3 @@ menuButton.addEventListener("click", () => {
     menuButton.classList.toggle("active");
     navigationMenu.classList.toggle("active");
 });
-
-
-window.addEventListener("load", function () {
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth <= 480) {
-        alert("Mobile screen");
-    } else if (screenWidth <= 768) {
-        alert("Tablet screen");
-    } else {
-        alert("Desktop screen");
-    }
-});
-
