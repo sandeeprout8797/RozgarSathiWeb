@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sandeeprout8797.github.io/RozgarSathiWeb/sitemap.xml
