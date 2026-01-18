@@ -313,14 +313,12 @@ button img {
 .collabImagesDivisionScroll {
     width: 100%;
     overflow: hidden;
-    background-color: red;
 }
     
 .collabImagesDivision {
     display: flex;
     gap: 40px;
     width: 100%;
-    background-color: rebeccapurple;
     animation: marquee 20s linear infinite;
 }
     
@@ -368,8 +366,7 @@ button img {
 
 
 .storyDivisionscroll {
-    width: 80%;
-    background-color: red;
+    width: 100%;
     padding-top: 150px;
     overflow: hidden;
     display: flex;
@@ -644,3 +641,37 @@ button img {
     text-align: center;
 }
 
+@media screen and (min-width: 800px) {
+    .cotentOneDivision {
+        flex-direction: row;
+    }
+
+    .contentTwoDivision {
+        flex-direction: row;
+        align-items: center;
+    }
+    .contentTwoImageDivision  {
+        align-items: start;
+    }
+
+    .servicesDescDivisionOne , .servicesDescDivisionTwo {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .pricingDivisionsDiv {
+        height: 100%;
+        align-items: start;
+        flex-direction: row;
+    }
+
+    .pricingDivisionsDiv div {
+        height: 600px;
+    }
+
+    .testimonialDivision {
+        flex-direction: row;
+    }
+
+}
