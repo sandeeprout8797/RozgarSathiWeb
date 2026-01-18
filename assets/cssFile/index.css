@@ -117,8 +117,6 @@ button img {
 }
 
 
-
-
 .cotentOneDivision {
     display: flex;
     gap: 70px;
@@ -135,8 +133,7 @@ button img {
 }
 
 .cotentOneDivision img {
-    height: 300px;
-    width: 300px;
+    width: 80%;
 }
 
 
@@ -170,8 +167,7 @@ button img {
 
 
 .contentTwoDivision img {
-    height: 200px;
-    width: 200px;
+    width: 50%;
 }
 
 
@@ -230,7 +226,7 @@ button img {
 }
 
 .statsRightOneDivision div , .statsRightTwoDivision div {
-    height: 30%;
+    height: 35%;
 }
 
 
@@ -327,7 +323,7 @@ button img {
 }
     
 .collabImagesDivision img {
-    height: 90px; 
+    height: 50px; 
     object-fit: cover;
     z-index: 1;         
 }
@@ -364,66 +360,55 @@ button img {
 }
 
 .callBookingDivision img {
-    height: 300px;
-    width: 300px;
+    width: 80%;
 }
-
 
 
 .storyDivisionscroll {
-    padding-top: 150px;
-}
-
-.storyDivisionscroll,
-.storyDivisionscrollTwo {
     width: 100%;
+    padding-top: 150px;
     overflow: hidden;
-    position: relative;
 }
-
 
 .storyDivision,
 .storyDivisionTwo {
     display: flex;
-    width: max-content;
+    width: 100%;
 }
 
 .storyDivision img,
 .storyDivisionTwo img {
-    width: 220px;
-    height: 140px;
-    object-fit: cover;
-    margin-right: 16px;
+    width: 220px;        
+    height: 100px;
     border-radius: 10px;
 }
 
 
 .storyDivision {
-    animation: scrollLeft 25s linear infinite;
+    animation: scrollLeft 35s linear infinite;
 }
 
 .storyDivisionTwo {
-    animation: scrollRight 25s linear infinite;
+    animation: scrollRight 35s linear infinite;
 }
 
 @keyframes scrollLeft {
-    0% {
+    from {
         transform: translateX(0);
     }
-    100% {
+    to {
         transform: translateX(-50%);
     }
 }
 
 @keyframes scrollRight {
-    0% {
+    from {
         transform: translateX(-50%);
     }
-    100% {
+    to {
         transform: translateX(0);
     }
 }
-
 
 
 .collabImagesDivisionScroll:hover .collabImagesDivision {
