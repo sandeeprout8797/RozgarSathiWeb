@@ -365,9 +365,14 @@ button img {
 
 
 .storyDivisionscroll {
-    width: 100%;
+    width: 80%;
+    background-color: red;
     padding-top: 150px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .storyDivision,
@@ -380,16 +385,15 @@ button img {
 .storyDivisionTwo img {
     width: 220px;        
     height: 100px;
-    border-radius: 10px;
 }
 
 
 .storyDivision {
-    animation: scrollLeft 35s linear infinite;
+    animation: scrollLeft 30s linear infinite;
 }
 
 .storyDivisionTwo {
-    animation: scrollRight 35s linear infinite;
+    animation: scrollRight 30s linear infinite;
 }
 
 @keyframes scrollLeft {
