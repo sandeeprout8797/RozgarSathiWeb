@@ -119,11 +119,11 @@ button img {
 
 .cotentOneDivision {
     display: flex;
-    gap: 70px;
     margin-top: 100px;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contentOneImageDivision {
@@ -133,7 +133,7 @@ button img {
 }
 
 .cotentOneDivision img {
-    width: 80%;
+    width: 40%;
 }
 
 
@@ -616,13 +616,13 @@ button img {
 .footerWhatsAppMessage {
     position: fixed;
     bottom: 140px;
-    right: 50px;
+    right: 40px;
 }
 
 .footerMailMesssage {
     position: fixed;
     bottom: 60px;
-    right: 50px;
+    right: 40px;
 }
 
 .backToTopDivision img {
@@ -641,6 +641,16 @@ button img {
 @media screen and (min-width: 800px) {
     .cotentOneDivision {
         flex-direction: row;
+
+    }
+
+    .cotentOneDivision div {
+        width: 60%;
+    }
+
+    .cotentOneDivision img {
+        width: 60%;
+        margin-right: 50px;
     }
 
     .contentTwoDivision {
@@ -664,7 +674,7 @@ button img {
     }
 
     .pricingDivisionsDiv div {
-        height: 600px;
+        height: 700px;
     }
 
     .testimonialDivision {
