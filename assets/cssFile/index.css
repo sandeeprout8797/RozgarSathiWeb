@@ -313,12 +313,14 @@ button img {
 .collabImagesDivisionScroll {
     width: 100%;
     overflow: hidden;
+    background-color: red;
 }
     
 .collabImagesDivision {
     display: flex;
-    gap: 40px;               
-    min-width: max-content; 
+    gap: 40px;
+    width: 100%;
+    background-color: rebeccapurple;
     animation: marquee 20s linear infinite;
 }
     
@@ -360,7 +362,7 @@ button img {
 }
 
 .callBookingDivision img {
-    width: 80%;
+    width: 200px;
 }
 
 
