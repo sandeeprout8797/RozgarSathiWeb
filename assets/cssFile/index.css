@@ -124,6 +124,7 @@ button img {
     padding: 20px;
     align-items: center;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .contentOneImageDivision {
