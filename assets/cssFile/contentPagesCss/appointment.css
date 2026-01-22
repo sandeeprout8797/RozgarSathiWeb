@@ -250,11 +250,9 @@ button img {
 }
 
 @media screen and (min-width: 800px) {
-    body {
-        background-color: red;
-    }
 
     .appointmentInputDivision {
+        gap: 250px;
         flex-direction: row;
     }
 }
