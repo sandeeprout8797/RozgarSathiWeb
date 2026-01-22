@@ -124,6 +124,11 @@ button img {
     justify-content: center;
 }
 
+.contactMapDivision iframe {
+    width: 300px;
+    height: 400px;
+}
+
 .contactMapDivision div {
     border: 5px solid black;
 }
@@ -227,12 +232,8 @@ button img {
 }
 
 @media screen and (min-width: 800px) {
-    .imageSectionTeam {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .aboutOurStoryDiv img {
-        width: 250px;
+    .contactMapDivision iframe {
+        width: 450px;
+        height: 450px;
     }
 }
