@@ -1,232 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Book an Appointment | RozgarSathi – Personalized Job Assistance</title>
-    <meta name="description" content="Book an appointment with RozgarSathi for career counselling, job assistance, hiring consultation, resume review and interview preparation.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Onboarding | RozgarSathi</title>
 
-    <!-- Basic SEO -->
-    <meta name="robots" content="index, follow">
+<style>
+:root{
+  --primary:#0a1f44;
+  --secondary:#f7931e;
+  --light:#f9f9f9;
+  --border:#ddd;
+}
 
-    <!-- Favicon (optional) -->
-    <link rel="icon" href="/favicon.png" type="image/png">
+body{
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: var(--light);
+  margin: 0;
+  padding: 20px;
+}
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f9fc;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+.onboarding-wrapper{
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
+.header{
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 10px;
-        }
+.header h1{
+  color: var(--primary);
+  margin-bottom: 8px;
+}
 
-        .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-        }
+.header p{
+  color: #666;
+}
 
-        form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+.section{
+  margin-bottom: 35px;
+}
 
-        form label {
-            font-weight: bold;
-            margin-bottom: 5px;
-            display: block;
-        }
+.section h2{
+  font-size: 20px;
+  color: var(--primary);
+  border-left: 5px solid var(--secondary);
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
 
-        form input,
-        form select,
-        form textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
+.form-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
 
-        form textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
+input, select, textarea{
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+}
 
-        .full-width {
-            grid-column: 1 / 3;
-        }
+textarea{
+  resize: vertical;
+  min-height: 80px;
+}
 
-        .submit-btn {
-            background: #1e88e5;
-            color: #fff;
-            border: none;
-            padding: 14px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+input:focus, select:focus, textarea:focus{
+  outline: none;
+  border-color: var(--secondary);
+}
 
-        .submit-btn:hover {
-            background: #1565c0;
-        }
+.full{
+  grid-column: 1 / -1;
+}
 
-        .info-section {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
+.checkbox{
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+}
 
-        .info-section h3 {
-            margin-bottom: 10px;
-        }
+.checkbox input{
+  width: auto;
+  margin-top: 4px;
+}
 
-        .info-section p,
-        .info-section li {
-            color: #555;
-            line-height: 1.6;
-        }
+button{
+  background: var(--secondary);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+button:hover{
+  opacity: .9;
+}
 
-        .contact-box {
-            background: #f1f5ff;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
+.footer-note{
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-top: 25px;
+}
 
-        @media (max-width: 768px) {
-            form {
-                grid-template-columns: 1fr;
-            }
-            .full-width {
-                grid-column: 1 / 2;
-            }
-        }
-    </style>
+@media(max-width:600px){
+  .onboarding-wrapper{
+    padding: 20px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="onboarding-wrapper">
 
-    <h1>Book an Appointment</h1>
-    <p class="subtitle">
-        Get personalized career guidance, job assistance, or hiring consultation from RozgarSathi experts.
-    </p>
+  <div class="header">
+    <h1>Client Onboarding Form</h1>
+    <p>RozgarSathi – Hiring & Employment Services</p>
+  </div>
 
-    <!-- Appointment Form -->
-    <form action="#" method="post">
-
-        <div>
-            <label for="name">Full Name *</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-
-        <div>
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div>
-            <label for="phone">Phone Number *</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-
-        <div>
-            <label for="appointmentType">Appointment Type *</label>
-            <select id="appointmentType" name="appointmentType" required>
-                <option value="">Select</option>
-                <option>Career Counselling</option>
-                <option>Job Assistance / Placement Discussion</option>
-                <option>Resume Review</option>
-                <option>Interview Preparation</option>
-                <option>Employer / Hiring Consultation</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="mode">Mode of Appointment *</label>
-            <select id="mode" name="mode" required>
-                <option value="">Select</option>
-                <option>Phone Call</option>
-                <option>Video Call (Google Meet)</option>
-                <option>Office Visit</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="date">Preferred Date *</label>
-            <input type="date" id="date" name="date" required>
-        </div>
-
-        <div>
-            <label for="time">Preferred Time *</label>
-            <input type="time" id="time" name="time" required>
-        </div>
-
-        <div>
-            <label for="company">Company Name (For Employers)</label>
-            <input type="text" id="company" name="company">
-        </div>
-
-        <div class="full-width">
-            <label for="message">Message / Requirement</label>
-            <textarea id="message" name="message" placeholder="Briefly describe your requirement..."></textarea>
-        </div>
-
-        <div class="full-width">
-            <button type="submit" class="submit-btn">Book Appointment</button>
-        </div>
-
-    </form>
-
-    <!-- Info Section -->
-    <div class="info-section">
-        <h3>Appointment Details</h3>
-        <ul>
-            <li>⏱ Duration: 20–30 minutes</li>
-            <li>📅 Availability: Monday to Saturday (10:00 AM – 6:00 PM)</li>
-            <li>📍 Location: Online / Phone / Office Visit (as selected)</li>
-        </ul>
-
-        <h3>Pricing & Disclaimer</h3>
-        <p>
-            Initial consultation may be free or paid depending on the service.  
-            RozgarSathi does <strong>not guarantee job placement</strong>.  
-            All services are provided on a best-effort basis.
-        </p>
-
-        <h3>Privacy & Data Protection</h3>
-        <p>
-            Your personal information and documents are kept confidential and are used only
-            for recruitment and career assistance purposes.
-        </p>
-
-        <div class="contact-box">
-            <strong>Need help booking?</strong><br>
-            📧 Email: privaterozgarsathi@gmail.com<br>
-            📞 Phone / WhatsApp: Available on request
-        </div>
+  <!-- COMPANY DETAILS -->
+  <div class="section">
+    <h2>Company Details</h2>
+    <div class="form-grid">
+      <input type="text" placeholder="Company Name *" required>
+      <input type="text" placeholder="CIN / LLPIN">
+      <select>
+        <option>Company Type</option>
+        <option>Pvt Ltd</option>
+        <option>LLP</option>
+        <option>Partnership</option>
+        <option>Proprietorship</option>
+      </select>
+      <input type="text" placeholder="Industry">
+      <input type="url" placeholder="Company Website">
+      <textarea class="full" placeholder="Registered Address"></textarea>
     </div>
+  </div>
+
+  <!-- SPOC -->
+  <div class="section">
+    <h2>Point of Contact (SPOC)</h2>
+    <div class="form-grid">
+      <input type="text" placeholder="Contact Person Name *" required>
+      <input type="text" placeholder="Designation">
+      <input type="email" placeholder="Email ID *" required>
+      <input type="tel" placeholder="Mobile Number *" required>
+    </div>
+  </div>
+
+  <!-- BILLING -->
+  <div class="section">
+    <h2>Billing & Compliance</h2>
+    <div class="form-grid">
+      <input type="text" placeholder="PAN Number">
+      <input type="text" placeholder="GSTIN (if applicable)">
+      <textarea class="full" placeholder="Billing Address"></textarea>
+      <input type="email" placeholder="Accounts Email">
+    </div>
+  </div>
+
+  <!-- JOB DETAILS -->
+  <div class="section">
+    <h2>Job Requirement</h2>
+    <div class="form-grid">
+      <input type="text" placeholder="Job Title">
+      <input type="text" placeholder="Department">
+      <input type="text" placeholder="Experience Required">
+      <input type="number" placeholder="Number of Openings">
+      <select>
+        <option>Work Mode</option>
+        <option>Onsite</option>
+        <option>Remote</option>
+        <option>Hybrid</option>
+      </select>
+      <input type="text" placeholder="Location">
+      <select>
+        <option>Employment Type</option>
+        <option>Full-time</option>
+        <option>Contract</option>
+      </select>
+      <input type="text" placeholder="CTC Range">
+      <input type="text" placeholder="Joining Timeline">
+      <textarea class="full" placeholder="Interview Process"></textarea>
+    </div>
+  </div>
+
+  <!-- COMMERCIAL -->
+  <div class="section">
+    <h2>Commercial Terms</h2>
+    <div class="form-grid">
+      <input type="text" placeholder="Recruitment Fee (%)">
+      <select>
+        <option>Replacement Period</option>
+        <option>30 Days</option>
+        <option>60 Days</option>
+        <option>90 Days</option>
+      </select>
+      <select>
+        <option>Payment Terms</option>
+        <option>7 Days</option>
+        <option>15 Days</option>
+        <option>30 Days</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- AUTH -->
+  <div class="section">
+    <h2>Authorization</h2>
+    <div class="checkbox">
+      <input type="checkbox" required>
+      <span>
+        We authorize <strong>RozgarSathi</strong> to act as our recruitment partner and confirm that the above information is true and accurate.
+      </span>
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <button type="submit">Submit Onboarding Form</button>
+  </div>
+
+  <div class="footer-note">
+    © 2026 RozgarSathi | All Rights Reserved
+  </div>
 
 </div>
 
