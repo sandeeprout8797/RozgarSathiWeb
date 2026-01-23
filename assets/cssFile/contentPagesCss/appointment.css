@@ -126,19 +126,18 @@ button img {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 100px;
+    padding: 50px;
 }
 
-.appointmentLeftInputDivision, .appointmentRightDivision {
-    width: 100%;
-}
 
 .appointmentLeftInputDivision div, .appointmentRightDivision div {
-    width: 100%;
+    width: 300px;
     margin-bottom: 50px;
+    display: flex;
+    
 }
 
-.appointmentLeftInputDivision input, .appointmentRightDivision input, .appointmentLeftInputDivision h3, .appointmentRightDivision h3 {
+.appointmentLeftInputDivision input, .appointmentRightDivision input, .appointmentLeftInputDivision select, .appointmentRightDivision select {
     width: 100%;
 }
 
