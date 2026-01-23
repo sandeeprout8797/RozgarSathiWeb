@@ -118,6 +118,112 @@ button img {
 
 
 
+/* ===== Privacy, Disclaimer & Refund Policy ===== */
+
+.legal-policy-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    color: #222;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.7;
+    border-radius: 8px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Main Title */
+.legal-policy-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0a3d62;
+    text-align: center;
+}
+
+/* Section Titles */
+.legal-policy-container h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #1e272e;
+}
+
+/* Sub Titles */
+.legal-policy-container h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: #34495e;
+}
+
+/* Paragraphs */
+.legal-policy-container p {
+    font-size: 14.8px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* Lists */
+.legal-policy-container ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.legal-policy-container ul li {
+    font-size: 14.5px;
+    margin-bottom: 6px;
+}
+
+/* Horizontal line */
+.legal-policy-container hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 30px 0;
+}
+
+/* Links */
+.legal-policy-container a {
+    color: #0a58ca;
+    text-decoration: none;
+}
+
+.legal-policy-container a:hover {
+    text-decoration: underline;
+}
+
+/* Highlight strong text */
+.legal-policy-container strong {
+    color: #000;
+}
+
+/* Footer note */
+.legal-policy-container p:last-child {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .legal-policy-container {
+        margin: 20px 12px;
+        padding: 22px 18px;
+    }
+
+    .legal-policy-container h1 {
+        font-size: 26px;
+    }
+
+    .legal-policy-container h2 {
+        font-size: 20px;
+    }
+
+    .legal-policy-container p,
+    .legal-policy-container ul li {
+        font-size: 14px;
+    }
+}
 
 
 
