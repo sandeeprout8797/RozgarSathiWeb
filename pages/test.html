@@ -1,245 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Client Onboarding | RozgarSathi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Registration Form</title>
+  <style>
+    /* General styling */
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 10px; }
+    h2 { text-align: center; }
+    label { display: block; margin: 10px 0 5px; font-weight: bold; }
+    input, select { width: 100%; padding: 8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; }
+    button { padding: 10px 20px; margin: 5px; cursor: pointer; border: none; border-radius: 5px; background-color: #4caf50; color: white; }
+    button:hover { background-color: #45a049; }
+    
+    /* Sections */
+    .section { display: none; } /* hide all sections by default */
+    .section.active { display: block; } /* show active section */
 
-<style>
-:root{
-  --primary:#0a1f44;
-  --secondary:#f7931e;
-  --light:#f9f9f9;
-  --border:#ddd;
-}
-
-body{
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  background: var(--light);
-  margin: 0;
-  padding: 20px;
-}
-
-.onboarding-wrapper{
-  max-width: 1000px;
-  margin: auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
-}
-
-.header{
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.header h1{
-  color: var(--primary);
-  margin-bottom: 8px;
-}
-
-.header p{
-  color: #666;
-}
-
-.section{
-  margin-bottom: 35px;
-}
-
-.section h2{
-  font-size: 20px;
-  color: var(--primary);
-  border-left: 5px solid var(--secondary);
-  padding-left: 12px;
-  margin-bottom: 20px;
-}
-
-.form-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
-}
-
-input, select, textarea{
-  width: 100%;
-  padding: 12px 14px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-textarea{
-  resize: vertical;
-  min-height: 80px;
-}
-
-input:focus, select:focus, textarea:focus{
-  outline: none;
-  border-color: var(--secondary);
-}
-
-.full{
-  grid-column: 1 / -1;
-}
-
-.checkbox{
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  font-size: 14px;
-}
-
-.checkbox input{
-  width: auto;
-  margin-top: 4px;
-}
-
-button{
-  background: var(--secondary);
-  color: #fff;
-  border: none;
-  padding: 14px 30px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-button:hover{
-  opacity: .9;
-}
-
-.footer-note{
-  text-align: center;
-  font-size: 13px;
-  color: #777;
-  margin-top: 25px;
-}
-
-@media(max-width:600px){
-  .onboarding-wrapper{
-    padding: 20px;
-  }
-}
-</style>
+    /* Progress Bar */
+    .progress-container {
+      width: 100%; background-color: #eee; border-radius: 10px; height: 25px; margin-bottom: 30px;
+    }
+    .progress-bar {
+      height: 100%; width: 0%; background-color: #4caf50;
+      border-radius: 10px; text-align: center; color: white;
+      line-height: 25px; transition: width 0.3s;
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="onboarding-wrapper">
+<h2>Job Registration Form</h2>
 
-  <div class="header">
-    <h1>Client Onboarding Form</h1>
-    <p>RozgarSathi – Hiring & Employment Services</p>
-  </div>
-
-  <!-- COMPANY DETAILS -->
-  <div class="section">
-    <h2>Company Details</h2>
-    <div class="form-grid">
-      <input type="text" placeholder="Company Name *" required>
-      <input type="text" placeholder="CIN / LLPIN">
-      <select>
-        <option>Company Type</option>
-        <option>Pvt Ltd</option>
-        <option>LLP</option>
-        <option>Partnership</option>
-        <option>Proprietorship</option>
-      </select>
-      <input type="text" placeholder="Industry">
-      <input type="url" placeholder="Company Website">
-      <textarea class="full" placeholder="Registered Address"></textarea>
-    </div>
-  </div>
-
-  <!-- SPOC -->
-  <div class="section">
-    <h2>Point of Contact (SPOC)</h2>
-    <div class="form-grid">
-      <input type="text" placeholder="Contact Person Name *" required>
-      <input type="text" placeholder="Designation">
-      <input type="email" placeholder="Email ID *" required>
-      <input type="tel" placeholder="Mobile Number *" required>
-    </div>
-  </div>
-
-  <!-- BILLING -->
-  <div class="section">
-    <h2>Billing & Compliance</h2>
-    <div class="form-grid">
-      <input type="text" placeholder="PAN Number">
-      <input type="text" placeholder="GSTIN (if applicable)">
-      <textarea class="full" placeholder="Billing Address"></textarea>
-      <input type="email" placeholder="Accounts Email">
-    </div>
-  </div>
-
-  <!-- JOB DETAILS -->
-  <div class="section">
-    <h2>Job Requirement</h2>
-    <div class="form-grid">
-      <input type="text" placeholder="Job Title">
-      <input type="text" placeholder="Department">
-      <input type="text" placeholder="Experience Required">
-      <input type="number" placeholder="Number of Openings">
-      <select>
-        <option>Work Mode</option>
-        <option>Onsite</option>
-        <option>Remote</option>
-        <option>Hybrid</option>
-      </select>
-      <input type="text" placeholder="Location">
-      <select>
-        <option>Employment Type</option>
-        <option>Full-time</option>
-        <option>Contract</option>
-      </select>
-      <input type="text" placeholder="CTC Range">
-      <input type="text" placeholder="Joining Timeline">
-      <textarea class="full" placeholder="Interview Process"></textarea>
-    </div>
-  </div>
-
-  <!-- COMMERCIAL -->
-  <div class="section">
-    <h2>Commercial Terms</h2>
-    <div class="form-grid">
-      <input type="text" placeholder="Recruitment Fee (%)">
-      <select>
-        <option>Replacement Period</option>
-        <option>30 Days</option>
-        <option>60 Days</option>
-        <option>90 Days</option>
-      </select>
-      <select>
-        <option>Payment Terms</option>
-        <option>7 Days</option>
-        <option>15 Days</option>
-        <option>30 Days</option>
-      </select>
-    </div>
-  </div>
-
-  <!-- AUTH -->
-  <div class="section">
-    <h2>Authorization</h2>
-    <div class="checkbox">
-      <input type="checkbox" required>
-      <span>
-        We authorize <strong>RozgarSathi</strong> to act as our recruitment partner and confirm that the above information is true and accurate.
-      </span>
-    </div>
-  </div>
-
-  <div style="text-align:center;">
-    <button type="submit">Submit Onboarding Form</button>
-  </div>
-
-  <div class="footer-note">
-    © 2026 RozgarSathi | All Rights Reserved
-  </div>
-
+<!-- Progress bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progressBar">0%</div>
 </div>
+
+<form id="registrationForm">
+
+  <!-- Section 1: Basic Info -->
+  <div class="section active" id="section1">
+    <label for="mobile">Mobile Number *</label>
+    <input type="tel" id="mobile" required placeholder="Enter your 10-digit mobile">
+
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" required placeholder="Enter your full name">
+
+    <button type="button" onclick="nextSection()">Next</button>
+  </div>
+
+  <!-- Section 2: Job Details -->
+  <div class="section" id="section2">
+    <label for="job">Job Category / Skill *</label>
+    <select id="job" required>
+      <option value="">Select Job Category</option>
+      <option value="helper">Helper</option>
+      <option value="driver">Driver</option>
+      <option value="sales">Sales Executive</option>
+      <option value="office">Office Staff</option>
+      <option value="it">IT / Computer</option>
+    </select>
+
+    <label for="location">Preferred Job Location *</label>
+    <input type="text" id="location" required placeholder="Enter city or area">
+
+    <label for="status">Job Search Status *</label>
+    <select id="status" required>
+      <option value="">Select Status</option>
+      <option value="actively_looking">Actively Looking</option>
+      <option value="open">Open to Opportunities</option>
+      <option value="not_looking">Not Looking</option>
+    </select>
+
+    <button type="button" onclick="prevSection()">Previous</button>
+    <button type="button" onclick="nextSection()">Next</button>
+  </div>
+
+  <!-- Section 3: Optional Profile -->
+  <div class="section" id="section3">
+    <label for="experience">Total Work Experience (Years)</label>
+    <input type="number" id="experience" min="0" placeholder="Optional">
+
+    <label for="skills">Secondary Skills</label>
+    <input type="text" id="skills" placeholder="Optional, e.g., Excel, Driving">
+
+    <label for="resume">Upload Resume (Optional)</label>
+    <input type="file" id="resume" accept=".pdf,.doc,.docx">
+
+    <label>
+      <input type="checkbox" id="consent" required>
+      I agree to Terms & Privacy Policy *
+    </label>
+
+    <button type="button" onclick="prevSection()">Previous</button>
+    <button type="submit">Submit</button>
+  </div>
+
+</form>
+
+<script>
+  // -------------------------------
+  // Variables
+  // -------------------------------
+
+  const form = document.getElementById('registrationForm');
+  const sections = document.querySelectorAll('.section');
+  const progressBar = document.getElementById('progressBar');
+  let currentSection = 0; // start at first section
+
+  // -------------------------------
+  // Show a section by index
+  // -------------------------------
+
+  function showSection(index) {
+    sections.forEach((sec, i) => {
+      // Show only the section matching the index
+      sec.classList.toggle('active', i === index);
+    });
+    updateProgress(); // update progress bar whenever section changes
+  }
+
+  // -------------------------------
+  // Go to next section
+  // -------------------------------
+
+  function nextSection() {
+    if (validateSection(currentSection)) {
+      currentSection++;
+      if (currentSection >= sections.length) currentSection = sections.length - 1;
+        showSection(currentSection);
+    }
+  }
+
+  // -------------------------------
+  // Go to previous section
+  // -------------------------------
+
+  function prevSection() {
+    currentSection--;
+    if (currentSection < 0) currentSection = 0;
+    showSection(currentSection);
+  }
+
+  // -------------------------------
+  // Validate required fields in current section
+  // -------------------------------
+
+  function validateSection(index) {
+    const inputs = sections[index].querySelectorAll('input, select');
+    for (let input of inputs) {
+      if (input.hasAttribute('required') && !input.value) {
+        alert('Please fill all required fields!');
+        input.focus();
+        return false;
+      }
+    }
+    return true;
+  }
+
+  // -------------------------------
+  // Update progress bar
+  // -------------------------------
+  function updateProgress() {
+    const allFields = form.querySelectorAll('input, select');
+    let filled = 0;
+
+    allFields.forEach(input => {
+      if ((input.type === 'checkbox' && input.checked) || (input.value && input.value !== "")) {
+        filled++;
+      }
+    });
+
+    const percent = Math.round((filled / allFields.length) * 100);
+    progressBar.style.width = percent + '%';
+    progressBar.innerText = percent + '%';
+  }
+
+  // -------------------------------
+  // Update progress dynamically as user types/selects
+  // -------------------------------
+  
+  form.addEventListener('input', updateProgress);
+  form.addEventListener('change', updateProgress);
+
+  // -------------------------------
+  // Initialize first section
+  // -------------------------------
+  showSection(currentSection);
+
+  // -------------------------------
+  // Form submission
+  // -------------------------------
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent page refresh
+    if (validateSection(currentSection)) {
+      alert('Registration submitted successfully!');
+      // Here you can send data to backend via AJAX / fetch
+    }
+  });
+
+</script>
 
 </body>
 </html>
