@@ -19,7 +19,7 @@
     
         <link rel="icon" href="../assets/images/favicon/favicon.ico" type="image/x-icon">
         <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href=".assets/images/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/favicon-180x180.png">
         <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicon/favicon-192x192.png">
         <link rel="icon" type="image/png" sizes="512x512" href="../assets/images/favicon/favicon-120x120.png">
@@ -42,7 +42,7 @@
         <meta property="og:description" content="Search thousands of job listings and internships across India with RozgarSathi. Start your career in Delhi, Gurugram & beyond today!">
         <meta property="og:url" content="https://rozgarsathi.co.in/">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://rozgarsathi.co.in/assets/social-image.jpg">
+        <meta property="og:image" content="https://rozgarsathi.co.in/assets/images/companyLogoImage.jpg">
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="RozgarSathi Career and Job Assistance Preview Image" />
@@ -50,7 +50,7 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="RozgarSathi – Job Portal India">
         <meta name="twitter:description" content="Find jobs and internships in Delhi, Gurugram & across India with RozgarSathi.">
-        <meta name="twitter:image" content="https://rozgarsathi.co.in/assets/social-image.jpg">
+        <meta name="twitter:image" content="https://rozgarsathi.co.in/assets/images/companyLogoImage.jpg">
         <meta name="twitter:site" content="@RozgarSathiCoIn">
         <meta name="twitter:creator" content="@RozgarSathiCoIn">
     
@@ -164,7 +164,173 @@
         </div>
 
         
+        <form class="singinFormDivision">
 
+            <div class="signinMainDivision">
+
+                <h3> Personal Details </h3>
+                <div class="personalDetailsInputDiv">
+                    <label> Full Name *</label> <br>
+                    <input type="text" name="fulllName" required> <br>
+
+                    <label> Mobile Number * </label> <br>
+                    <input type="tel" name="mobile" pattern="[0-9] {10}" required> <br>
+
+                    <label> Email Address </label> <br>
+                    <input type="email" name="email" required> <br>
+
+                    <label> Date Of Birth </label> <br>
+                    <input type="date" name="dob" required> <br>
+
+                    <label>Gender *</label> <br>
+                    <select name="gender" required>
+                        <option value="">Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select> <br>
+
+                    <label>Current City *</label> <br>
+                    <input type="text" name="city" required> <br>
+
+                    <label>State *</label> <br>
+                    <input type="text" name="state" required> <br>
+
+                    <label>Willing to Relocate?</label> <br>
+                    <select name="relocate">
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select> <br>
+                </div>
+
+
+                <h3>Education Details</h3>
+                <div class="educationDetailsInputDiv">
+
+                    <label>Highest Qualification *</label> <br>
+                    <select name="qualification" required>
+                        <option value="">Select</option>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Diploma</option>
+                        <option>ITI</option>
+                        <option>Graduate</option>
+                        <option>Post Graduate</option>
+                    </select> <br>
+
+                    <label>Course / Stream</label> <br>
+                    <input type="text" name="course"> <br>
+
+                    <label>Institute / University</label> <br>
+                    <input type="text" name="institute"> <br>
+
+                    <label>Year of Passing</label> <br>
+                    <input type="number"  max="2035"> <br>
+
+                </div>
+
+
+                <h3> Experience & Skills </h3>
+                <div class="experienceDetailsInputDiv">
+                    <label>Experience Level *</label> <br>
+                    <select id="experienceLevel" required>
+                        <option value="Fresher">Fresher</option>
+                        <option value="Experienced">Experienced</option>
+                    </select> <br>
+
+                    <label>Total Experience (Years)</label> <br>
+                    <input type="number" step="0.5"> <br>
+
+                    <label>Current / Last Job Title</label> <br>
+                    <input type="text"> <br>
+
+                    <label>Industry</label> <br>
+                    <input type="text"> <br>
+
+                    <label>Primary Skill *</label> <br>
+                    <input type="text" required> <br>
+
+                    <label>Secondary Skills</label> <br>
+                    <input type="text" placeholder="Comma separated"> <br>
+                </div>
+
+
+                <h3>Job Preferences</h3>
+                <div class="jobPrefrenseInputDivision">
+
+                    <label>Job Role Looking For *</label> <br>
+                    <input type="text" required> <br>
+                
+                    <label>Preferred Job Location *</label> <br>
+                    <input type="text" required> <br>
+                
+                    <label>Job Type *</label> <br>
+                    <select required>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Internship</option>
+                        <option>Contract</option>
+                    </select> <br>
+                
+                    <label>Preferred Shift *</label> <br>
+                    <select required>
+                        <option>Day </option>
+                        <option>Night</option>
+                        <option>Rotational</option>
+                    </select> <br>
+                
+                    <label>Immediate Joiner?</label> <br>
+                    <select>
+                        <option>Yes</option> 
+                        <option>No</option>
+                    </select> <br>
+                    
+                </div>
+
+
+                <h3>Salary Details</h3>
+                <div class="salaryDetailsInputDetails">
+
+                    <label>Current Salary (Monthly)</label> <br>
+                    <input type="number"> <br>
+
+                    <label>Expected Salary Range *</label> <br>
+                    <input type="text" placeholder="e.g. 15,000 - 25,000" required> <br>
+
+                    <label>Negotiable?</label> <br>
+                    <select>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select> <br>
+
+                </div>
+
+
+                <h3>Resume (Optional)</h3>
+                <div class="resumeInputDivision">
+                    <label>Upload Resume</label> <br>
+                    <input type="file" accept=".pdf,.doc,.docx"> <br>
+
+                    <label>LinkedIn / Portfolio URL</label> <br>
+                    <input type="url"> <br>
+                </div>
+
+
+                <h3>Consent</h3>
+                <div class="consentInoutDivision">
+                    <label class="checkbox">
+                        <input type="checkbox" required> <br>
+                        I agree to the Terms & Conditions and Privacy Policy *
+                    </label>
+                </div>
+  
+            </div>
+
+            <div class="singinButtonDivision">
+                <button class="singinSubmitButton"> Submit </button>
+            </div> 
+            
+        </form>
 
 
 
@@ -244,7 +410,7 @@
 
             <div class="footerMailMesssage">
                 <a href="mailto:privaterozgarsathi@gmail.com?subject=Inquiry&amp;body=Hi,%0D%0A%0D%0AI%20would%20like%20to%20know%20more%20about...">
-                    <img src=../assets/images/mailLogoImage.jpg" class="footerMailLogo" alt="Email contact link"> 
+                    <img src="../assets/images/mailLogoImage.jpg" class="footerMailLogo" alt="Email contact link"> 
                 </a>
             </div>
         </div>
@@ -252,6 +418,9 @@
         <div class="privacyPolicyDivision">
             <p3> PRIVACY POLICY COPYRIGHT © 2025 RozgarSathi All rights reserved </p3>
         </div>
+
+        <script src="../assets/jsFile/index.js"></script>
+        <script src="../assets/jsFile/signin.js"></script>
     </body>
 </html>
 

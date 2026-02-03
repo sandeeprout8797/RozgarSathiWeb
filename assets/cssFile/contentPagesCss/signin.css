@@ -117,9 +117,48 @@ button img {
 }
 
 
+.singinFormDivision {
+    padding: 40px;
 
+}
 
+.singinFormDivision h3 {
+    padding-left: 20px;
+    background-color: black;
+    color: white;
+}
 
+.singinFormDivision div {
+    padding: 20px;
+}
+
+.singinFormDivision input {
+    width: 85%;
+    margin-bottom: 50px;
+}
+.singinFormDivision select {
+    width: 70%;
+    margin-bottom: 50px;
+
+}
+
+.singinFormDivision button {
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.consentInoutDivision input {
+    margin-bottom: 0px;
+}
+
+.singinButtonDivision {
+    display: flex;
+    justify-content: center;
+}
 
 
 

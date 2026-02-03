@@ -1,205 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Registration Form</title>
-  <style>
-    /* General styling */
-    body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 10px; }
-    h2 { text-align: center; }
-    label { display: block; margin: 10px 0 5px; font-weight: bold; }
-    input, select { width: 100%; padding: 8px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; }
-    button { padding: 10px 20px; margin: 5px; cursor: pointer; border: none; border-radius: 5px; background-color: #4caf50; color: white; }
-    button:hover { background-color: #45a049; }
-    
-    /* Sections */
-    .section { display: none; } /* hide all sections by default */
-    .section.active { display: block; } /* show active section */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidate Registration | RozgarSathi</title>
 
-    /* Progress Bar */
-    .progress-container {
-      width: 100%; background-color: #eee; border-radius: 10px; height: 25px; margin-bottom: 30px;
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+  }
+
+  form {
+    max-width: 800px;
+    background: #ffffff;
+    padding: 25px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+
+  h3 {
+    margin-top: 30px;
+    color: #1e3a8a;
+    border-left: 5px solid #2563eb;
+    padding-left: 10px;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+  }
+
+  hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+
+  button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    background: #1e40af;
+  }
+
+  .checkbox {
+    margin-top: 10px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
     }
-    .progress-bar {
-      height: 100%; width: 0%; background-color: #4caf50;
-      border-radius: 10px; text-align: center; color: white;
-      line-height: 25px; transition: width 0.3s;
-    }
-  </style>
+  }
+</style>
 </head>
+
 <body>
 
-<h2>Job Registration Form</h2>
+<form id="candidateForm">
 
-<!-- Progress bar -->
-<div class="progress-container">
-  <div class="progress-bar" id="progressBar">0%</div>
-</div>
+  <!-- PERSONAL DETAILS -->
+  <h3>Personal Details</h3>
 
-<form id="registrationForm">
+  <label>Full Name *</label>
+  <input type="text" name="full_name" required>
 
-  <!-- Section 1: Basic Info -->
-  <div class="section active" id="section1">
-    <label for="mobile">Mobile Number *</label>
-    <input type="tel" id="mobile" required placeholder="Enter your 10-digit mobile">
+  <label>Mobile Number *</label>
+  <input type="tel" name="mobile" pattern="[0-9]{10}" required>
 
-    <label for="name">Full Name *</label>
-    <input type="text" id="name" required placeholder="Enter your full name">
+  <label>Email Address *</label>
+  <input type="email" name="email" required>
 
-    <button type="button" onclick="nextSection()">Next</button>
+  <label>Date of Birth *</label>
+  <input type="date" name="dob" required>
+
+  <label>Gender *</label>
+  <select name="gender" required>
+    <option value="">Select</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+
+  <label>Current City *</label>
+  <input type="text" name="city" required>
+
+  <label>State *</label>
+  <input type="text" name="state" required>
+
+  <label>Willing to Relocate?</label>
+  <select name="relocate">
+    <option>No</option>
+    <option>Yes</option>
+  </select>
+
+  <hr>
+
+  <!-- EDUCATION -->
+  <h3>Education Details</h3>
+
+  <label>Highest Qualification *</label>
+  <select name="qualification" required>
+    <option value="">Select</option>
+    <option>10th</option>
+    <option>12th</option>
+    <option>Diploma</option>
+    <option>ITI</option>
+    <option>Graduate</option>
+    <option>Post Graduate</option>
+  </select>
+
+  <label>Course / Stream</label>
+  <input type="text" name="course">
+
+  <label>Institute / University</label>
+  <input type="text" name="institute">
+
+  <label>Year of Passing</label>
+  <input type="number" min="1990" max="2035">
+
+  <hr>
+
+  <!-- EXPERIENCE -->
+  <h3>Experience & Skills</h3>
+
+  <label>Experience Level *</label>
+  <select id="experienceLevel" required>
+    <option value="Fresher">Fresher</option>
+    <option value="Experienced">Experienced</option>
+  </select>
+
+  <div id="experienceFields" class="hidden">
+    <label>Total Experience (Years)</label>
+    <input type="number" step="0.5">
+
+    <label>Current / Last Job Title</label>
+    <input type="text">
+
+    <label>Industry</label>
+    <input type="text">
   </div>
 
-  <!-- Section 2: Job Details -->
-  <div class="section" id="section2">
-    <label for="job">Job Category / Skill *</label>
-    <select id="job" required>
-      <option value="">Select Job Category</option>
-      <option value="helper">Helper</option>
-      <option value="driver">Driver</option>
-      <option value="sales">Sales Executive</option>
-      <option value="office">Office Staff</option>
-      <option value="it">IT / Computer</option>
-    </select>
+  <label>Primary Skill *</label>
+  <input type="text" required>
 
-    <label for="location">Preferred Job Location *</label>
-    <input type="text" id="location" required placeholder="Enter city or area">
+  <label>Secondary Skills</label>
+  <input type="text" placeholder="Comma separated">
 
-    <label for="status">Job Search Status *</label>
-    <select id="status" required>
-      <option value="">Select Status</option>
-      <option value="actively_looking">Actively Looking</option>
-      <option value="open">Open to Opportunities</option>
-      <option value="not_looking">Not Looking</option>
-    </select>
+  <hr>
 
-    <button type="button" onclick="prevSection()">Previous</button>
-    <button type="button" onclick="nextSection()">Next</button>
-  </div>
+  <!-- JOB PREFERENCES -->
+  <h3>Job Preferences</h3>
 
-  <!-- Section 3: Optional Profile -->
-  <div class="section" id="section3">
-    <label for="experience">Total Work Experience (Years)</label>
-    <input type="number" id="experience" min="0" placeholder="Optional">
+  <label>Job Role Looking For *</label>
+  <input type="text" required>
 
-    <label for="skills">Secondary Skills</label>
-    <input type="text" id="skills" placeholder="Optional, e.g., Excel, Driving">
+  <label>Preferred Job Location *</label>
+  <input type="text" required>
 
-    <label for="resume">Upload Resume (Optional)</label>
-    <input type="file" id="resume" accept=".pdf,.doc,.docx">
+  <label>Job Type *</label>
+  <select required>
+    <option>Full-time</option>
+    <option>Part-time</option>
+    <option>Internship</option>
+    <option>Contract</option>
+  </select>
 
-    <label>
-      <input type="checkbox" id="consent" required>
-      I agree to Terms & Privacy Policy *
-    </label>
+  <label>Preferred Shift *</label>
+  <select required>
+    <option>Day</option>
+    <option>Night</option>
+    <option>Rotational</option>
+  </select>
 
-    <button type="button" onclick="prevSection()">Previous</button>
-    <button type="submit">Submit</button>
-  </div>
+  <label>Immediate Joiner?</label>
+  <select>
+    <option>No</option>
+    <option>Yes</option>
+  </select>
+
+  <hr>
+
+  <!-- SALARY -->
+  <h3>Salary Details</h3>
+
+  <label>Current Salary (Monthly)</label>
+  <input type="number">
+
+  <label>Expected Salary Range *</label>
+  <input type="text" placeholder="e.g. 15,000 - 25,000" required>
+
+  <label>Negotiable?</label>
+  <select>
+    <option>Yes</option>
+    <option>No</option>
+  </select>
+
+  <hr>
+
+  <!-- RESUME -->
+  <h3>Resume (Optional)</h3>
+
+  <label>Upload Resume</label>
+  <input type="file" accept=".pdf,.doc,.docx">
+
+  <label>LinkedIn / Portfolio URL</label>
+  <input type="url">
+
+  <hr>
+
+  <!-- CONSENT -->
+  <h3>Consent</h3>
+  <label class="checkbox">
+    <input type="checkbox" required>
+    I agree to the Terms & Conditions and Privacy Policy *
+  </label>
+
+  <br>
+
+  <button type="submit">Register</button>
 
 </form>
 
 <script>
-  // -------------------------------
-  // Variables
-  // -------------------------------
+  const experienceLevel = document.getElementById("experienceLevel");
+  const experienceFields = document.getElementById("experienceFields");
 
-  const form = document.getElementById('registrationForm');
-  const sections = document.querySelectorAll('.section');
-  const progressBar = document.getElementById('progressBar');
-  let currentSection = 0; // start at first section
-
-  // -------------------------------
-  // Show a section by index
-  // -------------------------------
-
-  function showSection(index) {
-    sections.forEach((sec, i) => {
-      // Show only the section matching the index
-      sec.classList.toggle('active', i === index);
-    });
-    updateProgress(); // update progress bar whenever section changes
-  }
-
-  // -------------------------------
-  // Go to next section
-  // -------------------------------
-
-  function nextSection() {
-    if (validateSection(currentSection)) {
-      currentSection++;
-      if (currentSection >= sections.length) currentSection = sections.length - 1;
-        showSection(currentSection);
-    }
-  }
-
-  // -------------------------------
-  // Go to previous section
-  // -------------------------------
-
-  function prevSection() {
-    currentSection--;
-    if (currentSection < 0) currentSection = 0;
-    showSection(currentSection);
-  }
-
-  // -------------------------------
-  // Validate required fields in current section
-  // -------------------------------
-
-  function validateSection(index) {
-    const inputs = sections[index].querySelectorAll('input, select');
-    for (let input of inputs) {
-      if (input.hasAttribute('required') && !input.value) {
-        alert('Please fill all required fields!');
-        input.focus();
-        return false;
-      }
-    }
-    return true;
-  }
-
-  // -------------------------------
-  // Update progress bar
-  // -------------------------------
-  function updateProgress() {
-    const allFields = form.querySelectorAll('input, select');
-    let filled = 0;
-
-    allFields.forEach(input => {
-      if ((input.type === 'checkbox' && input.checked) || (input.value && input.value !== "")) {
-        filled++;
-      }
-    });
-
-    const percent = Math.round((filled / allFields.length) * 100);
-    progressBar.style.width = percent + '%';
-    progressBar.innerText = percent + '%';
-  }
-
-  // -------------------------------
-  // Update progress dynamically as user types/selects
-  // -------------------------------
-  
-  form.addEventListener('input', updateProgress);
-  form.addEventListener('change', updateProgress);
-
-  // -------------------------------
-  // Initialize first section
-  // -------------------------------
-  showSection(currentSection);
-
-  // -------------------------------
-  // Form submission
-  // -------------------------------
-  form.addEventListener('submit', function(e) {
-    e.preventDefault(); // prevent page refresh
-    if (validateSection(currentSection)) {
-      alert('Registration submitted successfully!');
-      // Here you can send data to backend via AJAX / fetch
+  experienceLevel.addEventListener("change", function () {
+    if (this.value === "Experienced") {
+      experienceFields.classList.remove("hidden");
+    } else {
+      experienceFields.classList.add("hidden");
     }
   });
 
+  document.getElementById("candidateForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Registration Successful! Our team will contact you soon.");
+    this.reset();
+    experienceFields.classList.add("hidden");
+  });
 </script>
 
 </body>
