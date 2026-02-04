@@ -117,29 +117,38 @@ button img {
 }
 
 
+
 .singinFormDivision {
-    padding: 40px;
+    padding: 20px;
 
 }
 
 .singinFormDivision h3 {
     padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     background-color: black;
     color: white;
 }
 
 .singinFormDivision div {
-    padding: 20px;
+    padding: 25px;
 }
 
 .singinFormDivision input {
     width: 85%;
+    padding: 15px;
+    border-radius: 5px;
     margin-bottom: 50px;
+    border: 1px solid black;
 }
-.singinFormDivision select {
-    width: 70%;
-    margin-bottom: 50px;
 
+.singinFormDivision select {
+    width: 50%;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .singinFormDivision button {
@@ -151,6 +160,15 @@ button img {
     border-radius: 15px;
 }
 
+.resumeInputDivision input {
+    border: 1px solid black;
+}
+
+
+.consenInputDivision {
+    display: flex;
+    justify-content: center;
+}
 .consentInoutDivision input {
     margin-bottom: 0px;
 }
