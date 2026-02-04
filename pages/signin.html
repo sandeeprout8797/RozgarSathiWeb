@@ -174,7 +174,7 @@
                     <input type="text" name="fulllName" required> <br>
 
                     <label> Mobile Number * </label> <br>
-                    <input type="tel" name="mobile" pattern="[0-9] {10}" required> <br>
+                    <input type="tel" name="mobile" pattern="[0-9]{10}" required><br>
 
                     <label> Email Address </label> <br>
                     <input type="email" name="email" required> <br>
@@ -225,7 +225,7 @@
                     <input type="text" name="institute"> <br>
 
                     <label>Year of Passing</label> <br>
-                    <input type="number"  max="2035"> <br>
+                    <input type="number"  max="2035" name="yearOfPassing"> <br>
 
                 </div>
 
@@ -233,25 +233,25 @@
                 <h3> Experience & Skills </h3>
                 <div class="experienceDetailsInputDiv">
                     <label>Experience Level *</label> <br>
-                    <select id="experienceLevel" required>
+                    <select id="experienceLevel"  name="experienceLevel" required>
                         <option value="Fresher">Fresher</option>
                         <option value="Experienced">Experienced</option>
                     </select> <br>
 
                     <label>Total Experience (Years)</label> <br>
-                    <input type="number" step="0.5"> <br>
+                    <input type="number" step="0.5"  name="totalExperience" > <br>
 
                     <label>Current / Last Job Title</label> <br>
-                    <input type="text"> <br>
+                    <input type="text" name="currentJobTitle"> <br>
 
                     <label>Industry</label> <br>
-                    <input type="text"> <br>
+                    <input type="text"  name="industry"> <br>
 
                     <label>Primary Skill *</label> <br>
-                    <input type="text" required> <br>
+                    <input type="text" required  name="primarySkill"> <br>
 
                     <label>Secondary Skills</label> <br>
-                    <input type="text" placeholder="Comma separated"> <br>
+                    <input type="text" name="secondarySkills" placeholder="Comma separated"> <br>
                 </div>
 
 
@@ -259,13 +259,13 @@
                 <div class="jobPrefrenseInputDivision">
 
                     <label>Job Role Looking For *</label> <br>
-                    <input type="text" required> <br>
+                    <input type="text"  name="jobRole" required> <br>
                 
                     <label>Preferred Job Location *</label> <br>
-                    <input type="text" required> <br>
+                    <input type="text" name="preferredLocation" required> <br>
                 
                     <label>Job Type *</label> <br>
-                    <select required>
+                    <select name="jobType" required>
                         <option>Full-time</option>
                         <option>Part-time</option>
                         <option>Internship</option>
@@ -273,14 +273,14 @@
                     </select> <br>
                 
                     <label>Preferred Shift *</label> <br>
-                    <select required>
+                    <select  name="preferredShift" required>
                         <option>Day </option>
                         <option>Night</option>
                         <option>Rotational</option>
                     </select> <br>
                 
                     <label>Immediate Joiner?</label> <br>
-                    <select>
+                    <select  name="immediateJoiner">
                         <option>Yes</option> 
                         <option>No</option>
                     </select> <br>
@@ -292,13 +292,13 @@
                 <div class="salaryDetailsInputDetails">
 
                     <label>Current Salary (Monthly)</label> <br>
-                    <input type="number"> <br>
+                    <input  name="currentSalary" type="number"> <br>
 
                     <label>Expected Salary Range *</label> <br>
-                    <input type="text" placeholder="e.g. 15,000 - 25,000" required> <br>
+                    <input name="expectedSalary" type="text" placeholder="e.g. 15,000 - 25,000" required> <br>
 
                     <label>Negotiable?</label> <br>
-                    <select>
+                    <select name="negotiable">
                         <option>Yes</option>
                         <option>No</option>
                     </select> <br>
@@ -309,16 +309,16 @@
                 <h3>Resume (Optional)</h3>
                 <div class="resumeInputDivision">
                     <label>Upload Resume</label> <br>
-                    <input type="file" accept=".pdf,.doc,.docx"> <br>
+                    <input  name="resume" type="file" accept=".pdf,.doc,.docx"> <br>
 
                     <label>LinkedIn / Portfolio URL</label> <br>
-                    <input type="url"> <br>
+                    <input name="portfolioUrl" type="url"> <br>
                 </div>
 
 
                 <h3>Consent</h3>
                 <div class="consenInputDivision">
-                    <input type="checkbox" required> 
+                    <input type="checkbox" name="consent" required> 
                     <p> I agree to the Terms & Conditions and Privsacy Policy * </p>
                 </div>
   
@@ -329,7 +329,7 @@
             </div> 
             
         </form>
-        
+
 
         <div class="footerdivision">
             <div class="footerDivisionMain">
